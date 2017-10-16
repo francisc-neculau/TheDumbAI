@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+	<!-- 
+		category : marks a "unit of knowledge" in a bot's knowledge base
+		pattern  : used to contain a simple pattern that matches what a user may say or type to a bot
+		template : contains the response to a user input
+	-->
+	<!-- Ultimate Default Category -->
+	<!-- <category>
+		<pattern>.*</pattern>
+		<template>
+			<default>Nu am un raspuns pentru asa ceva.</default>
+		</template>
+	</category> -->
+	<category>
+		<pattern> Multumesc </pattern>
+		<template>
+			Excelent
+		</template>
+	</category>
+	<category>
+		<pattern> BINE </pattern>
+		<template>
+			Excelent
+		</template>
+	</category>
+	<category>
+		<pattern>SALUT</pattern>
+		<template>
+			<random>
+				<li>Salut, cum te numesti ?</li>
+				<li>Salutare, cum te cheama ?</li>
+				<li>Buna, cine esti ?</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>.* NU .*</pattern>
+		<template>
+			<random>
+				<li>Hmm.. atunci m-a minti :(</li>
+				<li>Nu te cred :))</li>
+				<li>Ti-ai schimbat profesia ?</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>.* DA .*</pattern>
+		<template>
+			<random>
+				<li>Te tin minte! Si cum merge treaba ?</li>
+				<li>Si ce mai faci ?</li>
+				<li>La ce firma lucrai ?</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>.*BUNA.*</pattern>
+		<template>
+			<srai>SALUT</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>.* SALUT .*</pattern>
+		<template>
+			<srai>SALUT</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>SAL .*</pattern>
+		<template>
+			<srai>SALUT</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>(MA NUMESC )([A-Z]+)(.*)</pattern>
+		<captureGroupTrigger number="2" valueMeaning="name"/>
+		<template>
+			<random>
+				<li>Incantat de cunostinta. Ce varsta ai ?</li>
+				<li>Nu ne cunoastem, ce varsta ai ?</li>
+				<li>Cati ani ai ?</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>(.*)([1-9][0-9]{1,2} )([ DE]{0,2} ANI)(.*)</pattern>
+		<captureGroupTrigger number="2" valueMeaning="age"/>
+		<template>
+			<default>Multi inainte! Cu ce te ocupi ?</default>
+		</template>
+	</category>
+	<category>
+		<pattern>.*DE ANI</pattern>
+		<template>
+			<srai>(.*)([1-9][0-9]{1,2} )([ DE]{0,2} ANI)(.*)</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>(.*)( PROGRAMATOR)(.*)</pattern>
+		<captureGroupTrigger number="2" valueMeaning="profession"/>
+		<template>
+			<random>
+				<li>Bravo!</li>
+				<li>Inseamna ca faci o gramada de bani !</li>
+				<li>Felicitari!</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>(.*)( INGINER)(.*)</pattern>
+		<captureGroupTrigger number="2" valueMeaning="profession"/>
+		<template>
+			<random>
+				<li>Ingineria e foarte frumoasa!</li>
+				<li>Sa te tii de treaba!</li>
+				<li>Si eu am vrut sa fiu inginer.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>.* PROGRAMATOR</pattern>
+		<template>
+			<srai>(.*)( PROGRAMATOR )(.*)</srai>
+		</template>
+	</category>
+</aiml>
