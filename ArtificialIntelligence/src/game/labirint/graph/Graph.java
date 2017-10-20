@@ -1,4 +1,4 @@
-package graph;
+package game.labirint.graph;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;

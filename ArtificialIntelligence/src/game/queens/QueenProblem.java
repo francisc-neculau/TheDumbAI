@@ -1,4 +1,4 @@
-package queens;
+package game.queens;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.Iterator;

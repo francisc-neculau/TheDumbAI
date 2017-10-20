@@ -1,4 +1,4 @@
-package model;
+package game.labirint.model;
 
 public interface LabyrinthModel<T> {
 

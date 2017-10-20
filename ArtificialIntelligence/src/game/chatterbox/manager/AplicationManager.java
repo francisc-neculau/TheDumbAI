@@ -1,4 +1,4 @@
-package manager;
+package game.chatterbox.manager;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,12 +11,14 @@ import javax.xml.transform.TransformerException;
 
 import org.xml.sax.SAXException;
 
-import components.MainFrame;
-import components.UpdateDialog;
-import error.UnknownReplyException;
-import model.Category;
-import model.User;
-import parser.ChatbotMemory;
+import game.chatterbox.components.MainFrame;
+import game.chatterbox.components.UpdateDialog;
+import game.chatterbox.error.UnknownReplyException;
+import game.chatterbox.model.Category;
+import game.chatterbox.model.User;
+import game.chatterbox.parser.ChatbotMemory;
+
+
 
 public class AplicationManager implements ActionListener {
 

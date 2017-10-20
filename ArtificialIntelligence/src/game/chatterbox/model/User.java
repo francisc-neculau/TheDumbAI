@@ -1,4 +1,4 @@
-package model;
+package game.chatterbox.model;
 
 public class User {
 

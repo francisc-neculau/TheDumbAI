@@ -1,4 +1,4 @@
-package error;
+package game.chatterbox.error;
 
 public class UnknownReplyException extends Exception {
 

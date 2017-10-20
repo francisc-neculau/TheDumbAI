@@ -1,4 +1,4 @@
-package model;
+package game.tictactoe.model;
 
 public class Move {
 

@@ -9,18 +9,22 @@ public class HtHeuristicFunction implements EvaluationFunction<HtState>
 	@Override
 	public double evaluate(HtState state)
 	{
+		if(state.isAlreadyVisited(state.getPredecesor()))
+			return Double.NEGATIVE_INFINITY;
+		
 		return -(double)(t(state) + d(state));
 	}
 	
 	private int t(HtState state)
 	{
-		int disk = state.getLastMovementDisk();
-		int expectedMovementTimeFrame = (int)Math.pow(2, disk);
-		int movementTime = state.getLastMovementTime();
-		int movementOffset = (int)Math.pow(2, (double)(disk - 1));
-		if((movementTime - movementOffset) % expectedMovementTimeFrame == 0)
-			return 1;
-		return 3;
+		return 0;
+//		int disk = state.getLastMovementDisk();
+//		int expectedMovementTimeFrame = (int)Math.pow(2, disk);
+//		int movementTime = state.getLastMovementTime();
+//		int movementOffset = (int)Math.pow(2, (double)(disk - 1));
+//		if((movementTime - movementOffset) % expectedMovementTimeFrame == 0)
+//			return 1;
+//		return 3;
 	}
 	
 	/**

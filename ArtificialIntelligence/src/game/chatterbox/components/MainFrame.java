@@ -1,4 +1,4 @@
-package components;
+package game.chatterbox.components;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;

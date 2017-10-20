@@ -1,8 +1,10 @@
 package game.chatterbox;
 import javax.swing.SwingUtilities;
 
-import components.MainFrame;
-import manager.AplicationManager;
+import game.chatterbox.components.MainFrame;
+import game.chatterbox.manager.AplicationManager;
+
+
 
 public class Main {
 	

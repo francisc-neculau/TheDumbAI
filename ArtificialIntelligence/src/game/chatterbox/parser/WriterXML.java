@@ -1,4 +1,4 @@
-package parser;
+package game.chatterbox.parser;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,7 +15,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
 
-import model.Category;
+import game.chatterbox.model.Category;
+
 
 public class WriterXML {
 

@@ -1,7 +1,7 @@
-package graph;
+package game.labirint.graph;
 
-import model.LabyrinthMatrixModel;
-import model.MatrixCell;
+import game.labirint.model.LabyrinthMatrixModel;
+import game.labirint.model.MatrixCell;
 
 public class LabyrinthMatrixGraph extends Graph<MatrixCell> {
 

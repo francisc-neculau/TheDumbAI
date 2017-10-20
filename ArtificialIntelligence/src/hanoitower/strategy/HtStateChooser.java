@@ -17,10 +17,11 @@ public class HtStateChooser implements StateChooser<HtState>
 			F evaluationFunction)
 	{
 		Double evaluation;
-		Double maxEvaluation = -100.0;
+		Double maxEvaluation = Double.NEGATIVE_INFINITY;
 		for (HtState nextPossibleState : nextPossibleStates)
 		{
 			evaluation = evaluationFunction.evaluate(nextPossibleState);
+			
 			if(evaluation > maxEvaluation)
 				maxEvaluation = evaluation;
 			statesMap.put(evaluation, nextPossibleState);

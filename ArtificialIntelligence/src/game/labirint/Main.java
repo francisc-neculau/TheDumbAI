@@ -1,11 +1,13 @@
+package game.labirint;
+
 import java.util.Deque;
 import java.util.LinkedList;
-import java.util.Queue;
 
-import graph.LabyrinthMatrixGraph;
-import model.LabyrinthMatrixModel;
-import model.LabyrinthMatrixModelConfiguration;
-import model.MatrixCell;
+import game.labirint.graph.LabyrinthMatrixGraph;
+import game.labirint.model.LabyrinthMatrixModel;
+import game.labirint.model.LabyrinthMatrixModelConfiguration;
+import game.labirint.model.MatrixCell;
+
 
 public class Main {
 	

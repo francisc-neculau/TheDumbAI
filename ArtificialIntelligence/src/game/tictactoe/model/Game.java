@@ -1,4 +1,4 @@
-package model;
+package game.tictactoe.model;
 
 import java.util.HashMap;
 import java.util.Iterator;

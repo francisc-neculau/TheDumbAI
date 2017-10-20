@@ -1,9 +1,14 @@
-package tictactoe;
+package game.tictactoe;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import tictactoe.model.*;
+import game.tictactoe.model.Board;
+import game.tictactoe.model.Game;
+import game.tictactoe.model.Move;
+import game.tictactoe.model.Player;
+import game.tictactoe.model.State;
+
 
 public class Main {
 	

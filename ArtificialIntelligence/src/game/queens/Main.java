@@ -1,4 +1,4 @@
-package queens;
+package game.queens;
 public class Main {
 
 

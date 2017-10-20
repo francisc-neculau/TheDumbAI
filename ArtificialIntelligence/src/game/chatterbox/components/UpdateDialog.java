@@ -1,4 +1,4 @@
-package components;
+package game.chatterbox.components;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -12,8 +12,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-import manager.AplicationManager;
-import model.Category;
+import game.chatterbox.manager.AplicationManager;
+import game.chatterbox.model.Category;
 
 public class UpdateDialog extends JDialog implements ActionListener{
 

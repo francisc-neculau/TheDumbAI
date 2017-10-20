@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.Deque;
 import java.util.List;
 
+import hanoitower.util.ListUtil;
 import model.state.State;
 
 public final class HtState implements State
@@ -16,7 +17,7 @@ public final class HtState implements State
 	private HtState predecesor;
 	private int lastDiskMoved;
 	private boolean lastDiskMovedLeft;
-	private int movementTime;
+	private int depth;
 	/**
 	 * This value stores all the information needed
 	 * to encode a particular state of the game. First
@@ -52,7 +53,7 @@ public final class HtState implements State
 		this.predecesor = predecesor;
 		this.lastDiskMoved = lastDiskMoved;
 		this.lastDiskMovedLeft = lastDiskMovedLeft;
-		this.movementTime = movementTime;
+		this.depth = movementTime;
 	}
 	
 	public HtState(int[][] disksOnRodsDistribution)
@@ -117,20 +118,20 @@ public final class HtState implements State
 	}
 	
 	/**
-	 * @return the movementTime
+	 * @return the depth
 	 */
-	public int getLastMovementTime()
+	public int getDepth()
 	{
-		return movementTime;
+		return depth;
 	}
 
-	/**
-	 * @param movementTime the movementTime to set
-	 */
-	public void setMovementTime(int movementTime)
-	{
-		this.movementTime = movementTime;
-	}
+//	/**
+//	 * @param depth the movementTime to set
+//	 */
+//	public void setMovementTime(int depth)
+//	{
+//		this.depth = depth;
+//	}
 
 	public List<Deque<Integer>> getRods()
 	{
@@ -162,7 +163,7 @@ public final class HtState implements State
 			return false;
 		HtState other = (HtState) obj;
 		
-		return Arrays.deepEquals(disksOnRodsDistribution, other.disksOnRodsDistribution);
+		return ListUtil.deepEquals(rodsWithDisks, other.getRods());
 	}
 	
 	@Override
@@ -179,6 +180,19 @@ public final class HtState implements State
 			sb.append("}");
 		}
 		return sb.toString();
+	}
+
+	public boolean isAlreadyVisited(HtState statesStacktrace) 
+	{
+		HtState previousState = statesStacktrace.getPredecesor();
+		if(previousState == null)
+			return false;
+		
+		if(previousState.equals(this))
+			return true;
+		else
+			return isAlreadyVisited(previousState);
+		
 	}
 
 }

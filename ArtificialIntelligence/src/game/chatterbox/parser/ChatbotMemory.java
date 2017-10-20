@@ -1,4 +1,4 @@
-package parser;
+package game.chatterbox.parser;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,8 +9,8 @@ import javax.xml.transform.TransformerException;
 
 import org.xml.sax.SAXException;
 
-import error.UnknownReplyException;
-import model.Category;
+import game.chatterbox.error.UnknownReplyException;
+import game.chatterbox.model.Category;
 
 public class ChatbotMemory {
 

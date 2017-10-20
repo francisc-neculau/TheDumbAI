@@ -42,7 +42,8 @@ public class HtStateTransitioner implements StateTransitioner<HtState>
 				{
 					// Found a new possible state.
 					newRods.get(j).push(disk);
-					newStates.add(new HtState(newRods, current, disk, j < i , current.getLastMovementTime() + 1));
+					HtState nextState = new HtState(newRods, current, disk, j < i , current.getDepth() + 1);
+					newStates.add(nextState);
 					newRods = cloneRods(baseNewRods);
 				}
 			}

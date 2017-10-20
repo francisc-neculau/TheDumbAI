@@ -1,4 +1,4 @@
-package model;
+package game.chatterbox.model;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package components;
+package game.chatterbox.components;
 
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;

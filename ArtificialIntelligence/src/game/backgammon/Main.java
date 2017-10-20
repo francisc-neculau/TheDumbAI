@@ -1,5 +1,6 @@
 package game.backgammon;
-import model.Board;
+
+import game.backgammon.model.Board;
 
 public class Main {
 	
