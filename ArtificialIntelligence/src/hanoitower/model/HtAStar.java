@@ -13,7 +13,7 @@ public class HtAStar extends AStar<HtState> {
 		List<HtState> resultList = new ArrayList<>();
 		for (HtState htState : stateList) 
 		{
-			if(!htState.isAlreadyVisited(htState.getPredecesor()) )
+			if(!htState.isAlreadyVisited(htState.getPredecesor()) && !isStateAlreadyAdded(htState))
 				resultList.add(htState);
 		}
 		
@@ -30,4 +30,14 @@ public class HtAStar extends AStar<HtState> {
 		System.out.println(finalState);
 	}
 
+	public boolean isStateAlreadyAdded(HtState htState)
+	{
+		for (HtState state : iterationDeque) 
+		{
+			if(state.equals(htState))
+				return true;
+		}
+		
+		return false;
+	}
 }

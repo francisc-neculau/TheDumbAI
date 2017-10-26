@@ -1,28 +1,32 @@
 package hanoitower.strategy;
 
-import java.util.Deque;
-
 import hanoitower.model.HtState;
 import model.EvaluationFunction;
 
 public class HtHillClimbingFunction implements EvaluationFunction<HtState>
 {
-	private double diskValue;
-
-	public HtHillClimbingFunction()
+	@Override
+	public double evaluate(HtState state) 
 	{
-		diskValue = HtState.NUMBER_OF_DISKS/100;
+		if(state.isAlreadyVisited(state.getPredecesor()))
+			return Double.NEGATIVE_INFINITY;
+		
+		return state.getDepth() + h(state);
 	}
 
-	@Override
-	public double evaluate(HtState state)
+	private double h(HtState state) 
 	{
-		double value = 0;
-		for ( Deque<Integer> rod : state.getRods())
+		double sum = 0;
+		
+		for (int index = 0; index < state.getRods().size(); index++) 
 		{
-			value = rod.size() * diskValue;
+			if(index == state.getRods().size() - 1)
+				sum += 2 * state.getRods().get(index).size();
+			else
+				sum += state.getRods().get(index).size();
 		}
-		return value;
+		
+		return sum;
 	}
 
 }

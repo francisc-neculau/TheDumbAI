@@ -52,6 +52,7 @@ public class PerformanceSystem<S extends State>
 			nextState = chooser.choose(states, currentState, evaluationFunction);
 			currentState = nextState;
 		}
+		System.out.println(currentState);
 		stateTrace.add(currentState);
 		LocalDateTime dtEnd = LocalDateTime.now();
 		Duration duration = Duration.between(dtStart, dtEnd);
