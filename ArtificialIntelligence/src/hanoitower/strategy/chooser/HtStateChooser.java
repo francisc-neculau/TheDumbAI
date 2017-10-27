@@ -1,4 +1,4 @@
-package hanoitower.strategy;
+package hanoitower.strategy.chooser;
 
 import java.util.HashMap;
 import java.util.List;
@@ -21,16 +21,16 @@ public class HtStateChooser implements StateChooser<HtState>
 		for (HtState nextPossibleState : nextPossibleStates)
 		{
 			evaluation = evaluationFunction.evaluate(nextPossibleState);
-			
-			if(evaluation > maxEvaluation)
+
+			if (evaluation > maxEvaluation)
 				maxEvaluation = evaluation;
 			statesMap.put(evaluation, nextPossibleState);
 		}
-		
+
 		HtState chosenState = statesMap.get(maxEvaluation);
-		
+
 		statesMap.clear();
 		return chosenState;
 	}
-	
+
 }

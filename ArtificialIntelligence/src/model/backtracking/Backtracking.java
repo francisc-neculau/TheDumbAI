@@ -9,13 +9,13 @@ import model.state.FinalStateChecker;
 import model.state.State;
 import model.state.StateTransitioner;
 
-public abstract class Backtracking<T extends State> 
+public abstract class Backtracking<S extends State> 
 {
-	protected List<T> visitedStates;
-	protected Deque<T> iterationDeque;
+	protected List<S> visitedStates;
+	protected Deque<S> iterationDeque;
 	
-	protected FinalStateChecker<T> finalStateChecker;
-	protected StateTransitioner<T> stateTransitioner;
+	protected FinalStateChecker<S> finalStateChecker;
+	protected StateTransitioner<S> stateTransitioner;
 
 	public Backtracking()
 	{
@@ -23,45 +23,46 @@ public abstract class Backtracking<T extends State>
 		iterationDeque = new ArrayDeque<>();
 	}
 	
-	public void solveHt(T initialState)
+	public void solveHt(S initialState)
 	{
 		iterationDeque.push(initialState);
 		while(!iterationDeque.isEmpty())
 		{
-			T currentState = iterationDeque.pop();
+			S currentState = iterationDeque.pop();
 			visitedStates.add(currentState);
 			
 			if(!finalStateChecker.isFinal(currentState))
 			{
-				List<T> childStates = stateTransitioner.generateAllNextLegalStates(currentState);
+				List<S> childStates = stateTransitioner.generateAllNextLegalStates(currentState);
 				childStates			= filterVisitedStates(childStates);
 				
-				for (T childState : childStates) 
+				for (S childState : childStates) 
 				{
 					iterationDeque.push(childState);
 				}
 			}
 			else
 			{
-				System.out.println("############### Found a final state ###############");
+				//System.out.println("############### Found a final state ###############");
 				printFinalState(currentState);
-				System.out.println("###################################################");
+				break; // FIXME : Warning, it should find all states !
+				//System.out.println("###################################################");
 			}
 		}
 	}
 	
-	protected abstract List<T> filterVisitedStates(List<T> stateList);
-	protected abstract void printFinalState(T finalState);
+	protected abstract List<S> filterVisitedStates(List<S> stateList);
+	protected abstract void printFinalState(S finalState);
 
 	/*
 	 *  GETTERS AND SETTERS
 	 */
-	public void setFinalStateChecker(FinalStateChecker<T> finalStateChecker) {
+	public void setFinalStateChecker(FinalStateChecker<S> finalStateChecker) {
 		this.finalStateChecker = finalStateChecker;
 	}
 
 
-	public void setStateTransitioner(StateTransitioner<T> stateTransitioner) {
+	public void setStateTransitioner(StateTransitioner<S> stateTransitioner) {
 		this.stateTransitioner = stateTransitioner;
 	}
 }

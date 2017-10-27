@@ -63,7 +63,7 @@ public final class HtState implements State
 		for (int[] rod : disksOnRodsDistribution)
 		{
 			Deque<Integer> r = new ArrayDeque<>();
-			for(int index = 0; index < NUMBER_OF_DISKS && rod[index] != 0; index++)
+			for(int index = 0; index < rod.length && rod[index] != 0; index++)
 				r.add(rod[index]);
 			this.rodsWithDisks.add(r);
 		}

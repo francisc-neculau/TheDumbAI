@@ -1,4 +1,4 @@
-package hanoitower.strategy;
+package hanoitower.strategy.chooser;
 
 import java.security.SecureRandom;
 import java.util.HashMap;
@@ -37,9 +37,9 @@ public class HtRandomStateChooser implements StateChooser<HtState>
 		}
 		
 //		double randomValue = randomChooser.
-		System.out.println();
-		System.out.println("Max evaluation score: " + maxEvaluation);
-		System.out.println("2nd Max evaluation score: " + secondMaxEvaluation);
+//		System.out.println();
+//		System.out.println("Max evaluation score: " + maxEvaluation);
+//		System.out.println("2nd Max evaluation score: " + secondMaxEvaluation);
 		
 		HtState chosenState;
 		if(randomChooser.nextDouble() > 0.5 && secondMaxEvaluation != Double.NEGATIVE_INFINITY)

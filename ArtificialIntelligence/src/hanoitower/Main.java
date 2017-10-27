@@ -1,16 +1,17 @@
 package hanoitower;
 
+import java.time.Duration;
+import java.time.LocalTime;
+
 import hanoitower.model.HtAStar;
 import hanoitower.model.HtBacktracking;
 import hanoitower.model.HtFinalStateChecker;
 import hanoitower.model.HtState;
 import hanoitower.model.HtStateTransitioner;
-import hanoitower.strategy.HtAStarFunction;
-import hanoitower.strategy.HtHeuristicFunction;
 import hanoitower.strategy.HtHillClimbingFunction;
 import hanoitower.strategy.HtRandomFunction;
-import hanoitower.strategy.HtRandomStateChooser;
-import hanoitower.strategy.HtStateChooser;
+import hanoitower.strategy.chooser.HtRandomStateChooser;
+import hanoitower.strategy.chooser.HtStateChooser;
 import model.PerformanceSystem;
 import model.state.SolutionStateTrace;
 
@@ -18,57 +19,97 @@ public class Main
 {
 
 	/*
+	 * Deci rezum aici ce ar mai fi de facut , plus ce mi-am notat din clasa :
+pentru Random si Hill Climbin trebuie sa afisam :
+- durata medie executii ( evident metrica asta se va face pentru un calup de executii a programului )
+- lungime medie drum
+- numar mediu de tranzitii
+	 */
+	/*
 	 * INfO : 
 	 * https://csce.ucmss.com/books/LFS/CSREA2017/FEC3153.pdf
 	 * http://aries.ektf.hu/~gkusper/ArtificialIntelligence_LectureNotes.v.1.0.4.pdf ( page 45 )
 	 */
 	public static void main(String[] args)
 	{
-		HtState.NUMBER_OF_DISKS = 7;
+		HtState.NUMBER_OF_DISKS = 5;
 		HtState.NUMBER_OF_RODS = 3;
-		int[][] disksOnRodsDistribution = {{1, 2, 3, 4, 5, 6, 7}, {0}, {0}};
-		
-		
-		PerformanceSystem<HtState> performanceSystem = new PerformanceSystem<>(new HtStateTransitioner());
-		
-		performanceSystem.setChecker(new HtFinalStateChecker());
-//		performanceSystem.setChooser(new HtStateChooser());
-		performanceSystem.setChooser(new HtRandomStateChooser());
-		
-//		performanceSystem.setEvaluationFunction(new HtRandomFunction());
-		performanceSystem.setEvaluationFunction(new HtHillClimbingFunction());
-//		performanceSystem.setEvaluationFunction(new HtHeuristicFunction());
+		int[][] disksOnRodsDistribution = {{ 3, 4, 5}, {1, 2,}, {0}};
 		
 		HtState initialState = new HtState(disksOnRodsDistribution);
 		
-		SolutionStateTrace<HtState> solution = performanceSystem.solve(initialState);
+		PerformanceSystem<HtState> performanceSystem = new PerformanceSystem<>(new HtStateTransitioner());
+		performanceSystem.setChecker(new HtFinalStateChecker());
 		
-//		for (HtState state : solution.getStates())
-//		{
-//			System.out.println(state);
-//		}
+		SolutionStateTrace<HtState> solution;
+		LocalTime startTime, endTime;
+		Duration duration;
+		long totalNanoTime, totalSolutionLength;
+		long NUMBER_OF_ITERATIONS = 1000;
 		
-		HtState p = solution.getStates().get(solution.getStates().size() - 1).getPredecesor();
-		int counter = 0;
-		while( p.getPredecesor() != null) 
+		
+		totalNanoTime = 0;
+		totalSolutionLength = 0;
+		for (int i = 0; i < NUMBER_OF_ITERATIONS; i++)
 		{
-			//System.out.println(p);
-			p = p.getPredecesor();
-			counter++;
+			/*
+			 * Random
+			 */
+			performanceSystem.setEvaluationFunction(new HtRandomFunction());
+			performanceSystem.setChooser(new HtStateChooser());
+			startTime = LocalTime.now();
+			solution = performanceSystem.solve(initialState);
+			endTime = LocalTime.now();
+			duration = Duration.between(startTime, endTime);
+			totalNanoTime += duration.getNano();
+			totalSolutionLength += solution.getLastState().getDepth();
+			
 		}
-//		System.out.println(counter);
-		System.out.println("Depth:" + solution.getStates().get(solution.getStates().size() - 1).getDepth());
+		System.out.println("Random Performance : ");
+		System.out.println("Avearage Time            : " + (totalNanoTime/NUMBER_OF_ITERATIONS)/Math.pow(10.0, 9.0));
+		System.out.println("Avearage Solution Lentgh : " + (totalSolutionLength/NUMBER_OF_ITERATIONS));
 		
+		totalNanoTime = 0;
+		totalSolutionLength = 0;
+		for (int i = 0; i < NUMBER_OF_ITERATIONS; i++)
+		{
+			/*
+			 * HillClimbing
+			 */
+			performanceSystem.setEvaluationFunction(new HtHillClimbingFunction());
+			performanceSystem.setChooser(new HtRandomStateChooser());
+			startTime = LocalTime.now();
+			solution = performanceSystem.solve(initialState);
+			endTime = LocalTime.now();
+			duration = Duration.between(startTime, endTime);
+			totalNanoTime += duration.getNano();
+			totalSolutionLength += solution.getLastState().getDepth();
+			
+		}
+		System.out.println("Random Performance : ");
+		System.out.println("Avearage Time            : " + (totalNanoTime/NUMBER_OF_ITERATIONS)/Math.pow(10.0, 9.0));
+		System.out.println("Avearage Solution Lentgh : " + (totalSolutionLength/NUMBER_OF_ITERATIONS));
+
+
+		System.out.println("============================");
+		/*
+		 * Backtracking
+		 */
+		System.out.println("Backtracking :");
+		HtBacktracking bktSystem = new HtBacktracking();
+		bktSystem.setFinalStateChecker(new HtFinalStateChecker());
+		bktSystem.setStateTransitioner(new HtStateTransitioner());
+		bktSystem.solveHt(initialState);
 		
-//		HtBacktracking bktSystem = new HtBacktracking();
-//		bktSystem.setFinalStateChecker(new HtFinalStateChecker());
-//		bktSystem.setStateTransitioner(new HtStateTransitioner());
-//		bktSystem.solveHt(initialState);
-		
-//		HtAStar aStarSystem = new HtAStar();
-//		aStarSystem.setFinalStateChecker(new HtFinalStateChecker());
-//		aStarSystem.setStateTransitioner(new HtStateTransitioner());
-//		aStarSystem.solveHt(initialState);
+		System.out.println();
+		/*
+		 * Best First Search
+		 */
+		System.out.println("Best First Search :");
+		HtAStar aStarSystem = new HtAStar();
+		aStarSystem.setFinalStateChecker(new HtFinalStateChecker());
+		aStarSystem.setStateTransitioner(new HtStateTransitioner());
+		aStarSystem.solve(initialState);
 	}
 
 }

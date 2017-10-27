@@ -1,8 +1,5 @@
 package model;
 
-import java.time.Duration;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -30,7 +27,9 @@ public class PerformanceSystem<S extends State>
 	private StateChooser<S> chooser;
 	private FinalStateChecker<S> checker;
 	private EvaluationFunction<S> evaluationFunction;
-
+	
+	// FIXME : The performance system should keep track of solution performance measure parameter values
+	
 	public PerformanceSystem(StateTransitioner<S> transitioner)
 	{
 		this.transitioner = transitioner;
@@ -38,7 +37,7 @@ public class PerformanceSystem<S extends State>
 	
 	public SolutionStateTrace<S> solve(S initialState)
 	{
-		LocalDateTime dtStart = LocalDateTime.now();
+		//LocalDateTime dtStart = LocalDateTime.now();
 		SolutionStateTrace<S> stateTrace = new SolutionStateTrace<>(initialState);
 		List<S> states;
 		S currentState;
@@ -46,17 +45,16 @@ public class PerformanceSystem<S extends State>
 		currentState = initialState;
 		while (!checker.isFinal(currentState))
 		{
-			System.out.println(currentState.toString());
+//			System.out.println(currentState);
 			stateTrace.add(currentState);
 			states = transitioner.generateAllNextLegalStates(currentState);
 			nextState = chooser.choose(states, currentState, evaluationFunction);
 			currentState = nextState;
 		}
-		System.out.println(currentState);
 		stateTrace.add(currentState);
-		LocalDateTime dtEnd = LocalDateTime.now();
-		Duration duration = Duration.between(dtStart, dtEnd);
-		logger.info(Long.toString(duration.getSeconds()));
+		//LocalDateTime dtEnd = LocalDateTime.now();
+		//Duration duration = Duration.between(dtStart, dtEnd);
+		//logger.info(Long.toString(duration.getSeconds()));
 		return stateTrace;
 	}
 

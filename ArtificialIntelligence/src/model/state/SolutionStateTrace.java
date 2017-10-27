@@ -21,6 +21,26 @@ public class SolutionStateTrace<S extends State>
 		return states.add(state);
 	}
 
+//	for (HtState state : solution.getStates())
+//	{
+//		System.out.println(state);
+//	}
+//	HtState p = solution.getStates().get(solution.getStates().size() - 1).getPredecesor();
+//	int counter = 0;
+//	while( p.getPredecesor() != null) 
+//	{
+		//System.out.println(p);
+//		p = p.getPredecesor();
+//		counter++;
+//	}
+//	System.out.println(counter);
+//	System.out.println("Depth:" + solution.getStates().get(solution.getStates().size() - 1).getDepth());
+	
+	public S getLastState()
+	{
+		return states.get(states.size() - 1);
+	}
+	
 	/**
 	 * @return the initialState
 	 */
