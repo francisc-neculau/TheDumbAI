@@ -1,5 +1,12 @@
 package model.state;
 
-public interface State
+import java.io.Serializable;
+
+public interface State<T extends TransitionDetails> extends Serializable
 {
+	default T getTransitionDetails()
+	{
+		return null;
+	}
+	
 }

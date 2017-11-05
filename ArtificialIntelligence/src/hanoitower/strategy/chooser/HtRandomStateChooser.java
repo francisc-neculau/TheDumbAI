@@ -36,10 +36,6 @@ public class HtRandomStateChooser implements StateChooser<HtState>
 			statesMap.put(evaluation, nextPossibleState);
 		}
 		
-//		double randomValue = randomChooser.
-//		System.out.println();
-//		System.out.println("Max evaluation score: " + maxEvaluation);
-//		System.out.println("2nd Max evaluation score: " + secondMaxEvaluation);
 		
 		HtState chosenState;
 		if(randomChooser.nextDouble() > 0.5 && secondMaxEvaluation != Double.NEGATIVE_INFINITY)
@@ -48,6 +44,9 @@ public class HtRandomStateChooser implements StateChooser<HtState>
 			chosenState = statesMap.get(maxEvaluation);
 			
 		
+		System.out.println(chosenState);
+		System.out.println("Max evaluation score: " + maxEvaluation);
+		System.out.println("2nd Max evaluation score: " + secondMaxEvaluation);
 		
 		statesMap.clear();
 		return chosenState;

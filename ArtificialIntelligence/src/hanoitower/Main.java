@@ -1,5 +1,8 @@
 package hanoitower;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.time.Duration;
 import java.time.LocalTime;
 
@@ -30,13 +33,19 @@ pentru Random si Hill Climbin trebuie sa afisam :
 	 * https://csce.ucmss.com/books/LFS/CSREA2017/FEC3153.pdf
 	 * http://aries.ektf.hu/~gkusper/ArtificialIntelligence_LectureNotes.v.1.0.4.pdf ( page 45 )
 	 */
-	public static void main(String[] args)
+	static int[][] disksOnRodsDistribution = null;
+	
+	public static void main(String[] args) throws Exception
 	{
-		HtState.NUMBER_OF_DISKS = 5;
-		HtState.NUMBER_OF_RODS = 3;
-		int[][] disksOnRodsDistribution = {{ 3, 4, 5}, {1, 2,}, {0}};
+		processConfigFile();
+		
+//		HtState.NUMBER_OF_DISKS = 5;
+//		HtState.NUMBER_OF_RODS = 3;
+//		int[][] disksOnRodsDistribution = {{ 3, 4, 5}, {1, 2,}, {0}};
 		
 		HtState initialState = new HtState(disksOnRodsDistribution);
+		
+		System.out.println(initialState);
 		
 		PerformanceSystem<HtState> performanceSystem = new PerformanceSystem<>(new HtStateTransitioner());
 		performanceSystem.setChecker(new HtFinalStateChecker());
@@ -50,6 +59,7 @@ pentru Random si Hill Climbin trebuie sa afisam :
 		
 		totalNanoTime = 0;
 		totalSolutionLength = 0;
+		int totalUniqueTransitions = 0;
 		for (int i = 0; i < NUMBER_OF_ITERATIONS; i++)
 		{
 			/*
@@ -63,15 +73,18 @@ pentru Random si Hill Climbin trebuie sa afisam :
 			duration = Duration.between(startTime, endTime);
 			totalNanoTime += duration.getNano();
 			totalSolutionLength += solution.getLastState().getDepth();
+			totalUniqueTransitions += solution.getUniquesStates().size();
 			
 		}
 		System.out.println("Random Performance : ");
-		System.out.println("Avearage Time            : " + (totalNanoTime/NUMBER_OF_ITERATIONS)/Math.pow(10.0, 9.0));
-		System.out.println("Avearage Solution Lentgh : " + (totalSolutionLength/NUMBER_OF_ITERATIONS));
+		System.out.println("Avearage Time              : " + (totalNanoTime/NUMBER_OF_ITERATIONS)/Math.pow(10.0, 6.0));
+		System.out.println("Avearage Solution Lentgh   : " + (totalSolutionLength/NUMBER_OF_ITERATIONS));
+		System.out.println("Avearage Unique Transition : " + (totalUniqueTransitions/NUMBER_OF_ITERATIONS));
+		
 		
 		totalNanoTime = 0;
 		totalSolutionLength = 0;
-		for (int i = 0; i < NUMBER_OF_ITERATIONS; i++)
+		for (int i = 0; i < 1; i++)
 		{
 			/*
 			 * HillClimbing
@@ -86,30 +99,68 @@ pentru Random si Hill Climbin trebuie sa afisam :
 			totalSolutionLength += solution.getLastState().getDepth();
 			
 		}
-		System.out.println("Random Performance : ");
-		System.out.println("Avearage Time            : " + (totalNanoTime/NUMBER_OF_ITERATIONS)/Math.pow(10.0, 9.0));
-		System.out.println("Avearage Solution Lentgh : " + (totalSolutionLength/NUMBER_OF_ITERATIONS));
-
-
-		System.out.println("============================");
-		/*
-		 * Backtracking
-		 */
-		System.out.println("Backtracking :");
-		HtBacktracking bktSystem = new HtBacktracking();
-		bktSystem.setFinalStateChecker(new HtFinalStateChecker());
-		bktSystem.setStateTransitioner(new HtStateTransitioner());
-		bktSystem.solveHt(initialState);
+//		System.out.println("HillClimbing Performance : ");
+//		System.out.println("Avearage Time            : " + (totalNanoTime/NUMBER_OF_ITERATIONS)/Math.pow(10.0, 6.0));
+//		System.out.println("Avearage Solution Lentgh : " + (totalSolutionLength/NUMBER_OF_ITERATIONS));
+//
+//
+//		System.out.println("============================");
+//		/*
+//		 * Backtracking
+//		 */
+//		System.out.println("Backtracking :");
+//		HtBacktracking bktSystem = new HtBacktracking();
+//		bktSystem.setFinalStateChecker(new HtFinalStateChecker());
+//		bktSystem.setStateTransitioner(new HtStateTransitioner());
+//		bktSystem.solveHt(initialState);
 		
-		System.out.println();
+//		System.out.println();
+//		/*
+//		 * Best First Search
+//		 */
+//		System.out.println("Best First Search :");
+//		HtAStar aStarSystem = new HtAStar();
+//		aStarSystem.setFinalStateChecker(new HtFinalStateChecker());
+//		aStarSystem.setStateTransitioner(new HtStateTransitioner());
+//		aStarSystem.solve(initialState);
+	}
+
+	private static void processConfigFile() throws Exception
+	{
 		/*
-		 * Best First Search
+		 * Structure:
+		 * 1 - number of disks
+		 * 2 - number of rods
+		 * 3 - initial state
 		 */
-		System.out.println("Best First Search :");
-		HtAStar aStarSystem = new HtAStar();
-		aStarSystem.setFinalStateChecker(new HtFinalStateChecker());
-		aStarSystem.setStateTransitioner(new HtStateTransitioner());
-		aStarSystem.solve(initialState);
+		
+		BufferedReader fileReader = new BufferedReader(new FileReader("resources//hanoiTowers//inputArgs.txt"));
+		String line = fileReader.readLine();
+		HtState.NUMBER_OF_DISKS = Integer.parseInt(line);
+		
+		line = fileReader.readLine();
+		HtState.NUMBER_OF_RODS = Integer.parseInt(line);
+	
+		disksOnRodsDistribution = new int[HtState.NUMBER_OF_RODS][];
+		
+		for(int counter = 0; counter < HtState.NUMBER_OF_RODS; counter++ )
+		{
+			line = fileReader.readLine();
+			if(line == null)
+				line = "";
+			if(line.equals(""))
+			{
+				disksOnRodsDistribution[counter] = new int[0];
+				continue;
+			}
+			String[] disks = line.split(" ");
+			disksOnRodsDistribution[counter] = new int[disks.length];
+			
+			for (int i = 0; i < disks.length; i++)
+			{
+				disksOnRodsDistribution[counter][i] = Integer.parseInt(disks[i]);
+			}
+		}
 	}
 
 }

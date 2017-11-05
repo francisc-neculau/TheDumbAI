@@ -1,7 +1,12 @@
 package model.state;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+
+import hanoitower.model.HtState;
 
 public class SolutionStateTrace<S extends State>
 {
@@ -63,5 +68,10 @@ public class SolutionStateTrace<S extends State>
 	public List<S> getStates()
 	{
 		return states;
+	}
+
+	public Set<HtState> getUniquesStates()
+	{
+		return new HashSet<HtState>((Collection<? extends HtState>) states);
 	}
 }
