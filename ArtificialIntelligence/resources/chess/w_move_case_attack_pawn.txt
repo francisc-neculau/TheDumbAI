@@ -3,7 +3,7 @@ true
 7 - - - - - - - - 0
 6 - - - - - - - - 1
 5 - - - - - - - - 2
-4 - - w - w - - - 3 00010000
+4 - - w - w - - - 3
 3 - - - - - - - - 4
 2 - - - - - - - - 5
 1 - - - b - - - - 6
@@ -13,19 +13,24 @@ b 0 1 2 3 4 5 6 7 ~
 black attack :
 
 
+true
 ~ 7 6 5 4 3 2 1 0 w
 7 - - - - - - - - 0
 6 - - - - - - - - 1
 5 - - - - - - - - 2
 4 - - w - w - - - 3
-3 - - - - - - - - 4
-2 - - - b - - - - 5
-1 - - - - - - - - 6
+3 - - - - x - - - 4
+2 - - - - - - - - 5
+1 - - - b - - - - 6
 0 - - - - - - - - 7
 b 0 1 2 3 4 5 6 7 ~
 
 black moves 
-he checkes row3 column4
+he checkes row4 column4
+
+then we must check from white perspective
+row 4 col 5
+row 4 col 2
 from black perspective
 x ( row 3 column 3)
 

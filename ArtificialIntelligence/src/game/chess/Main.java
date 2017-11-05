@@ -95,7 +95,9 @@ public class Main extends JFrame
 		  
 //		  System.out.println();System.out.println();System.out.println();
 		  
-		  System.out.println(ChessStateTransitioner.isFreeUnatackableAt(4, 4, serializer.readState(filePath).getWhitePawns()));
+		  System.out.println(ChessStateTransitioner.isPositionAtackedAt(3, 3, serializer.readState(filePath).getWhitePawns()));
+		  System.out.println(ChessStateTransitioner.isPositionBlockedAt(3, 3, serializer.readState(filePath).getWhitePawns()));
+		  
 		  
 //		  for (ChessState s :
 //		  stateTransitioner.generateAllNextLegalStates(serializer.readState(filePath)))

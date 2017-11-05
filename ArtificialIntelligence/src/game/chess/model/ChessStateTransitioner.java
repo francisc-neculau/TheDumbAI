@@ -131,39 +131,17 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 			   ((blackPawns[7 - rowIndex] & b) != b) ? true : false;
 	}
 	
-	public static boolean isPawnBlockedAt(int rowIndex, Integer columnIndex, byte[] stationaryPawns)
+	public static boolean isPositionBlockedAt(int rowIndex, Integer columnIndex, byte[] stationaryPawns)
 	{
-		if(columnIndex - 1 > 0)
+		if(columnIndex > - 1 && rowIndex < 8)
 		{	
-			byte leftB  = byteMap.get((7 - columnIndex) - 1);
-			if((stationaryPawns[7 - rowIndex] & leftB) != leftB)
-				return false;
+			byte leftB  = byteMap.get(7 - columnIndex);
+			if((stationaryPawns[7 - rowIndex - 1] & leftB) == leftB)
+				return true;
 		}
-		if(columnIndex + 1 < 8)
-		{	
-			byte rightB = byteMap.get((7 - columnIndex) + 1);
-			if((stationaryPawns[7 - rowIndex] & rightB) != rightB)
-				return false;
-		}	
-		return true;
+		return false;
 	}
 	
-	public static boolean isPawnAtackedAt(int rowIndex, Integer columnIndex, byte[] stationaryPawns)
-	{
-		if(columnIndex - 1 > 0)
-		{	
-			byte leftB  = byteMap.get((7 - columnIndex) - 1);
-			if((stationaryPawns[7 - rowIndex] & leftB) != leftB)
-				return false;
-		}
-		if(columnIndex + 1 < 8)
-		{	
-			byte rightB = byteMap.get((7 - columnIndex) + 1);
-			if((stationaryPawns[7 - rowIndex] & rightB) != rightB)
-				return false;
-		}	
-		return true;
-	}
 	/**
 	 * This function calculates if the position is free
 	 * and is not attacked by the opponent.
@@ -175,6 +153,23 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 	 * @param stationaryPawns
 	 * @return
 	 */
+	public static boolean isPositionAtackedAt(int rowIndex, Integer columnIndex, byte[] stationaryPawns)
+	{
+		if(columnIndex - 1 > 0)
+		{	
+			byte leftB  = byteMap.get((7 - columnIndex) - 1);
+			if((stationaryPawns[7 - rowIndex -1] & leftB) != leftB)
+				return false;
+		}
+		if(columnIndex + 1 < 8)
+		{	
+			byte rightB = byteMap.get((7 - columnIndex) + 1);
+			if((stationaryPawns[7 - rowIndex - 1] & rightB) != rightB)
+				return false;
+		}	
+		return true;
+	}
+	
 	public static boolean isFreeUnatackableAt(int rowIndex, Integer columnIndex, byte[] stationaryPawns)
 	{
 		if(columnIndex - 1 > 0)
