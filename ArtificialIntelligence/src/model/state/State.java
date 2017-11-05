@@ -9,4 +9,9 @@ public interface State<T extends TransitionDetails> extends Serializable
 		return null;
 	}
 	
+	default void setTransitionDetails(T transitionDetails)
+	{
+		
+	}
+	
 }

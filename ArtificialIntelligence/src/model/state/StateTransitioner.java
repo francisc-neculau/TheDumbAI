@@ -9,7 +9,7 @@ import java.util.List;
  * @author franc
  *
  */
-public interface StateTransitioner<S extends State>
+public interface StateTransitioner<S extends State> /*<T extends TransitionDetails, S extends State<T>>*/
 {
 	public abstract List<S> generateAllNextLegalStates(S currentState);
 }

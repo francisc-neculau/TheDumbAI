@@ -20,12 +20,12 @@ import model.state.State;
  * @author franc
  *
  */
-public interface EvaluationFunction<T extends State>
+public interface EvaluationFunction<S extends State>
 {
 	/**
 	 * FIXME: Add more details
 	 * @param state
 	 * @return
 	 */
-	public abstract double evaluate(T state);
+	public abstract double evaluate(S state);
 }
