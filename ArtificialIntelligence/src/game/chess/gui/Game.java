@@ -20,6 +20,7 @@ public class Game extends JPanel implements MouseListener
 	private JPanel firstSelection;
 	private JPanel secondSelection;
 	private MinMaxTree<ChessState> minMaxTree;
+	private boolean humanPlayerTurn;
 	
 	public Game() throws IOException
 	{
@@ -27,35 +28,6 @@ public class Game extends JPanel implements MouseListener
 		this.board = new Board(this);
 		this.add(board);
 		this.minMaxTree = new MinMaxTree<>(4);
-//		  byte[] whitePawns = {0, -1, 0, 0, 0, 0, 0, 0}; byte[] blackPawns = {0, -1, 0, 0, 0, 0, 0, 0}; 
-//		  ChessState state = new ChessState(whitePawns, blackPawns, false);
-//		  
-////		  int row = 0; int column = 0; boolean b = isFreeAt(row, column,state.getWhitePawns(), state.getBlackPawns()); //
-////		  System.out.println(b); // System.out.println(isPawnAt(0, blackPawns[1])); //
-//		  System.out.println(state);
-//		  
-//		  
-//		  ChessStateTransitioner stateTransitioner = new ChessStateTransitioner();
-//		  
-//		  
-//		  String filePath; ChessStateFileSerializer serializer = new
-//		  ChessStateFileSerializer(); 
-//		  filePath = "resources//chess//standard_start.txt";
-//		  
-//		  System.out.println(serializer.readState(filePath));
-//		  
-//		  filePath = "resources//chess//b_advantage_case_en_passant.txt";
-//		  System.out.println(serializer.readState(filePath));
-//		  
-//		  filePath = "resources//chess//w_move_case_attack_pawn.txt";
-//		  System.out.println(serializer.readState(filePath));
-//		  
-//		  System.out.println();System.out.println();System.out.println();
-//		  
-//		  for (ChessState s :
-//		  stateTransitioner.generateAllNextLegalStates(serializer.readState(filePath)))
-//		  { System.out.println(s); }
- 
 	}
 
 	private void updateBoard()
@@ -73,6 +45,8 @@ public class Game extends JPanel implements MouseListener
 	@Override
  	public void mouseClicked(MouseEvent e)
 	{
+		if(!humanPlayerTurn)
+			return;
 		if(firstSelection == null)
 		{
 			firstSelection = (JPanel) e.getSource();

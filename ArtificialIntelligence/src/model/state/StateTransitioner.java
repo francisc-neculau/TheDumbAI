@@ -4,7 +4,7 @@ import java.util.List;
 
 /**
  * This interface is responsible of modeling the behavior of
- * the classes that must provide all legal state transitions
+ * the classes that must return all legal state transitions
  * 
  * @author franc
  *

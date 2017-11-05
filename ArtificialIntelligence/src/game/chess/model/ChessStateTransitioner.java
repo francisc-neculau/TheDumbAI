@@ -11,7 +11,7 @@ import model.state.StateTransitioner;
 public class ChessStateTransitioner implements StateTransitioner<ChessState>
 {
 	private static Map<Integer, Byte> positionCheckMap;
-	private static Map<Integer, Byte> byteMap;
+	public static final Map<Integer, Byte> byteMap;
 	
 	static
 	{
@@ -129,6 +129,67 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 		byte b = positionCheckMap.get(columnIndex);
 		return ((whitePawns[rowIndex] & b) != b) &&
 			   ((blackPawns[7 - rowIndex] & b) != b) ? true : false;
+	}
+	
+	public static boolean isPawnBlockedAt(int rowIndex, Integer columnIndex, byte[] stationaryPawns)
+	{
+		if(columnIndex - 1 > 0)
+		{	
+			byte leftB  = byteMap.get((7 - columnIndex) - 1);
+			if((stationaryPawns[7 - rowIndex] & leftB) != leftB)
+				return false;
+		}
+		if(columnIndex + 1 < 8)
+		{	
+			byte rightB = byteMap.get((7 - columnIndex) + 1);
+			if((stationaryPawns[7 - rowIndex] & rightB) != rightB)
+				return false;
+		}	
+		return true;
+	}
+	
+	public static boolean isPawnAtackedAt(int rowIndex, Integer columnIndex, byte[] stationaryPawns)
+	{
+		if(columnIndex - 1 > 0)
+		{	
+			byte leftB  = byteMap.get((7 - columnIndex) - 1);
+			if((stationaryPawns[7 - rowIndex] & leftB) != leftB)
+				return false;
+		}
+		if(columnIndex + 1 < 8)
+		{	
+			byte rightB = byteMap.get((7 - columnIndex) + 1);
+			if((stationaryPawns[7 - rowIndex] & rightB) != rightB)
+				return false;
+		}	
+		return true;
+	}
+	/**
+	 * This function calculates if the position is free
+	 * and is not attacked by the opponent.
+	 * rowIndex and columnIndex have values from the
+	 * perspective of the player that makes the move
+	 * 
+	 * @param rowIndex
+	 * @param columnIndex
+	 * @param stationaryPawns
+	 * @return
+	 */
+	public static boolean isFreeUnatackableAt(int rowIndex, Integer columnIndex, byte[] stationaryPawns)
+	{
+		if(columnIndex - 1 > 0)
+		{	
+			byte leftB  = byteMap.get((7 - columnIndex) - 1);
+			if((stationaryPawns[7 - rowIndex] & leftB) != leftB)
+				return false;
+		}
+		if(columnIndex + 1 < 8)
+		{	
+			byte rightB = byteMap.get((7 - columnIndex) + 1);
+			if((stationaryPawns[7 - rowIndex] & rightB) != rightB)
+				return false;
+		}	
+		return true;
 	}
 	
 }
