@@ -4,6 +4,7 @@ import java.awt.Component;
 import java.awt.Font;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.io.File;
 import java.io.IOException;
 
 import javax.swing.JLabel;
@@ -28,6 +29,7 @@ public class Game extends JPanel implements MouseListener
 		this.board = new Board(this);
 		this.add(board);
 		this.minMaxTree = new MinMaxTree<>(4);
+		this.humanPlayerTurn = true;
 	}
 
 	private void updateBoard()
@@ -121,5 +123,10 @@ public class Game extends JPanel implements MouseListener
             if (jc instanceof JLabel)
                 return (JLabel) jc;
 		return null;
+	}
+
+	public void loadNewGameState(File stateFile)
+	{
+		
 	}
 }
