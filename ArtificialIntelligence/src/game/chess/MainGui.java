@@ -19,12 +19,12 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import game.chess.gui.Game;
+import game.chess.model.ChessStateFileSerializer;
 
 public class MainGui extends JFrame
 {
 	private static final long serialVersionUID = 7934048699542573198L;
-	private static final File resourcesDirectory = new File(System.getProperty("user.dir") + File.separator + "resources" + File.separator + "chess" );
-	private static int gameCounter = 1;
+	private int gameCounter = 1;
 	private JTabbedPane tabbedPane;
 	private int selectedGameIndex;
 
@@ -56,7 +56,7 @@ public class MainGui extends JFrame
 		});
 		panel.add(tabbedPane);
 		
-		Game game = new Game();
+		Game game = new Game(ChessStateFileSerializer.loadDefaultState());
 		tabbedPane.addTab("Game " + gameCounter++, null, game, null);
 		
 		JMenuBar menuBar = new JMenuBar();
@@ -73,7 +73,7 @@ public class MainGui extends JFrame
 		{
 			public void actionPerformed(ActionEvent e) {
                 JFileChooser chooser = new JFileChooser();
-                chooser.setCurrentDirectory(resourcesDirectory);
+                chooser.setCurrentDirectory( new File(ChessStateFileSerializer.resourcesDirectoryPath));
                 int option = chooser.showOpenDialog(null);
                 if(option == JFileChooser.APPROVE_OPTION)
                 	MainGui.this.loadStateOnSelectedGame(chooser.getSelectedFile());
@@ -117,14 +117,9 @@ public class MainGui extends JFrame
 	
 	private void startNewGame()
 	{
-		try
-		{
-			Game game = new Game();
-			tabbedPane.addTab("Game " + gameCounter++, null, game, null);
-		} catch (IOException e)
-		{
-			e.printStackTrace();
-		}
+		Game game = new Game(ChessStateFileSerializer.loadDefaultState());
+		tabbedPane.addTab("Game " + gameCounter, null, game, null);
+		gameCounter++;
 	}
 	
 	public static void main(String... args) throws Exception

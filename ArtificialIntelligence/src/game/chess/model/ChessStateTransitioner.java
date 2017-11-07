@@ -102,7 +102,20 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 		return states;
 	}
 	
-	private ChessState move(int fromRowIndex, int toRowIndex, Integer fromColumnIndex, Integer toColumnIndex, byte[] toBeMovedPawns, byte[] stationaryPawns, boolean isWhiteMove)
+	public static ChessState move(int fromRowIndex, int toRowIndex, Integer fromColumnIndex, Integer toColumnIndex, ChessState state)
+	{
+		byte[] toBeMovedPawns  = state.getBlackPawns();
+		byte[] stationaryPawns = state.getWhitePawns();
+		boolean isWhiteMove    = state.isWhiteToMove();
+		if(state.isWhiteToMove())
+		{
+			toBeMovedPawns  = state.getWhitePawns();
+			stationaryPawns = state.getBlackPawns();
+		}
+		return move(fromRowIndex, toRowIndex, fromColumnIndex, toColumnIndex, toBeMovedPawns, stationaryPawns, isWhiteMove);
+	}
+	
+	public static ChessState move(int fromRowIndex, int toRowIndex, Integer fromColumnIndex, Integer toColumnIndex, byte[] toBeMovedPawns, byte[] stationaryPawns, boolean isWhiteMove)
 	{
 		byte[] movedPawnsCopy      = Arrays.copyOf(toBeMovedPawns, 8);
 		byte[] stationaryPawnsCopy = Arrays.copyOf(stationaryPawns, 8);
@@ -185,6 +198,54 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 				return false;
 		}	
 		return true;
+	}
+	
+	public static boolean isLegalMove(int fromRowIndex, int toRowIndex, Integer fromColumnIndex, Integer toColumnIndex, byte[] toBeMovedPawns, byte[] stationaryPawns, boolean enPassantVulnerable, byte enPassantColumn)
+	{
+		/* Forward Move */
+		if(fromColumnIndex - toColumnIndex == 0)
+		{	
+			if(toRowIndex - fromRowIndex == 2) // do we have a double move ?
+			{
+				if(!isPawnAt(7 - toColumnIndex, 7 - toColumnIndex, stationaryPawns) && // is one of the opponent pawns blocking it ?
+						!isPawnAt(toColumnIndex, toColumnIndex, toBeMovedPawns) && // is one of our pawns blocking it ?
+						fromRowIndex == 1) // is the move legal ?
+					return true;
+				return false;
+			}
+			else if(toRowIndex - fromRowIndex == 1) // do we have a normal move ?
+			{
+				if(!isPawnAt(toRowIndex, toColumnIndex, toBeMovedPawns) &&
+					!isPawnAt(7 - toRowIndex, 7 - toColumnIndex, stationaryPawns))
+					return true;
+				return false;
+			}
+			else
+				return false; // we cannot move backwards
+		}
+		/* Attacking Move */
+		else if(Math.abs(fromColumnIndex - toColumnIndex) == 1)// Attacking move
+		{	
+			if(Math.abs(fromRowIndex - toRowIndex) != 1) // cannot jump two rows
+				return false;
+			/* EnPassant Attack */
+			if((byteMap.get(7 - toColumnIndex) & enPassantColumn) == enPassantColumn && // do we target the vulnerable column ?
+					isPawnAt(7 - fromRowIndex, 7 - toColumnIndex, stationaryPawns) && // is his pawn in the vulnerable spot ?
+					enPassantVulnerable) // was the move en passant ?
+				return true;
+			/* Left or Right Attack */
+			if(isPawnAt(7 - toRowIndex, 7 - toColumnIndex, stationaryPawns))
+				return true;
+			return false;
+		}
+		else
+			return false;// we cannot move on more than one column
+	}
+	
+	public static boolean isPawnAt(int rowIndex, int columnIndex, byte[] pawns)
+	{
+		byte b = byteMap.get(columnIndex);
+		return ((pawns[rowIndex] & b) == b) ? true : false;
 	}
 	
 }

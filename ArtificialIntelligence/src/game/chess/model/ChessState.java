@@ -36,6 +36,13 @@ public class ChessState implements State<ChessStateTransitionDetails>
 	
 	boolean whiteToMove = false;
 	boolean enPassantVulnerable = false;
+	byte enPassantColumn;
+	
+	public ChessState(byte[] whitePawns, byte[] blackPawns, boolean isWhiteMove, boolean enPassantVulnerable)
+	{
+		this(whitePawns,blackPawns,isWhiteMove);
+		this.enPassantVulnerable = enPassantVulnerable;
+	}
 	
 	public ChessState(byte[] whitePawns, byte[] blackPawns, boolean isWhiteMove)
 	{
@@ -66,6 +73,16 @@ public class ChessState implements State<ChessStateTransitionDetails>
 		this.whitePawns = whitePawns;
 	}
 
+	public ChessStateTransitionDetails getTransitionDetails()
+	{
+		return transitionDetails;
+	}
+
+	public void setTransitionDetails(ChessStateTransitionDetails transitionDetails)
+	{
+		this.transitionDetails = transitionDetails;
+	}
+
 	public boolean isWhiteToMove()
 	{
 		return whiteToMove;
@@ -74,6 +91,26 @@ public class ChessState implements State<ChessStateTransitionDetails>
 	public void setWhiteToMove(boolean whiteToMove)
 	{
 		this.whiteToMove = whiteToMove;
+	}
+
+	public boolean isEnPassantVulnerable()
+	{
+		return enPassantVulnerable;
+	}
+
+	public void setEnPassantVulnerable(boolean enPassantVulnerable)
+	{
+		this.enPassantVulnerable = enPassantVulnerable;
+	}
+
+	public byte getEnPassantColumn()
+	{
+		return enPassantColumn;
+	}
+
+	public void setEnPassantColumn(byte enPassantColumn)
+	{
+		this.enPassantColumn = enPassantColumn;
 	}
 
 	@Override

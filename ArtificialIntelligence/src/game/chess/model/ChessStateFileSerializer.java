@@ -11,32 +11,16 @@ import model.state.StateFileSerializer;
 
 public class ChessStateFileSerializer implements StateFileSerializer<ChessState>
 {
-
+	public static final String resourcesDirectoryPath = System.getProperty("user.dir") + File.separator + "resources" + File.separator + "chess";
+	private static final String standardStartStateFileName = "standard_start.txt";
+	
 	@Override
 	public void writeState(ChessState state, String filePath) throws IOException
 	{
 		File f = new File(filePath);
 
-//		if(f.exists())
-//			throw new IOException("File " + f.getName() + " allready exists"
-//					+ " thus no writting will occur");
-//		if(!f.createNewFile())
-//			throw new IOException("File " + f.getName() + " could not be created");
-					
-		
 		BufferedWriter bw = new BufferedWriter(new FileWriter(f));
-//		for (byte b : state.getWhitePawns())
-//		{
-//			bw.write(Byte.toString(b));
-//			bw.newLine();
-//		}
-//		bw.newLine();
-//		
-//		for (byte b : state.getBlackPawns())
-//		{
-//			bw.write(Byte.toString(b));
-//			bw.newLine();
-//		}
+
 		bw.write(Boolean.toString(state.isWhiteToMove()));
 		bw.write(state.toString());
 		bw.flush();
@@ -81,14 +65,22 @@ public class ChessStateFileSerializer implements StateFileSerializer<ChessState>
 			blackPawns[7 - i] = (byte)bp;
 		}
 		
-//		for (int i = 0; i < 8; i++)
-//			whitePawns[i] = Byte.parseByte(br.readLine());
-//		br.readLine();
-//		for (int i = 0; i < 8; i++)
-//			blackPawns[i] = Byte.parseByte(br.readLine());
-		
 		br.close();
 		return new ChessState(whitePawns, blackPawns, isWhiteMove);
+	}
+
+	public static ChessState loadDefaultState()
+	{
+		// FIXME : This stuff is very messy. Maybe a Helper class after all ?
+		ChessStateFileSerializer csfs = new ChessStateFileSerializer();
+		try
+		{
+			return csfs.readState(csfs.resourcesDirectoryPath + File.separator + csfs.standardStartStateFileName);
+		} catch (IOException e)
+		{
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 }
