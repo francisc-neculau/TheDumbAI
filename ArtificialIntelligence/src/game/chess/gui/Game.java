@@ -1,16 +1,19 @@
 package game.chess.gui;
 
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
 import java.io.IOException;
 
+import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 import game.chess.model.ChessState;
 import game.chess.model.ChessStateFileSerializer;
 import game.chess.model.ChessStateTransitioner;
+import model.minmax.MinMaxTree;
 
 public class Game extends JPanel implements MouseListener
 {
@@ -19,17 +22,33 @@ public class Game extends JPanel implements MouseListener
 	private Board board;
 	private JTextField firstSelection;
 	private ChessState currentState;
-//	private MinMaxTree<ChessState> minMaxTree;
-	private boolean humanPlayerTurn;
+	private MinMaxTree<ChessState> minMaxTree;
 	
-	public Game(ChessState state)
+	public Game(ChessState state, boolean whiteMove)
 	{
 		this.setLayout(null);
 		this.board = new Board(state, this);
 		this.add(board);
 		this.currentState = state;
-//		this.minMaxTree = new MinMaxTree<>(4);
-		this.humanPlayerTurn = true;
+		this.minMaxTree = new MinMaxTree<>(4);
+		this.minMaxTree.setTransitioner(new ChessStateTransitioner());
+		JButton btnAiNextMove = new JButton("AI Next Move");
+		btnAiNextMove.setBounds(400, 64, 115, 45);
+		btnAiNextMove.addMouseListener(new MouseAdapter() {
+	        @Override
+	        public void mousePressed(MouseEvent e)
+	        {
+	            Game.this.generateNextAiMove();
+	        }
+	    });
+		this.add(btnAiNextMove);
+	}
+	
+	private void generateNextAiMove()
+	{
+		ChessState aiNextState = minMaxTree.nextState(currentState, MinMaxTree.MAX_PLAYER);
+		currentState = aiNextState;
+		reDrawBoard();
 	}
 	
 	private boolean isLegalMove(JTextField from, JTextField to)
@@ -74,11 +93,11 @@ public class Game extends JPanel implements MouseListener
 	@Override
  	public void mouseClicked(MouseEvent e)
 	{
-		if(!humanPlayerTurn)
-			return;
+		JTextField selectedCell = (JTextField) e.getSource();
+
 		if(firstSelection == null)
 		{
-			firstSelection = (JTextField) e.getSource();
+			firstSelection = selectedCell;
 			firstSelection.setFont(Board.bigBoldFont);
 		}
 		else

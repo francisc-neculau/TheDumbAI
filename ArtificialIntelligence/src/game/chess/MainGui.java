@@ -20,6 +20,8 @@ import javax.swing.event.ChangeListener;
 
 import game.chess.gui.Game;
 import game.chess.model.ChessStateFileSerializer;
+import javax.swing.JButton;
+import javax.swing.JCheckBoxMenuItem;
 
 public class MainGui extends JFrame
 {
@@ -27,7 +29,8 @@ public class MainGui extends JFrame
 	private int gameCounter = 1;
 	private JTabbedPane tabbedPane;
 	private int selectedGameIndex;
-
+	private boolean whiteFirst = false;
+	
 	public MainGui() throws IOException
 	{
 		getContentPane().setBackground(Color.WHITE);
@@ -56,8 +59,16 @@ public class MainGui extends JFrame
 		});
 		panel.add(tabbedPane);
 		
-		Game game = new Game(ChessStateFileSerializer.loadDefaultState());
+		Game game = new Game(ChessStateFileSerializer.loadDefaultState(), true);
 		tabbedPane.addTab("Game " + gameCounter++, null, game, null);
+		
+		JPanel panel_1 = new JPanel();
+		tabbedPane.addTab("New tab", null, panel_1, null);
+		panel_1.setLayout(null);
+		
+		JButton btnAiNextMove = new JButton("AI Next Move");
+		btnAiNextMove.setBounds(400, 64, 115, 45);
+		panel_1.add(btnAiNextMove);
 		
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
@@ -102,6 +113,22 @@ public class MainGui extends JFrame
 			}
 		});
 		optionsMenu.add(mntmNewGame);
+		
+		JCheckBoxMenuItem chckbxmntmWhiteFirst = new JCheckBoxMenuItem("White First");
+		chckbxmntmWhiteFirst.addActionListener(new ActionListener()
+		{
+			@Override
+			public void actionPerformed(ActionEvent e)
+			{
+				MainGui.this.toggleWhiteFirst();
+			}
+		});
+		optionsMenu.add(chckbxmntmWhiteFirst);
+	}
+
+	protected void toggleWhiteFirst()
+	{
+		this.whiteFirst = !whiteFirst;
 	}
 
 	private void loadStateOnSelectedGame(File stateFile)
@@ -117,7 +144,7 @@ public class MainGui extends JFrame
 	
 	private void startNewGame()
 	{
-		Game game = new Game(ChessStateFileSerializer.loadDefaultState());
+		Game game = new Game(ChessStateFileSerializer.loadDefaultState(), whiteFirst);
 		tabbedPane.addTab("Game " + gameCounter, null, game, null);
 		gameCounter++;
 	}

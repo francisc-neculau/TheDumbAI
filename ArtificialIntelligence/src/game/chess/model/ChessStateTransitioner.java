@@ -71,7 +71,7 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 		byte[] movedPawnsCopy      = Arrays.copyOf(toBeMovedPawns, 8);
 		byte[] stationaryPawnsCopy = Arrays.copyOf(stationaryPawns, 8);
 		
-		// left attack
+		// Attacks from left to the center
 		if(toColumnIndex - 1 > 0 && isPawnAt(4, toColumnIndex - 1, toBeMovedPawns))
 		{
 			movedPawnsCopy[4] = (byte) (movedPawnsCopy[4] - byteMap.get(toColumnIndex - 1));
@@ -82,13 +82,13 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 			{
 				state = new ChessState(movedPawnsCopy, stationaryPawnsCopy, false);
 				state.setTransitionDetails(new ChessStateTransitionDetails(
-						true, true, true, 1, 5, 7 - toColumnIndex + 1));
+						true, true, true, 1, 5, 7 - toColumnIndex));
 			}
 			else
 			{
 				state = new ChessState(stationaryPawnsCopy, movedPawnsCopy, true);
 				state.setTransitionDetails(new ChessStateTransitionDetails(
-						true, true, true, 1, 5, toColumnIndex + 1));
+						true, true, true, 1, 5, toColumnIndex));
 			}
 			
 			states.add(state);
@@ -96,7 +96,7 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 		
 		movedPawnsCopy      = Arrays.copyOf(toBeMovedPawns, 8);
 		stationaryPawnsCopy = Arrays.copyOf(stationaryPawns, 8);
-		// right attack
+		// Attacks from right to the center
 		if(toColumnIndex + 1 < 8 && isPawnAt(4, toColumnIndex + 1, toBeMovedPawns))
 		{
 			movedPawnsCopy[4] = (byte) (movedPawnsCopy[4] - byteMap.get(toColumnIndex + 1));
@@ -107,13 +107,13 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 			{
 				state = new ChessState(movedPawnsCopy, stationaryPawnsCopy, false);
 				state.setTransitionDetails(new ChessStateTransitionDetails(
-						true, true, true, 1, 5, 7 - toColumnIndex - 1));
+						true, true, true, 1, 5, 7 - toColumnIndex));
 			}
 			else
 			{
 				state = new ChessState(stationaryPawnsCopy, movedPawnsCopy, true);
 				state.setTransitionDetails(new ChessStateTransitionDetails(
-						true, true, true, 1, 5, toColumnIndex - 1));
+						true, true, true, 1, 5, toColumnIndex));
 			}
 			
 			states.add(state);
