@@ -248,4 +248,13 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 		return ((pawns[rowIndex] & b) == b) ? true : false;
 	}
 	
+	public static boolean isBackedLeft(int rowIndex, Integer columnIndex, byte[] toBeMovedPawns)
+	{
+		return false;
+	}
+	
+	public static boolean isBackedRight(int rowIndex, Integer columnIndex, byte[] toBeMovedPawns)
+	{
+		return false;
+	}
 }
