@@ -12,19 +12,29 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 {
 	private static Map<Integer, Byte> positionCheckMap;
 	public static final Map<Integer, Byte> byteMap;
-	public static final Map<Integer, Byte> reversedByteMap;
+	public static final Map<Byte, Integer> reversedByteMap;
 	
 	static
 	{
+		positionCheckMap = new HashMap<>();
+		positionCheckMap.put(0, Byte.valueOf((byte)0b10000000));
+		positionCheckMap.put(1, Byte.valueOf((byte)0b01000000));
+		positionCheckMap.put(2, Byte.valueOf((byte)0b00100000));
+		positionCheckMap.put(3, Byte.valueOf((byte)0b00010000));
+		positionCheckMap.put(4, Byte.valueOf((byte)0b00001000));
+		positionCheckMap.put(5, Byte.valueOf((byte)0b00000100));
+		positionCheckMap.put(6, Byte.valueOf((byte)0b00000010));
+		positionCheckMap.put(7, Byte.valueOf((byte)0b00000001));
+		
 		reversedByteMap = new HashMap<>();
-		reversedByteMap.put(0, Byte.valueOf((byte)0b10000000));
-		reversedByteMap.put(1, Byte.valueOf((byte)0b01000000));
-		reversedByteMap.put(2, Byte.valueOf((byte)0b00100000));
-		reversedByteMap.put(3, Byte.valueOf((byte)0b00010000));
-		reversedByteMap.put(4, Byte.valueOf((byte)0b00001000));
-		reversedByteMap.put(5, Byte.valueOf((byte)0b00000100));
-		reversedByteMap.put(6, Byte.valueOf((byte)0b00000010));
-		reversedByteMap.put(7, Byte.valueOf((byte)0b00000001));
+		reversedByteMap.put(Byte.valueOf((byte)0b10000000), 7);
+		reversedByteMap.put(Byte.valueOf((byte)0b01000000), 6);
+		reversedByteMap.put(Byte.valueOf((byte)0b00100000), 5);
+		reversedByteMap.put(Byte.valueOf((byte)0b00010000), 4);
+		reversedByteMap.put(Byte.valueOf((byte)0b00001000), 3);
+		reversedByteMap.put(Byte.valueOf((byte)0b00000100), 2);
+		reversedByteMap.put(Byte.valueOf((byte)0b00000010), 1);
+		reversedByteMap.put(Byte.valueOf((byte)0b00000001), 0);
 		
 		byteMap = new HashMap<>();
 		byteMap.put(7, Byte.valueOf((byte)0b10000000));
@@ -48,25 +58,54 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 		states.addAll(generateForwardingMoves(toBeMovedPawns,stationaryPawns,currentState.isWhiteToMove()));
 		states.addAll(generateAtackingMoves(toBeMovedPawns,stationaryPawns,currentState.isWhiteToMove()));
 		if(currentState.isEnPassantVulnerable())
-			states.add(generateEnPassatAttackMove(toBeMovedPawns,stationaryPawns, currentState.getEnPassantColumn(), currentState.isWhiteToMove()));
+			states.addAll(generateEnPassatAttackMove(toBeMovedPawns,stationaryPawns, currentState.getEnPassantColumn(), currentState.isWhiteToMove()));
 		
 		return states;
 	}
 
-	private ChessState generateEnPassatAttackMove(byte[] toBeMovedPawns, byte[] stationaryPawns, byte enPassatColumn, boolean isWhiteMove)
+	private List<ChessState> generateEnPassatAttackMove(byte[] toBeMovedPawns, byte[] stationaryPawns, byte enPassatColumn, boolean isWhiteMove)
 	{
+		List<ChessState> states = new ArrayList<>();
+		ChessState state;
+		int toColumnIndex = 7 - reversedByteMap.get(enPassatColumn);
 		byte[] movedPawnsCopy      = Arrays.copyOf(toBeMovedPawns, 8);
 		byte[] stationaryPawnsCopy = Arrays.copyOf(stationaryPawns, 8);
 		
-//		movedPawnsCopy[fromRowIndex] = (byte) (movedPawnsCopy[fromRowIndex] - byteMap.get(fromColumnIndex));
-//		movedPawnsCopy[toRowIndex]   = (byte) (movedPawnsCopy[toRowIndex]   + byteMap.get(toColumnIndex));
-//		
-//		if(fromColumnIndex != toColumnIndex) // means we have an attacking move, thus we should clean the attacked position
-//			stationaryPawnsCopy[7 - toRowIndex] = (byte) (stationaryPawnsCopy[7 - toRowIndex] - byteMap.get(7- toColumnIndex));
+		// left attack
+		if(isPawnAt(4, toColumnIndex - 1, toBeMovedPawns))
+		{
+			movedPawnsCopy[4] = (byte) (movedPawnsCopy[4] - byteMap.get(toColumnIndex - 1));
+			movedPawnsCopy[5] = (byte) (movedPawnsCopy[5] + byteMap.get(toColumnIndex));
+			
+			stationaryPawnsCopy[3] = (byte) (stationaryPawnsCopy[3] - byteMap.get(7 - toColumnIndex));
+			if(isWhiteMove)
+				state = new ChessState(movedPawnsCopy, stationaryPawnsCopy, false);
+			else
+				state = new ChessState(stationaryPawnsCopy, movedPawnsCopy, true);
+			state.setTransitionDetails(new ChessStateTransitionDetails(
+					true, true, true, 1, 5, toColumnIndex + 1));
+			states.add(state);
+		}
+		
+		movedPawnsCopy      = Arrays.copyOf(toBeMovedPawns, 8);
+		stationaryPawnsCopy = Arrays.copyOf(stationaryPawns, 8);
+		// right attack
+		if(isPawnAt(4, toColumnIndex + 1, toBeMovedPawns))
+		{
+			movedPawnsCopy[4] = (byte) (movedPawnsCopy[4] - byteMap.get(toColumnIndex + 1));
+			movedPawnsCopy[5] = (byte) (movedPawnsCopy[5] + byteMap.get(toColumnIndex));
+			
+			stationaryPawnsCopy[3] = (byte) (stationaryPawnsCopy[3] - byteMap.get(7 - toColumnIndex));
+			if(isWhiteMove)
+				state = new ChessState(movedPawnsCopy, stationaryPawnsCopy, false);
+			else
+				state = new ChessState(stationaryPawnsCopy, movedPawnsCopy, true);
+			state.setTransitionDetails(new ChessStateTransitionDetails(
+					true, true, true, 1, 5, toColumnIndex - 1));
+			states.add(state);
+		}
 
-		if(isWhiteMove)
-			return new ChessState(movedPawnsCopy, stationaryPawnsCopy, false);
-		return new ChessState(stationaryPawnsCopy, movedPawnsCopy, true);
+		return states;
 	}
 
 	private List<ChessState> generateAtackingMoves(byte[] toBeMovedPawns, byte[] stationaryPawns, boolean isWhiteMove)
@@ -74,23 +113,23 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 		List<ChessState> states = new ArrayList<>();
 		ChessState generatedState;
 		
-		// Check EnPassat Attacks
-		for (int i = 0; i < 8; i++)
-		{
-			if(!isPawnAt(1, i, toBeMovedPawns))
-				continue;
-			/* Can we move the pawn two step ?
-			 * check non-existence of enemy blocking pawn or own blocking pawn two cells ahead */
-			if(isPawnAt(5, 7 - i, stationaryPawns) || isPawnAt(2, i, toBeMovedPawns) ||
-				isPawnAt(4, 7 -i, stationaryPawns) || isPawnAt(3, i, toBeMovedPawns))
-				continue;
-			generatedState = move(1, 3, i, i, toBeMovedPawns, stationaryPawns, isWhiteMove);
-			generatedState.setEnPassantVulnerable(true);
-			generatedState.setEnPassantColumn(byteMap.get(i));
-			generatedState.setTransitionDetails(new ChessStateTransitionDetails(
-					true, false, true, 2, 3, i));
-			states.add(generatedState);
-		}
+//		// Check EnPassat Attacks
+//		for (int i = 0; i < 8; i++)
+//		{
+//			if(!isPawnAt(1, i, toBeMovedPawns))
+//				continue;
+//			/* Can we move the pawn two step ?
+//			 * check non-existence of enemy blocking pawn or own blocking pawn two cells ahead */
+//			if(isPawnAt(5, 7 - i, stationaryPawns) || isPawnAt(2, i, toBeMovedPawns) ||
+//				isPawnAt(4, 7 -i, stationaryPawns) || isPawnAt(3, i, toBeMovedPawns))
+//				continue;
+//			generatedState = move(1, 3, i, i, toBeMovedPawns, stationaryPawns, isWhiteMove);
+//			generatedState.setEnPassantVulnerable(true);
+//			generatedState.setEnPassantColumn(byteMap.get(i));
+//			generatedState.setTransitionDetails(new ChessStateTransitionDetails(
+//					true, false, true, 2, 3, i));
+//			states.add(generatedState);
+//		}
 
 		for (int i = 0; i < 7; i++)
 		{
