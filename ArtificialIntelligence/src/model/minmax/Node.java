@@ -7,12 +7,12 @@ import model.state.State;
 
 public class Node<S extends State>
 {
-	public S state;
-	public Node<S> parent;
-	public List<Node<S>> childs;
+	private S state;
+	private Node<S> parent;
+	private List<Node<S>> childs;
 	
-	public int min;
-	public int max;
+	private double minValue;
+	private double maxValue;
 	
 	public Node(Node<S> parent, S state)
 	{
@@ -20,46 +20,63 @@ public class Node<S extends State>
 		this.parent = parent;
 		this.childs = new ArrayList<>();
 	}
+	public boolean isLeaf()
+	{
+		return childs.isEmpty();
+	}
 
 	public void addChildNode(Node<S> childNode)
 	{
 		this.childs.add(childNode);
 	}
-	
-	
+
+	public S getState()
+	{
+		return state;
+	}
+	public void setState(S state)
+	{
+		this.state = state;
+	}
+	public Node<S> getParent()
+	{
+		return parent;
+	}
+	public void setParent(Node<S> parent)
+	{
+		this.parent = parent;
+	}
+	public List<Node<S>> getChilds()
+	{
+		return childs;
+	}
+	public void setChilds(List<Node<S>> childs)
+	{
+		this.childs = childs;
+	}
+	public double getMinValue()
+	{
+		return minValue;
+	}
+	public void setMinValue(double minValue)
+	{
+		this.minValue = minValue;
+	}
+	public double getMaxValue()
+	{
+		return maxValue;
+	}
+	public void setMaxValue(double maxValue)
+	{
+		this.maxValue = maxValue;
+	}
+
 	@Override
 	public String toString()
 	{
 		StringBuilder sb = new StringBuilder();
 		sb.append(this.state);
 		return sb.toString();
-	}
-
-	public S getState()
-	{
-		return this.state;
-	}
-
-	public boolean isLeaf()
-	{
-		return childs.isEmpty();
-	}
-
-	public List<Node<S>> getChilds()
-	{
-		return this.childs;
-	}
-
-	public void setMaxValue(double value)
-	{
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void setMinValue(double value)
-	{
-		// TODO Auto-generated method stub
-		
 	}
 	
 }

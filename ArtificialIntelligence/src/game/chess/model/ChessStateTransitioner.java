@@ -242,19 +242,21 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 			return false;// we cannot move on more than one column
 	}
 	
-	public static boolean isPawnAt(int rowIndex, int columnIndex, byte[] pawns)
+	public static boolean isPawnAt(int rowIndex, int columnIndex, byte[] toBeMovedPawns)
 	{
 		byte b = byteMap.get(columnIndex);
-		return ((pawns[rowIndex] & b) == b) ? true : false;
+		return ((toBeMovedPawns[rowIndex] & b) == b) ? true : false;
 	}
 	
 	public static boolean isBackedLeft(int rowIndex, Integer columnIndex, byte[] toBeMovedPawns)
 	{
-		return false;
+		byte b = byteMap.get(columnIndex - 1);
+		return ((toBeMovedPawns[rowIndex-1] & b) == b) ? true : false;
 	}
 	
 	public static boolean isBackedRight(int rowIndex, Integer columnIndex, byte[] toBeMovedPawns)
 	{
-		return false;
+		byte b = byteMap.get(columnIndex + 1);
+		return ((toBeMovedPawns[rowIndex-1] & b) == b) ? true : false;
 	}
 }
