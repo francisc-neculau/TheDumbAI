@@ -55,5 +55,11 @@ public class Node<S extends State>
 		// TODO Auto-generated method stub
 		
 	}
+
+	public void setMinValue(double value)
+	{
+		// TODO Auto-generated method stub
+		
+	}
 	
 }

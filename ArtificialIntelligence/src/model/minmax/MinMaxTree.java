@@ -73,7 +73,7 @@ public class MinMaxTree<S extends State>
 			for (Node<S> child : node.getChilds())
 			{
 				value = minmax(child, depth - 1, MAX_PLAYER);
-				child.setMaxValue(value);
+				child.setMinValue(value);
 				bestValue = value < bestValue ? value : bestValue;
 			}
 			return bestValue;
