@@ -31,15 +31,31 @@ public class MinMaxTree<S extends State>
 	{
 		root = new Node<>(null, state);
 		// Build the tree and make mark the value of the nodes
-		double value = minmax(root, 4, player);
+		double value = minmax(root, depth, player);
 		
 		// We know now the best value so we go in the root and pick the child with that value
 		// 
-		Node bestNode = null; // FIXME : implementation here
+		Node bestNode = getNode(root.getChilds(), value, player);
 		
-		return (S) bestNode.getState();
+		return bestNode == null ? null : (S) bestNode.getState();
 	}
 	
+	private Node getNode(List<Node<S>> nodeList, double value, int player) 
+	{
+		if(player != MAX_PLAYER && player != MIN_PLAYER)
+			throw new IllegalArgumentException("Unknown value for player!");
+		
+		double checkingValue;
+		for (Node<S> node : nodeList) 
+		{
+			checkingValue = (player == MAX_PLAYER) ? node.getMaxValue() : node.getMinValue();
+			if(checkingValue == value)
+				return node;
+		}
+		
+		return null;
+	}
+
 	private void buildTreeBranch(Node<S> root)
 	{
 		List<S> states = transitioner.generateAllNextLegalStates(root.getState());
@@ -50,7 +66,7 @@ public class MinMaxTree<S extends State>
 	private double minmax(Node<S> node,int depth, int player)
 	{
 		double value, bestValue;
-		if(depth == 0 || node.isLeaf())
+		if(depth == 0 && node.isLeaf())
 			return f.evaluate(node.getState());
 		if(player == MAX_PLAYER)
 		{
@@ -109,6 +125,22 @@ public class MinMaxTree<S extends State>
 			}
 			return value;
 		}
+	}
+
+	public StateTransitioner<S> getTransitioner() {
+		return transitioner;
+	}
+
+	public void setTransitioner(StateTransitioner<S> transitioner) {
+		this.transitioner = transitioner;
+	}
+
+	public EvaluationFunction<S> getF() {
+		return f;
+	}
+
+	public void setEvaluationFunction(EvaluationFunction<S> f) {
+		this.f = f;
 	}
 	
 }

@@ -1,5 +1,7 @@
 package game.chess.strategy;
 
+import java.security.SecureRandom;
+
 import game.chess.model.ChessState;
 import game.chess.model.ChessStateTransitionDetails;
 import game.chess.model.ChessStateTransitioner;
@@ -16,6 +18,8 @@ public class ChessOffensiveHeuristics extends ChessCoreHeuristics
 			score += computeScore(state.getTransitionDetails(), state.getWhitePawns());
 		
 		return score;
+		
+//		return new SecureRandom().nextInt(100);
 	}
 	
 	

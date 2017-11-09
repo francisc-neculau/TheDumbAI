@@ -185,19 +185,49 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 	 */
 	public static boolean isPositionAtackedAt(int rowIndex, Integer columnIndex, byte[] stationaryPawns)
 	{
+		columnIndex = 7 - columnIndex;
+		rowIndex	= 7 - rowIndex;
 		if(columnIndex - 1 > 0)
 		{	
-			byte leftB  = byteMap.get((7 - columnIndex) - 1);
-			if((stationaryPawns[7 - rowIndex -1] & leftB) != leftB)
+			byte leftB  = byteMap.get(columnIndex - 1);
+			if((stationaryPawns[rowIndex -1] & leftB) != leftB)
 				return false;
 		}
 		if(columnIndex + 1 < 8)
 		{	
-			byte rightB = byteMap.get((7 - columnIndex) + 1);
-			if((stationaryPawns[7 - rowIndex - 1] & rightB) != rightB)
+			byte rightB = byteMap.get((columnIndex) + 1);
+			if((stationaryPawns[rowIndex - 1] & rightB) != rightB)
 				return false;
 		}	
 		return true;
+	}
+	
+	public static boolean isPositionBackingAt(int rowIndex, Integer columnIndex, byte[] personalPawns)
+	{
+		if(columnIndex - 1 > 0)
+		{	
+			byte leftB  = byteMap.get(columnIndex - 1);
+			if((personalPawns[rowIndex -1] & leftB) != leftB)
+				return false;
+		}
+		if(columnIndex + 1 < 8)
+		{	
+			byte rightB = byteMap.get(columnIndex + 1);
+			if((personalPawns[rowIndex - 1] & rightB) != rightB)
+				return false;
+		}	
+		return true;
+	}
+	
+	public static boolean isPositionBlockingAt(int rowIndex, Integer columnIndex, byte[] personalPawns)
+	{
+		if(columnIndex > - 1 && rowIndex < 8)
+		{	
+			byte leftB  = byteMap.get(columnIndex);
+			if((personalPawns[rowIndex - 1] & leftB) == leftB)
+				return true;
+		}
+		return false;
 	}
 	
 	public static boolean isFreeUnatackableAt(int rowIndex, Integer columnIndex, byte[] stationaryPawns)

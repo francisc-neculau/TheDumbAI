@@ -1,9 +1,19 @@
 package game.chess;
 
+import java.io.IOException;
+import java.security.SecureRandom;
+
+import game.chess.model.ChessState;
+import game.chess.model.ChessStateFileSerializer;
+import game.chess.model.ChessStateTransitioner;
+import game.chess.strategy.ChessDefensiveHeuristics;
+import game.chess.strategy.ChessOffensiveHeuristics;
+import model.minmax.MinMaxTree;
+
 public class Main
 {
 
-	public static void main(String[] args)
+	public static void main(String[] args) throws Exception
 	{
 //		  byte[] whitePawns = {0, -1, 0, 0, 0, 0, 0, 0}; byte[] blackPawns = {0, -1, 0, 0, 0, 0, 0, 0}; 
 //		  ChessState state = new ChessState(whitePawns, blackPawns, false);
@@ -16,12 +26,37 @@ public class Main
 //		  ChessStateTransitioner stateTransitioner = new ChessStateTransitioner();
 //		  
 //		  
-//		  String filePath;
-//		  ChessStateFileSerializer serializer = new ChessStateFileSerializer(); 
+		  SecureRandom random = new SecureRandom();
+		  String filePath;
+		  ChessStateFileSerializer serializer = new ChessStateFileSerializer(); 
 //		  
-//		  filePath = "resources//chess//standard_start.txt";
-////		  System.out.println(serializer.readState(filePath));
-//		  
+//		  filePath = "resources//chess//w_move_case_defend_pawn.txt";
+		  filePath = "resources//chess//standard_start.txt";
+		  ChessState state = serializer.readState(filePath);
+		  System.out.println(state);
+		  
+		  MinMaxTree<ChessState> tree = new MinMaxTree<>(6);
+		  tree.setTransitioner(new ChessStateTransitioner());
+//		  if(random.nextDouble() > 0.5)
+//			  tree.setEvaluationFunction(new ChessOffensiveHeuristics());
+//		  else
+//			  tree.setEvaluationFunction(new ChessDefensiveHeuristics());
+		  
+		  tree.setEvaluationFunction(new ChessOffensiveHeuristics());
+		  
+		  ChessState nextState = tree.nextState(state, MinMaxTree.MAX_PLAYER);
+		  while(nextState != null)
+		  {
+			  System.out.println(nextState);
+//			  if(random.nextDouble() > 0.5)
+//				  tree.setEvaluationFunction(new ChessOffensiveHeuristics());
+//			  else
+//				  tree.setEvaluationFunction(new ChessDefensiveHeuristics());
+			  
+			  tree.setEvaluationFunction(new ChessOffensiveHeuristics());
+			  nextState = tree.nextState(nextState, MinMaxTree.MAX_PLAYER);
+		  }
+		  
 //		  filePath = "resources//chess//b_advantage_case_en_passant.txt";
 ////		  System.out.println(serializer.readState(filePath));
 //		  
