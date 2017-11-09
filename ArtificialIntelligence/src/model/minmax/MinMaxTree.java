@@ -1,14 +1,9 @@
 package model.minmax;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import model.EvaluationFunction;
-import model.state.FinalStateChecker;
 import model.state.State;
-import model.state.StateChooser;
 import model.state.StateTransitioner;
 
 public class MinMaxTree<S extends State>
@@ -20,8 +15,6 @@ public class MinMaxTree<S extends State>
 	private Node<S> root;
 	
 	private StateTransitioner<S> transitioner;
-	private StateChooser<S> chooser;
-	private FinalStateChecker<S> checker;
 	private EvaluationFunction<S> f;
 	
 	public MinMaxTree(int globalDepth)
@@ -37,19 +30,21 @@ public class MinMaxTree<S extends State>
 	public S nextState(S state, int player, int depth)
 	{
 		root = new Node<>(null, state);
-		// Build the tree
-		Node<S> currentNode = root;
-		int currentDepth = 0;
-		Map<Integer, List<S>> depthToNodes = new HashMap<>();
-		while(depth > currentDepth)
-		{
-			List<S> childs = transitioner.generateAllNextLegalStates(currentNode.state);
-			buildTree(currentNode, childs);
-			currentDepth++;
-		}
-		// MinMax the tree
+		// Build the tree and make mark the value of the nodes
+		double value = minmax(root, 4, player);
 		
-		return null;
+		// We know now the best value so we go in the root and pick the child with that value
+		// 
+		Node bestNode = null; // FIXME : implementation here
+		
+		return (S) bestNode.getState();
+	}
+	
+	private void buildTreeBranch(Node<S> root)
+	{
+		List<S> states = transitioner.generateAllNextLegalStates(root.getState());
+		for (S state : states)
+			root.addChildNode(new Node<>(root, state));
 	}
 	
 	private double minmax(Node<S> node,int depth, int player)
@@ -59,23 +54,27 @@ public class MinMaxTree<S extends State>
 			return f.evaluate(node.getState());
 		if(player == MAX_PLAYER)
 		{
+			/* Build the tree here */
+			buildTreeBranch(node);
 			bestValue = Integer.MIN_VALUE;
 			for (Node<S> child : node.getChilds())
 			{
 				value = minmax(child, depth - 1, MIN_PLAYER);
+				child.setMaxValue(value);
 				bestValue = value > bestValue ? value : bestValue;
-				// FIXME : Save the value in the nodes !
 			}
 			return bestValue;
 		}
 		else /* minimizing player */
 		{
+			/* Build the tree here */
+			buildTreeBranch(node);
 			bestValue = Integer.MAX_VALUE;
 			for (Node<S> child : node.getChilds())
 			{
 				value = minmax(child, depth - 1, MAX_PLAYER);
+				child.setMaxValue(value);
 				bestValue = value < bestValue ? value : bestValue;
-				// FIXME : Save the value in the nodes !
 			}
 			return bestValue;
 		}
@@ -110,19 +109,6 @@ public class MinMaxTree<S extends State>
 			}
 			return value;
 		}
-	}
-	
-	private List<Node<S>> buildTree(Node<S> root, List<S> states)
-	{
-		List<Node<S>> nodes = new ArrayList<>();
-		Node<S> childNode;
-		for (S state : states)
-		{
-			childNode = new Node<>(root, state);
-			nodes.add(childNode);
-			root.addChildNode(childNode);
-		}
-		return nodes;
 	}
 	
 }
