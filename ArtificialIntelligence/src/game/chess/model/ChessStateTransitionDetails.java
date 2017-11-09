@@ -11,8 +11,20 @@ public class ChessStateTransitionDetails implements TransitionDetails
 	private boolean attackingEnPasantMove;
 	
 	// the moved pawn position
-	private int rowIndex;
-	private int columnIndex;
+	private int toRowIndex;
+	private int toColumnIndex;
+	
+	// FIXME : Builder Pattern
+	public ChessStateTransitionDetails(boolean movedForward, boolean attackingMove, 
+			boolean attackingEnPasantMove, int numberOfSpaces, int rowIndex, int columnIndex)
+	{
+		this.movedForward = movedForward;
+		this.attackingMove = attackingMove;
+		this.attackingEnPasantMove = attackingEnPasantMove;
+		this.numberOfSpaces = numberOfSpaces;
+		this.toRowIndex = rowIndex;
+		this.toColumnIndex = columnIndex;
+	}
 	
 	/*
 	 * GETTERS & SETTERS
@@ -38,10 +50,10 @@ public class ChessStateTransitionDetails implements TransitionDetails
 	}
 
 	public int getRowIndex() {
-		return rowIndex;
+		return toRowIndex;
 	}
 
 	public int getColumnIndex() {
-		return columnIndex;
+		return toColumnIndex;
 	}
 }

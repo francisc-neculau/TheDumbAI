@@ -52,7 +52,9 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 
 	private List<ChessState> generateAtackingMoves(byte[] toBeMovedPawns, byte[] stationaryPawns, boolean isWhiteMove)
 	{
+		// FIXME : EnPassat Attack
 		List<ChessState> states = new ArrayList<>();
+		ChessState generatedState;
 		for (int i = 0; i < 7; i++)
 		{
 			if(toBeMovedPawns[i] == 0) // no pawn on this row
@@ -67,11 +69,21 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 				/* Can attack left ?
 				 * check board limit and check existence of opponent pawn */
 				if(j - 1 >= 0 && isPawnAt(7 - j + 1, stationaryPawns[7 - i - 1]))
-					states.add(move(i, i + 1, j, j - 1, toBeMovedPawns, stationaryPawns, isWhiteMove));
+				{
+					generatedState = move(i, i + 1, j, j - 1, toBeMovedPawns, stationaryPawns, isWhiteMove);
+					generatedState.setTransitionDetails(new ChessStateTransitionDetails(
+							true, true, false, 1, i + 1, j - 1));
+					states.add(generatedState);
+				}
 				/* Can attack right ?
 				 * check board limit and check existence of opponent pawn */
-				if(j + 1 < 8 && isPawnAt(7 - j - 1, stationaryPawns[7 - i - 1])) // 
-					states.add(move(i, i + 1, j, j + 1, toBeMovedPawns, stationaryPawns, isWhiteMove));
+				if(j + 1 < 8 && isPawnAt(7 - j - 1, stationaryPawns[7 - i - 1]))
+				{
+					generatedState = move(i, i + 1, j, j + 1, toBeMovedPawns, stationaryPawns, isWhiteMove);
+					generatedState.setTransitionDetails(new ChessStateTransitionDetails(
+							true, true, false, 1, i + 1, j + 1));
+					states.add(generatedState);
+				}
 			}
 		}
 		return states;
@@ -79,7 +91,9 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 	
 	private List<ChessState> generateForwardingMoves(byte[] toBeMovedPawns, byte[] stationaryPawns, boolean isWhiteMove)
 	{
+		// FIXME : Double forward
 		List<ChessState> states = new ArrayList<>();
+		ChessState generatedState;
 		// go through each row
 		for (int i = 0; i < 7; i++)
 		{
@@ -96,7 +110,10 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 				 * check non-existence of enemy blocking pawn or own blocking pawn  */
 				if(isPawnAt(7 - j, stationaryPawns[7 - i - 1]) || isPawnAt(j, toBeMovedPawns[i + 1]))
 					continue;
-				states.add(move(i, i + 1, j, j, toBeMovedPawns, stationaryPawns, isWhiteMove));
+				generatedState = move(i, i + 1, j, j, toBeMovedPawns, stationaryPawns, isWhiteMove);
+				generatedState.setTransitionDetails(new ChessStateTransitionDetails(
+						true, false, false, 1, i + 1, j));
+				states.add(generatedState);
 			}
 		}
 		return states;
