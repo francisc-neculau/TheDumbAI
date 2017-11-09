@@ -72,36 +72,50 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 		byte[] stationaryPawnsCopy = Arrays.copyOf(stationaryPawns, 8);
 		
 		// left attack
-		if(isPawnAt(4, toColumnIndex - 1, toBeMovedPawns))
+		if(toColumnIndex - 1 > 0 && isPawnAt(4, toColumnIndex - 1, toBeMovedPawns))
 		{
 			movedPawnsCopy[4] = (byte) (movedPawnsCopy[4] - byteMap.get(toColumnIndex - 1));
 			movedPawnsCopy[5] = (byte) (movedPawnsCopy[5] + byteMap.get(toColumnIndex));
 			
 			stationaryPawnsCopy[3] = (byte) (stationaryPawnsCopy[3] - byteMap.get(7 - toColumnIndex));
 			if(isWhiteMove)
+			{
 				state = new ChessState(movedPawnsCopy, stationaryPawnsCopy, false);
+				state.setTransitionDetails(new ChessStateTransitionDetails(
+						true, true, true, 1, 5, 7 - toColumnIndex + 1));
+			}
 			else
+			{
 				state = new ChessState(stationaryPawnsCopy, movedPawnsCopy, true);
-			state.setTransitionDetails(new ChessStateTransitionDetails(
-					true, true, true, 1, 5, toColumnIndex + 1));
+				state.setTransitionDetails(new ChessStateTransitionDetails(
+						true, true, true, 1, 5, toColumnIndex + 1));
+			}
+			
 			states.add(state);
 		}
 		
 		movedPawnsCopy      = Arrays.copyOf(toBeMovedPawns, 8);
 		stationaryPawnsCopy = Arrays.copyOf(stationaryPawns, 8);
 		// right attack
-		if(isPawnAt(4, toColumnIndex + 1, toBeMovedPawns))
+		if(toColumnIndex + 1 < 8 && isPawnAt(4, toColumnIndex + 1, toBeMovedPawns))
 		{
 			movedPawnsCopy[4] = (byte) (movedPawnsCopy[4] - byteMap.get(toColumnIndex + 1));
 			movedPawnsCopy[5] = (byte) (movedPawnsCopy[5] + byteMap.get(toColumnIndex));
 			
 			stationaryPawnsCopy[3] = (byte) (stationaryPawnsCopy[3] - byteMap.get(7 - toColumnIndex));
 			if(isWhiteMove)
+			{
 				state = new ChessState(movedPawnsCopy, stationaryPawnsCopy, false);
+				state.setTransitionDetails(new ChessStateTransitionDetails(
+						true, true, true, 1, 5, 7 - toColumnIndex - 1));
+			}
 			else
+			{
 				state = new ChessState(stationaryPawnsCopy, movedPawnsCopy, true);
-			state.setTransitionDetails(new ChessStateTransitionDetails(
-					true, true, true, 1, 5, toColumnIndex - 1));
+				state.setTransitionDetails(new ChessStateTransitionDetails(
+						true, true, true, 1, 5, toColumnIndex - 1));
+			}
+			
 			states.add(state);
 		}
 
@@ -322,16 +336,18 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 	
 	public static boolean isFreeUnatackableAt(int rowIndex, Integer columnIndex, byte[] stationaryPawns)
 	{
+		columnIndex = 7 - columnIndex;
+		rowIndex	= 7 - rowIndex;
 		if(columnIndex - 1 > 0)
 		{	
-			byte leftB  = byteMap.get((7 - columnIndex) - 1);
-			if((stationaryPawns[7 - rowIndex] & leftB) != leftB)
+			byte leftB  = byteMap.get(columnIndex - 1);
+			if((stationaryPawns[rowIndex] & leftB) != leftB)
 				return false;
 		}
 		if(columnIndex + 1 < 8)
 		{	
-			byte rightB = byteMap.get((7 - columnIndex) + 1);
-			if((stationaryPawns[7 - rowIndex] & rightB) != rightB)
+			byte rightB = byteMap.get(columnIndex + 1);
+			if((stationaryPawns[rowIndex] & rightB) != rightB)
 				return false;
 		}	
 		return true;
