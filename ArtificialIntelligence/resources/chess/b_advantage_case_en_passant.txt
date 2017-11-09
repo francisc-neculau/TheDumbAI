@@ -1,5 +1,7 @@
 true
-  a b c d e f g h 
+false
+-1
+  a b c d e f g h  | white move
 8 - - - - - - - - 1
 7 - - - - - w w - 2
 6 - - - - - - - - 3

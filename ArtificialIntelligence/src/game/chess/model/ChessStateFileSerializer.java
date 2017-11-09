@@ -21,7 +21,6 @@ public class ChessStateFileSerializer implements StateFileSerializer<ChessState>
 
 		BufferedWriter bw = new BufferedWriter(new FileWriter(f));
 
-		bw.write(Boolean.toString(state.isWhiteToMove()));
 		bw.write(state.toString());
 		bw.flush();
 		bw.close();
@@ -35,8 +34,12 @@ public class ChessStateFileSerializer implements StateFileSerializer<ChessState>
 			throw new IOException("File " + f.getName() + " does not exist");
 		
 		BufferedReader br = new BufferedReader(new FileReader(f));
+		
 		boolean isWhiteMove = Boolean.parseBoolean(br.readLine());
-		br.readLine(); // first line is not of interest
+		boolean enPassantVulnerable = Boolean.parseBoolean(br.readLine());// first line is not of interest
+		byte enPassantColumn = Byte.parseByte(br.readLine());
+		
+		br.readLine();
 		
 		byte[] whitePawns = new byte[8];
 		byte[] blackPawns = new byte[8];
@@ -66,7 +69,7 @@ public class ChessStateFileSerializer implements StateFileSerializer<ChessState>
 		}
 		
 		br.close();
-		return new ChessState(whitePawns, blackPawns, isWhiteMove);
+		return new ChessState(whitePawns, blackPawns, isWhiteMove, enPassantVulnerable, enPassantColumn);
 	}
 
 	public static ChessState loadDefaultState()

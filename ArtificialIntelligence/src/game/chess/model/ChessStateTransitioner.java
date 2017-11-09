@@ -91,9 +91,26 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 	
 	private List<ChessState> generateForwardingMoves(byte[] toBeMovedPawns, byte[] stationaryPawns, boolean isWhiteMove)
 	{
-		// FIXME : Double forward
 		List<ChessState> states = new ArrayList<>();
 		ChessState generatedState;
+		
+		// check the double moves
+		// go through each column
+		for (int i = 0; i < 8; i++)
+		{
+			if(!isPawnAt(1, i, toBeMovedPawns))
+				continue;
+			/* Can we move the pawn two step ?
+			 * check non-existence of enemy blocking pawn or own blocking pawn two cells ahead */
+			if(isPawnAt(5, 7 - i, stationaryPawns) || isPawnAt(2, i, toBeMovedPawns) ||
+				isPawnAt(4, 7 -i, stationaryPawns) || isPawnAt(3, i, toBeMovedPawns))
+				continue;
+			generatedState = move(1, 3, i, i, toBeMovedPawns, stationaryPawns, isWhiteMove);
+			generatedState.setTransitionDetails(new ChessStateTransitionDetails(
+					true, false, false, 2, 3, i));
+			states.add(generatedState);
+		}
+		
 		// go through each row
 		for (int i = 0; i < 7; i++)
 		{
@@ -106,10 +123,11 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 				 * check existence of pawn */
 				if(!isPawnAt(j, toBeMovedPawns[i])) // no pawn to be moved on that column
 					continue;
-				/* Can we move the pawn ?
-				 * check non-existence of enemy blocking pawn or own blocking pawn  */
+				/* Can we move the pawn one step ?
+				 * check non-existence of enemy blocking pawn or own blocking pawn one cell ahead  */
 				if(isPawnAt(7 - j, stationaryPawns[7 - i - 1]) || isPawnAt(j, toBeMovedPawns[i + 1]))
 					continue;
+				
 				generatedState = move(i, i + 1, j, j, toBeMovedPawns, stationaryPawns, isWhiteMove);
 				generatedState.setTransitionDetails(new ChessStateTransitionDetails(
 						true, false, false, 1, i + 1, j));

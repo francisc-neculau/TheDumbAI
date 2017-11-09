@@ -34,21 +34,22 @@ public class ChessState implements State<ChessStateTransitionDetails>
 	
 	private ChessStateTransitionDetails transitionDetails;
 	
-	boolean whiteToMove = false;
-	boolean enPassantVulnerable = false;
+	boolean whiteToMove;
+	boolean enPassantVulnerable;
 	byte enPassantColumn;
 	
-	public ChessState(byte[] whitePawns, byte[] blackPawns, boolean isWhiteMove, boolean enPassantVulnerable)
-	{
-		this(whitePawns,blackPawns,isWhiteMove);
-		this.enPassantVulnerable = enPassantVulnerable;
-	}
-	
-	public ChessState(byte[] whitePawns, byte[] blackPawns, boolean isWhiteMove)
+	public ChessState(byte[] whitePawns, byte[] blackPawns, boolean isWhiteMove, boolean enPassantVulnerable, byte enPassantColumn)
 	{
 		this.setWhitePawns(whitePawns);
 		this.setBlackPawns(blackPawns);
 		this.setWhiteToMove(isWhiteMove);
+		this.enPassantVulnerable = enPassantVulnerable;
+		this.enPassantColumn     = enPassantColumn;
+	}
+	
+	public ChessState(byte[] whitePawns, byte[] blackPawns, boolean isWhiteMove)
+	{
+		this(whitePawns,blackPawns,isWhiteMove, false, (byte) -1);
 	}
 	
 	public byte[] getBlackPawns()
@@ -121,13 +122,17 @@ public class ChessState implements State<ChessStateTransitionDetails>
 		BitSet bbits, wbits;
 		byte bp, wb;
 		
-		sb.append("  a b c d e f g h  | " + ( whiteToMove ? "white" : "black") +" move");
+		sb.append(whiteToMove).append(System.lineSeparator());
+		sb.append(enPassantVulnerable).append(System.lineSeparator());
+		sb.append(enPassantColumn).append(System.lineSeparator());
+		//sb.append("  a b c d e f g h | " + ( whiteToMove ? "white" : "black") +" move");
+		sb.append("  7 6 5 4 3 2 1 0 W | " + ( whiteToMove ? "white" : "black") +" move");
 		sb.append(System.lineSeparator());
 		
 		for (int i = 0; i < 8; i++)
 		{
-			sb.append((8 - i)).append(" ");
-			
+//			sb.append((8 - i)).append(" ");
+			sb.append((7 - i)).append(" ");
 			wb = whitePawns[i];
 			bp = blackPawns[7 - i];
 			
@@ -145,11 +150,13 @@ public class ChessState implements State<ChessStateTransitionDetails>
 				sb.append(" ");
 			}
 			
-			sb.append((i + 1));
+//			sb.append((i + 1));
+			sb.append((i));
 			sb.append(System.lineSeparator());
 		}
 		
-		sb.append("  a b c d e f g h ");
+		sb.append("B 0 1 2 3 4 5 6 7 ");
+		sb.append(System.lineSeparator());
 		
 		return sb.toString();
 	}
