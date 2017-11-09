@@ -11,6 +11,23 @@ public class MainTest
 
 	public static void main(String[] args) throws IOException
 	{
+		
+		int [] pawnValuetable = new int[] {
+			     0,  0,  0,  0,  0,  0,  0,  0,
+			    75, 75, 75, 75, 75, 75, 75, 75,
+			    25, 25, 29, 29, 29, 29, 25, 25,
+			     4,  8, 12, 21, 21, 12,  8,  4,
+			     0,  4,  8, 17, 17,  8,  4,  0,
+			     4, -4, -8,  4,  4, -8, -4,  4,
+			     4,  8,  8,-17,-17,  8,  8,  4,
+			     0,  0,  0,  0,  0,  0,  0,  0
+			};
+		
+		for (int i = 0; i < 256; i++)
+		{
+			
+		}
+		
 //		  byte[] whitePawns = {0, -1, 0, 0, 0, 0, 0, 0}; byte[] blackPawns = {0, -1, 0, 0, 0, 0, 0, 0}; 
 //		  ChessState state = new ChessState(whitePawns, blackPawns, false);
 //		  

@@ -13,6 +13,8 @@ import javax.swing.JTextField;
 import game.chess.model.ChessState;
 import game.chess.model.ChessStateFileSerializer;
 import game.chess.model.ChessStateTransitioner;
+import game.chess.strategy.ChessDefensiveHeuristics;
+import game.chess.strategy.ChessOffensiveHeuristics;
 import model.minmax.MinMaxTree;
 
 public class Game extends JPanel implements MouseListener
@@ -32,6 +34,8 @@ public class Game extends JPanel implements MouseListener
 		this.currentState = state;
 		this.minMaxTree = new MinMaxTree<>(4);
 		this.minMaxTree.setTransitioner(new ChessStateTransitioner());
+		this.minMaxTree.setEvaluationFunction(new ChessOffensiveHeuristics());
+		
 		JButton btnAiNextMove = new JButton("AI Next Move");
 		btnAiNextMove.setBounds(400, 64, 115, 45);
 		btnAiNextMove.addMouseListener(new MouseAdapter() {

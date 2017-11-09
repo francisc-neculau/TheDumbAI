@@ -424,4 +424,10 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 		byte b = byteMap.get(columnIndex + 1);
 		return ((toBeMovedPawns[rowIndex-1] & b) == b) ? true : false;
 	}
+
+	public static int computeNumberOfPawns(byte[] pawns)
+	{
+		return 1;
+	}
+	
 }
