@@ -36,6 +36,11 @@ public class ChessState implements State<ChessStateTransitionDetails>
 	
 	boolean whiteToMove;
 	boolean enPassantVulnerable;
+	/**
+	 * The value is always from the perspective of the
+	 * attacker thus when setting it, it must be set reversed
+	 * by the player that makes the vulnerable move
+	 */
 	byte enPassantColumn;
 	
 	public ChessState(byte[] whitePawns, byte[] blackPawns, boolean isWhiteMove, boolean enPassantVulnerable, byte enPassantColumn)

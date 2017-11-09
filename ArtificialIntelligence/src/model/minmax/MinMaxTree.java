@@ -66,12 +66,13 @@ public class MinMaxTree<S extends State>
 	private double minmax(Node<S> node,int depth, int player)
 	{
 		double value, bestValue;
-		if(depth == 0 && node.isLeaf())
+		/* Build the tree here */
+		buildTreeBranch(node);
+		if(depth == 0 || node.isLeaf())
 			return f.evaluate(node.getState());
 		if(player == MAX_PLAYER)
 		{
-			/* Build the tree here */
-			buildTreeBranch(node);
+			
 			bestValue = Integer.MIN_VALUE;
 			for (Node<S> child : node.getChilds())
 			{
@@ -83,8 +84,6 @@ public class MinMaxTree<S extends State>
 		}
 		else /* minimizing player */
 		{
-			/* Build the tree here */
-			buildTreeBranch(node);
 			bestValue = Integer.MAX_VALUE;
 			for (Node<S> child : node.getChilds())
 			{
