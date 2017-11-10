@@ -294,16 +294,16 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 		if(columnIndex - 1 > 0)
 		{	
 			byte leftB  = byteMap.get(columnIndex - 1);
-			if((stationaryPawns[rowIndex -1] & leftB) != leftB)
-				return false;
+			if((stationaryPawns[rowIndex -1] & leftB) == leftB)
+				return true;
 		}
 		if(columnIndex + 1 < 8)
 		{	
 			byte rightB = byteMap.get((columnIndex) + 1);
-			if((stationaryPawns[rowIndex - 1] & rightB) != rightB)
-				return false;
+			if((stationaryPawns[rowIndex - 1] & rightB) == rightB)
+				return true;
 		}	
-		return true;
+		return false;
 	}
 	
 	public static boolean isPositionBackingAt(int rowIndex, Integer columnIndex, byte[] personalPawns)
@@ -430,7 +430,7 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 		int pawnsNumber = 0;
 		for (byte b : pawns)
 		{
-			pawnsNumber += byteTrueBitsMap.get(Byte.valueOf(b));
+			pawnsNumber += byteTrueBitsMap.get(Byte.valueOf((byte) (b & 0xFF)));
 		}
 		return pawnsNumber;
 	}
@@ -438,6 +438,7 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 	static
 	{
 		byteTrueBitsMap = new HashMap<>();
+		byteTrueBitsMap.put(Byte.valueOf((byte)-128), Integer.valueOf(1));
 		byteTrueBitsMap.put(Byte.valueOf((byte)-127), Integer.valueOf(2));
 		byteTrueBitsMap.put(Byte.valueOf((byte)-126), Integer.valueOf(2));
 		byteTrueBitsMap.put(Byte.valueOf((byte)-125), Integer.valueOf(3));

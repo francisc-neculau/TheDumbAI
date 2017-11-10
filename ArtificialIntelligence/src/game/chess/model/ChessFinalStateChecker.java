@@ -21,9 +21,12 @@ public class ChessFinalStateChecker implements FinalStateChecker<ChessState>
 		int lastMoveRowIndex = stateDetails.getRowIndex();
 		int lastMoveColumnIndex = stateDetails.getColumnIndex();
 		
-		for(int index = lastMoveRowIndex; index <= 7; index++)
+		for(int index = lastMoveRowIndex; index <= 6; index++)
 		{
-			if(!ChessStateTransitioner.isFreeUnatackableAt(lastMoveRowIndex, lastMoveColumnIndex, state.isWhiteToMove() ? state.getWhitePawns() : state.getBlackPawns()))
+			if(ChessStateTransitioner.isPositionBlockedAt(index, lastMoveColumnIndex, state.isWhiteToMove() ? state.getWhitePawns() : state.getBlackPawns()))
+				return false;
+			
+			if(ChessStateTransitioner.isPositionAtackedAt(index, lastMoveColumnIndex, state.isWhiteToMove() ? state.getWhitePawns() : state.getBlackPawns()))
 				return false;
 		}
 		

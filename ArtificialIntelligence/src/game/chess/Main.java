@@ -34,8 +34,8 @@ public class Main
 		String filePath;
 		ChessStateFileSerializer serializer = new ChessStateFileSerializer(); 
 //		  
-//		  filePath = "resources//chess//w_move_case_defend_pawn.txt";
-		  filePath = "resources//chess//standard_start.txt";
+		  filePath = "resources//chess//w_move_case_attack_pawn.txt";
+//		  filePath = "resources//chess//standard_start.txt";
 		  ChessState state = serializer.readState(filePath);
 		  System.out.println(state);
 		  
@@ -47,6 +47,9 @@ public class Main
 			  tree.setEvaluationFunction(new ChessDefensiveHeuristics());
 		  
 //		  tree.setEvaluationFunction(new ChessOffensiveHeuristics());
+		  
+//		  if(finalStateChecker.isFinal(state))
+//			  System.out.println("YES!!!");
 		  
 		  ChessState nextState = tree.nextState(state, MinMaxTree.MAX_PLAYER);
 		  while(nextState != null)

@@ -29,21 +29,18 @@ public class ChessOffensiveHeuristics extends ChessCoreHeuristics
 		int pawnRowIndex = moveDetails.getRowIndex();
 		int pawnColumnIndex = moveDetails.getColumnIndex();
 		
+		if(moveDetails.wasAttackingMove())
+			score += 3;
+		if(moveDetails.wasAttackingEnPasantMove())
+			score += 4;
+		
 		for(int counter = pawnRowIndex; counter <= 7 - pawnRowIndex; counter++)
 		{
-			if(ChessStateTransitioner.isPositionBlockedAt(counter, pawnColumnIndex, stationaryPawns))
-			{
-				score -= 1;
-				if(ChessStateTransitioner.isPositionAtackedAt(counter, pawnColumnIndex, stationaryPawns))
-					score -= 2;
-				
-				break;
-			}
-			
 			if(ChessStateTransitioner.isPositionAtackedAt(counter, pawnColumnIndex, stationaryPawns))
-				score -= 2;
+				return score;
 		}
 		
+		score += 10; // for a move which is not attacked by anything
 		return score;
 	}
 
