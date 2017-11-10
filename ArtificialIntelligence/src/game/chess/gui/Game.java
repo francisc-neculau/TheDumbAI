@@ -24,6 +24,9 @@ public class Game extends JPanel implements MouseListener
 	private Board board;
 	private JTextField firstSelection;
 	private ChessState currentState;
+	private boolean isFinished;
+	private boolean whiteMove;
+	
 	private MinMaxTree<ChessState> minMaxTree;
 	
 	public Game(ChessState state, boolean whiteMove)
@@ -32,6 +35,8 @@ public class Game extends JPanel implements MouseListener
 		this.board = new Board(state, this);
 		this.add(board);
 		this.currentState = state;
+		this.isFinished = false;
+		this.whiteMove = whiteMove;
 		this.minMaxTree = new MinMaxTree<>(4);
 		this.minMaxTree.setTransitioner(new ChessStateTransitioner());
 		this.minMaxTree.setEvaluationFunction(new ChessOffensiveHeuristics());
@@ -42,16 +47,22 @@ public class Game extends JPanel implements MouseListener
 	        @Override
 	        public void mousePressed(MouseEvent e)
 	        {
-	            Game.this.generateNextAiMove();
+	            Game.this.generateAiNextMove();
 	        }
 	    });
 		this.add(btnAiNextMove);
 	}
 	
-	private void generateNextAiMove()
+	private void generateAiNextMove()
 	{
 		ChessState aiNextState = minMaxTree.nextState(currentState, MinMaxTree.MAX_PLAYER);
+		if(aiNextState == null || isFinished)
+		{
+			this.isFinished = true;
+			return;
+		}
 		currentState = aiNextState;
+		whiteMove = !whiteMove;
 		reDrawBoard();
 	}
 	
@@ -67,7 +78,7 @@ public class Game extends JPanel implements MouseListener
 		int fromRowIndex    = Integer.parseInt(from.getName().substring(0, 1));
 		int fromColumnIndex = Integer.parseInt(from.getName().substring(1));
 		int toRowIndex      = Integer.parseInt(to.getName().substring(0, 1));
-		int toColumnIndex   = Integer.parseInt(from.getName().substring(1));
+		int toColumnIndex   = Integer.parseInt(to.getName().substring(1));
 		
 		if(currentState.isWhiteToMove())
 		{
@@ -97,7 +108,14 @@ public class Game extends JPanel implements MouseListener
 	@Override
  	public void mouseClicked(MouseEvent e)
 	{
+		if(isFinished)
+			return;
+		
 		JTextField selectedCell = (JTextField) e.getSource();
+//		if(firstSelection == null && whiteMove && selectedCell.getText().equals("B"))
+//			return;
+//		if(firstSelection == null && !whiteMove && selectedCell.getText().equals("W"))
+//			return;
 
 		if(firstSelection == null)
 		{
@@ -108,7 +126,10 @@ public class Game extends JPanel implements MouseListener
 		{
 			JTextField secondSelection = (JTextField) e.getSource();
 			if(isLegalMove(firstSelection, secondSelection)) // condition to move
+			{	
+				whiteMove = !whiteMove;
 				reDrawBoard();
+			}
 			firstSelection.setFont(Board.normalBoldFont);
 			firstSelection  = null;
 		}

@@ -42,13 +42,19 @@ public class ChessState implements State<ChessStateTransitionDetails>
 	 */
 	byte enPassantColumn;
 	
-	public ChessState(byte[] whitePawns, byte[] blackPawns, boolean isWhiteMove, boolean enPassantVulnerable, byte enPassantColumn)
+	public ChessState(byte[] whitePawns, byte[] blackPawns, boolean isWhiteMove, boolean enPassantVulnerable, byte enPassantColumn, ChessStateTransitionDetails transitionDetails)
 	{
 		this.setWhitePawns(whitePawns);
 		this.setBlackPawns(blackPawns);
 		this.setWhiteToMove(isWhiteMove);
 		this.enPassantVulnerable = enPassantVulnerable;
 		this.enPassantColumn     = enPassantColumn;
+		this.transitionDetails   = transitionDetails;
+	}
+	
+	public ChessState(byte[] whitePawns, byte[] blackPawns, boolean isWhiteMove, boolean enPassantVulnerable, byte enPassantColumn)
+	{
+		this(whitePawns, blackPawns, isWhiteMove, enPassantVulnerable, enPassantColumn, null);
 	}
 	
 	public ChessState(byte[] whitePawns, byte[] blackPawns, boolean isWhiteMove)

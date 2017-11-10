@@ -251,11 +251,30 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 		movedPawnsCopy[toRowIndex]   = (byte) (movedPawnsCopy[toRowIndex]   + byteMap.get(toColumnIndex));
 		
 		if(fromColumnIndex != toColumnIndex) // means we have an attacking move, thus we should clean the attacked position
-			stationaryPawnsCopy[7 - toRowIndex] = (byte) (stationaryPawnsCopy[7 - toRowIndex] - byteMap.get(7- toColumnIndex));
-
+		{	
+			if((stationaryPawnsCopy[7 - toRowIndex] & byteMap.get(7- toColumnIndex)) != byteMap.get(7- toColumnIndex)) // EnPassatAttack
+				stationaryPawnsCopy[7 - toRowIndex + 1] = (byte) (stationaryPawnsCopy[7 - toRowIndex + 1] - byteMap.get(7 - toColumnIndex));
+			else
+				stationaryPawnsCopy[7 - toRowIndex] = (byte) (stationaryPawnsCopy[7 - toRowIndex] - byteMap.get(7- toColumnIndex));
+		}		
+		
+		ChessStateTransitionDetails details;
+		
+		if(Math.abs((fromRowIndex - toRowIndex)) == 2) // EnPassat Attack Vulnerability
+		{
+			details = new ChessStateTransitionDetails(true, false, false, 2, toRowIndex, toColumnIndex);
+			if(isWhiteMove)
+				return new ChessState(movedPawnsCopy, stationaryPawnsCopy, false, true, byteMap.get(toColumnIndex), details);
+			return new ChessState(stationaryPawnsCopy, movedPawnsCopy, true, true, byteMap.get(toColumnIndex), details);
+		}
+		if(Math.abs((fromColumnIndex - toColumnIndex)) == 1) // FIXME : EnPassat not covered
+			details = new ChessStateTransitionDetails(true, true, false, 1, toRowIndex, toColumnIndex);
+		else
+			details = new ChessStateTransitionDetails(true, false, false, 1, toRowIndex, toColumnIndex);
+			
 		if(isWhiteMove)
-			return new ChessState(movedPawnsCopy, stationaryPawnsCopy, false);
-		return new ChessState(stationaryPawnsCopy, movedPawnsCopy, true);
+			return new ChessState(movedPawnsCopy, stationaryPawnsCopy, false, false, (byte)-1, details);
+		return new ChessState(stationaryPawnsCopy, movedPawnsCopy, true, false, (byte)-1, details);
 	}
 	
 	public static boolean isFreeAt(int rowIndex, Integer columnIndex, byte[] whitePawns, byte[] blackPawns)
