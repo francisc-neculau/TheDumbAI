@@ -1,0 +1,666 @@
+GEONAMEID;NAME;ASCIINAME;ALTERNATENAMES;LATITUDE;LONGITUDE;FEATURE_CLASS;FEATURE_CODE;COUNTRY_CODE;CC2;ADMIN1_CODE;ADMIN2_CODE;ADMIN3_CODE;ADMIN4_CODE;POPULATION;ELEVATION;DEM;TIMEZONE;MODIFICATION_DATE
+10115113;Vila Select;Vila Select;;45.50948;25.55734;S;HTL;RO;;09;40303;;;0;;1209;Europe/Bucharest;2016-02-07
+10115114;Predeal Comfort Suites;Predeal Comfort Suites;;45.50209;25.57694;S;HTL;RO;;09;40303;;;0;;1046;Europe/Bucharest;2016-02-07
+10115115;Pensiunea Regina;Pensiunea Regina;;45.50058;25.57392;S;HTL;RO;;09;40303;;;0;;1029;Europe/Bucharest;2016-02-07
+10115116;Orizont Hotel Predeal;Orizont Hotel Predeal;;45.50884;25.57304;S;HTL;RO;;09;40303;;;0;;1051;Europe/Bucharest;2016-02-07
+10115117;Hotel Traian Severin;Hotel Traian Severin;;44.63206;22.65597;S;HTL;RO;;26;109773;;;0;;86;Europe/Bucharest;2016-02-07
+10115118;Sirena;Sirena;;43.83051;28.58971;S;HTL;RO;;14;60482;;;0;;0;Europe/Bucharest;2016-02-07
+10115119;Hora;Hora;;43.83052;28.58968;S;HTL;RO;;14;60482;;;0;;0;Europe/Bucharest;2016-02-07
+10115120;Cleopatra;Cleopatra;;43.84289;28.5894;S;HTL;RO;;14;60482;;;0;;1;Europe/Bucharest;2016-02-07
+10115121;Balada;Balada;;43.8287;28.5916;S;HTL;RO;;14;60482;;;0;;4;Europe/Bucharest;2016-02-07
+10115122;Paradiso;Paradiso;;43.81576;28.58674;S;HTL;RO;;14;60482;;;0;;10;Europe/Bucharest;2016-02-07
+10115123;Pacific Hotel;Pacific Hotel;;44.18211;28.61774;S;HTL;RO;;14;60419;;;0;;52;Europe/Bucharest;2016-02-07
+10115124;Condor Hotel;Condor Hotel;;45.59355;25.55012;S;HTL;RO;;09;40198;;;0;;1022;Europe/Bucharest;2016-02-07
+10115125;Hotel Coandi;Hotel Coandi;;46.16425;21.32218;S;HTL;RO;;02;9262;;;0;;109;Europe/Bucharest;2016-02-07
+10115243;Intourist;Intourist;;45.73273;25.65878;S;HTL;RO;;09;41925;;;0;;519;Europe/Bucharest;2016-02-07
+10115713;Gloria;Gloria;;47.64355;26.25799;S;AIRH;RO;;34;146263;;;0;0;348;Europe/Bucharest;2016-02-07
+10115721;Capital Plaza Hotel Bucharest;Capital Plaza Hotel Bucharest;;44.45261;26.09631;S;AIRH;RO;;10;179132;11055041;;0;0;86;Europe/Bucharest;2016-02-07
+10115830;Silver Hotel Conference & Spa;Silver Hotel Conference & Spa;;47.06605;21.96025;S;HTL;RO;;05;26564;;;0;;148;Europe/Bucharest;2016-02-07
+10115831;Cristal Hotel;Cristal Hotel;;46.76477;23.57221;S;HTL;RO;;13;54975;;;0;;343;Europe/Bucharest;2016-02-07
+10117801;Lyra Hotel;Lyra Hotel;;47.04429;21.96875;S;HTL;RO;;05;26564;;;0;;129;Europe/Bucharest;2016-02-07
+10117802;Carol;Carol;;44.17431;28.41784;S;HTL;RO;;14;62360;;;0;;23;Europe/Bucharest;2016-02-07
+10117803;Balada Nej;Balada Nej;;44.17923;28.63677;S;HTL;RO;;14;60419;;;0;;44;Europe/Bucharest;2016-02-07
+10117804;Paradis Hotel;Paradis Hotel;;46.77971;23.61322;S;HTL;RO;;13;54975;;;0;;332;Europe/Bucharest;2016-02-07
+10117806;Ambiance Hotel;Ambiance Hotel;;44.43854;26.0701;S;HTL;RO;;10;179132;11055039;;0;;72;Europe/Bucharest;2016-02-07
+10117807;Monterai Resort;Monterai Resort;;45.60921;25.55463;S;HTL;RO;;09;40198;;;0;;951;Europe/Bucharest;2016-02-07
+10117971;Pensiunea Natural Guesthouse;Pensiunea Natural Guesthouse;;45.63995;25.59105;S;HTL;RO;;09;40198;;;0;;594;Europe/Bucharest;2016-02-07
+10118893;Best Hotel Ploiesti;Best Hotel Ploiesti;;44.93831;26.02249;S;HTL;RO;;30;130534;;;0;;156;Europe/Bucharest;2016-02-07
+10119436;Euro Hotels International Triumf;Euro Hotels International Triumf;;44.4638;26.075;S;HTL;RO;;10;179132;11055041;;0;;90;Europe/Bucharest;2016-02-07
+10119634;Mirage Snagov Hotel And Resort;Mirage Snagov Hotel And Resort;;44.709;26.171;S;HTL;RO;;43;105160;;;0;;90;Europe/Bucharest;2016-02-07
+10119743;Sport & Spa;Sport & Spa;;45.59236;25.55718;S;HTL;RO;;09;40198;;;0;;1045;Europe/Bucharest;2016-02-07
+10119744;Rina Vista;Rina Vista;;45.58415;25.52354;S;HTL;RO;;09;40198;;;0;;969;Europe/Bucharest;2016-02-07
+10119746;Bradul Hotel-Poiana Brasov;Bradul Hotel-Poiana Brasov;;45.59228;25.55718;S;HTL;RO;;09;40198;;;0;;1045;Europe/Bucharest;2016-02-07
+10119868;Muntenia;Muntenia;;44.85722;24.8711;S;HTL;RO;;03;13169;;;0;;278;Europe/Bucharest;2016-02-07
+10119869;Galmondo;Galmondo;;45.43278;28.05143;S;HTL;RO;;18;75098;;;0;;26;Europe/Bucharest;2016-02-07
+10119870;Visconti Residence;Visconti Residence;;44.43299;25.99485;S;HTL;RO;;10;179132;11055039;;0;;92;Europe/Bucharest;2016-02-07
+10119871;Casa Sofia Hotel Bucharest;Casa Sofia Hotel Bucharest;;44.45179;26.10278;S;HTL;RO;;10;179132;11055040;;0;;84;Europe/Bucharest;2016-02-07
+10120168;Olimp;Olimp;;46.75509;23.58508;S;HTL;RO;;13;54975;;;0;;432;Europe/Bucharest;2016-02-07
+10120169;Meteor;Meteor;;46.77001;23.59418;S;HTL;RO;;13;54975;;;0;;344;Europe/Bucharest;2016-02-07
+10120170;Agape Hotel;Agape Hotel;;46.77031;23.59165;S;HTL;RO;;13;54975;;;0;;350;Europe/Bucharest;2016-02-07
+10120171;Hostel Nord;Hostel Nord;;45.75;21.20767;S;HTL;RO;;36;155243;;;0;;90;Europe/Bucharest;2016-02-07
+10120172;Boavista;Boavista;;45.74561;21.24188;S;HTL;RO;;36;155243;;;0;;87;Europe/Bucharest;2016-02-07
+10120173;West Plaza Hotel Bucharest;West Plaza Hotel Bucharest;;44.42964;26.03691;S;HTL;RO;;10;179132;11055039;;0;;90;Europe/Bucharest;2016-02-07
+10120174;Radisson Blu Bucharest;Radisson Blu Bucharest;;44.44131;26.09412;S;HTL;RO;;10;179132;11055041;;0;;89;Europe/Bucharest;2016-02-07
+10120175;Phoenicia Comfort;Phoenicia Comfort;;44.51146;26.02037;S;HTL;RO;;10;179132;11055041;;0;;89;Europe/Bucharest;2016-02-07
+10120176;Pensiunea Luiza;Pensiunea Luiza;;45.66248;25.57856;S;HTL;RO;;09;40198;;;0;;551;Europe/Bucharest;2016-02-07
+10120177;Pantex Hotel;Pantex Hotel;;45.64278;25.60005;S;HTL;RO;;09;40198;;;0;;619;Europe/Bucharest;2016-02-07
+10120923;Oxford Hotel;Oxford Hotel;;44.21689;28.62882;S;HTL;RO;;14;60419;;;0;;8;Europe/Bucharest;2016-02-07
+10120951;Bulevard Prestige Hotel;Bulevard Prestige Hotel;;44.42771;24.3655;S;HTL;RO;;29;125347;;;0;;173;Europe/Bucharest;2016-02-07
+10120972;Vega Hotel;Vega Hotel;;44.25719;28.62075;S;HTL;RO;;14;60419;;;0;;4;Europe/Bucharest;2016-02-07
+10120975;Rivulus Hotel;Rivulus Hotel;;47.65651;23.57123;S;HTL;RO;;25;106318;;;0;;221;Europe/Bucharest;2016-02-07
+10121014;Splendid;Splendid;;44.25374;28.61868;S;HTL;RO;;14;60419;;;0;;0;Europe/Bucharest;2016-02-07
+10121016;Orfeu;Orfeu;;44.58131;27.32472;S;HTL;RO;;22;92658;;;0;;23;Europe/Bucharest;2016-02-07
+10121017;Modern;Modern;;44.25106;28.62085;S;HTL;RO;;14;60419;;;0;;4;Europe/Bucharest;2016-02-07
+10121019;Golden Tulip Fantasy Beach;Golden Tulip Fantasy Beach;;44.25413;28.62099;S;HTL;RO;;14;60419;;;0;;6;Europe/Bucharest;2016-02-07
+10121020;Dorna;Dorna;;44.21147;28.64432;S;HTL;RO;;14;60419;;;0;;11;Europe/Bucharest;2016-02-07
+10121021;Comandor;Comandor;;44.26026;28.61905;S;HTL;RO;;14;60419;;;0;;6;Europe/Bucharest;2016-02-07
+10121022;Central Mamaia;Central Mamaia;;44.25202;28.6209;S;HTL;RO;;14;60419;;;0;;5;Europe/Bucharest;2016-02-07
+10121051;Pietroasa;Pietroasa;;45.15234;26.82155;S;HTL;RO;;11;44818;;;0;;100;Europe/Bucharest;2016-02-07
+10121232;Continental;Continental;;44.63209;22.67397;S;HTL;RO;;26;109773;;;0;;66;Europe/Bucharest;2016-02-07
+10121233;Pension Anette;Pension Anette;;45.77126;21.22296;S;HTL;RO;;36;155243;;;0;;91;Europe/Bucharest;2016-02-07
+10121234;Aurelia Hotel;Aurelia Hotel;;45.69648;21.1794;S;HTL;RO;;36;155314;;;0;;86;Europe/Bucharest;2016-02-07
+10121236;Black Lord;Black Lord;;46.54482;24.53553;S;HTL;RO;;27;114319;;;0;;306;Europe/Bucharest;2016-02-07
+10121237;Ioana;Ioana;;46.1374;25.8542;S;HTL;RO;;20;83428;;;0;;639;Europe/Bucharest;2016-02-07
+10121240;Vila Transylvanian Inn;Vila Transylvanian Inn;;45.52492;25.36106;S;HTL;RO;;09;40633;;;0;;756;Europe/Bucharest;2016-02-07
+10121250;Central Plaza;Central Plaza;;46.9299;26.36294;S;HTL;RO;;28;120726;;;0;;312;Europe/Bucharest;2016-02-07
+10121284;Yaky Hotel;Yaky Hotel;;44.84703;24.88544;S;HTL;RO;;03;13169;;;0;;281;Europe/Bucharest;2016-02-07
+10121285;Magic Trivale Hotel;Magic Trivale Hotel;;44.8661;24.86203;S;HTL;RO;;03;13169;;;0;;277;Europe/Bucharest;2016-02-07
+10121286;Magic Centru Hotel;Magic Centru Hotel;;44.85731;24.86915;S;HTL;RO;;03;13169;;;0;;281;Europe/Bucharest;2016-02-07
+10121287;Decebal Hotel;Decebal Hotel;;46.56561;26.91068;S;HTL;RO;;04;20297;;;0;;169;Europe/Bucharest;2016-02-07
+10121326;Alcadibo Center;Alcadibo Center;;44.86062;24.87117;S;HTL;RO;;03;13169;;;0;;277;Europe/Bucharest;2016-02-07
+10121382;Zenix Hotel;Zenix Hotel;;44.39234;26.09281;S;HTL;RO;;10;179132;11055043;;0;;82;Europe/Bucharest;2016-02-07
+10121383;Victoriei Residence;Victoriei Residence;;44.44112;26.09527;S;HTL;RO;;10;179132;11055041;;0;;89;Europe/Bucharest;2016-02-07
+10121384;Unirii Residence;Unirii Residence;;44.42386;26.10613;S;HTL;RO;;10;179132;11055042;;0;;73;Europe/Bucharest;2016-02-07
+10121385;Tecadra Hotel;Tecadra Hotel;;44.5139;26.12649;S;HTL;RO;;43;179551;;;0;;87;Europe/Bucharest;2016-02-07
+10121386;Sarroglia Hotel;Sarroglia Hotel;;44.44225;26.10949;S;HTL;RO;;10;179132;11055040;;0;;84;Europe/Bucharest;2016-02-07
+10121388;Hemingway Residence;Hemingway Residence;;44.4332;26.11207;S;HTL;RO;;10;179132;11055044;;0;;84;Europe/Bucharest;2016-02-07
+10121389;Casa Victor;Casa Victor;;44.46311;26.08418;S;HTL;RO;;10;179132;11055041;;0;;87;Europe/Bucharest;2016-02-07
+10121390;Best Western Plus Mari Vila;Best Western Plus Mari Vila;;44.4074;26.21603;S;HTL;RO;;10;179132;11055044;;0;;63;Europe/Bucharest;2016-02-07
+10121391;Berthelot Hotel;Berthelot Hotel;;44.44202;26.09273;S;HTL;RO;;10;179132;11055041;;0;;85;Europe/Bucharest;2016-02-07
+10121464;Jiul Hotel;Jiul Hotel;;44.32127;23.79621;S;HTL;RO;;17;69900;;;0;;97;Europe/Bucharest;2016-02-07
+10121488;Sydney Hotel;Sydney Hotel;;44.31268;23.85255;S;HTL;RO;;17;74859;;;0;;142;Europe/Bucharest;2016-02-07
+10121489;Plus Hotel;Plus Hotel;;44.29474;23.84162;S;HTL;RO;;17;73068;;;0;;117;Europe/Bucharest;2016-02-07
+10121490;Europeca Hotel;Europeca Hotel;;44.32541;23.80343;S;HTL;RO;;17;69900;;;0;;104;Europe/Bucharest;2016-02-07
+10121500;Parc Hotel;Parc Hotel;;44.32027;23.78951;S;HTL;RO;;17;69900;;;0;;90;Europe/Bucharest;2016-02-07
+10121502;Emma West;Emma West;;44.31387;23.83112;S;HTL;RO;;17;69900;;;0;;120;Europe/Bucharest;2016-02-07
+10121503;Emma Est;Emma Est;;44.31387;23.83112;S;HTL;RO;;17;69900;;;0;;120;Europe/Bucharest;2016-02-07
+10121616;Best Western Savoy Hotel;Best Western Savoy Hotel;;44.21244;28.64266;S;HTL;RO;;14;60419;;;0;;3;Europe/Bucharest;2016-02-07
+10121638;Maria Hotel;Maria Hotel;;44.16992;28.63733;S;HTL;RO;;14;60419;;;0;;41;Europe/Bucharest;2016-02-07
+10121641;Megalos;Megalos;;44.19349;28.64947;S;HTL;RO;;14;60419;;;0;;27;Europe/Bucharest;2016-02-07
+10121642;Guci;Guci;;44.19599;28.64207;S;HTL;RO;;14;60419;;;0;;17;Europe/Bucharest;2016-02-07
+10121643;Gmg Hotel;Gmg Hotel;;44.20488;28.63617;S;HTL;RO;;14;60419;;;0;;-2;Europe/Bucharest;2016-02-07
+10121644;Class;Class;;44.18601;28.63915;S;HTL;RO;;14;60419;;;0;;41;Europe/Bucharest;2016-02-07
+10121898;Tranzzit Hotel;Tranzzit Hotel;;44.44103;26.07915;S;HTL;RO;;10;179132;11055041;;0;;79;Europe/Bucharest;2016-02-07
+10121899;Epoque Hotel;Epoque Hotel;;44.43676;26.08715;S;HTL;RO;;10;179132;11055041;;0;;73;Europe/Bucharest;2016-02-07
+10121967;Neon Hotel;Neon Hotel;;45.77373;21.22144;S;HTL;RO;;36;155243;;;0;;89;Europe/Bucharest;2016-02-07
+10121968;Arta Hotel;Arta Hotel;;45.77144;21.28262;S;HTL;RO;;36;155289;;;0;;86;Europe/Bucharest;2016-02-07
+10121969;Best Western Plus Fusion;Best Western Plus Fusion;;46.75085;23.52089;S;HTL;RO;;13;57706;;;0;;358;Europe/Bucharest;2016-02-07
+10121970;Michelangelo;Michelangelo;;44.44884;26.09162;S;HTL;RO;;10;179132;11055041;;0;;87;Europe/Bucharest;2016-02-07
+10122699;Volo;Volo;;44.43392;26.08977;S;HTL;RO;;10;179132;11055043;;0;;78;Europe/Bucharest;2016-02-07
+10122700;Centre Ville By Radisson Blu;Centre Ville By Radisson Blu;;44.44121;26.09434;S;HTL;RO;;10;179132;11055041;;0;;87;Europe/Bucharest;2016-02-07
+10122791;Senator Hotel;Senator Hotel;;45.7715;21.27687;S;HTL;RO;;36;155243;;;0;;93;Europe/Bucharest;2016-02-07
+10122792;Green Forum;Green Forum;;44.46593;26.0895;S;HTL;RO;;10;179132;11055041;;0;;88;Europe/Bucharest;2016-02-07
+10122793;Christina Hotel;Christina Hotel;;44.451;26.097;S;HTL;RO;;10;179132;11055041;;0;;85;Europe/Bucharest;2016-02-07
+10123350;Hotel Opal;Hotel Opal;;46.76256;23.61026;S;HTL;RO;;13;54975;;;0;;365;Europe/Bucharest;2016-02-07
+10123392;Delpack;Delpack;;45.73513;21.21898;S;HTL;RO;;36;155243;;;0;;85;Europe/Bucharest;2016-02-07
+10123393;Levoslav House Hotel;Levoslav House Hotel;;45.79719;24.15406;S;HTL;RO;;33;143450;;;0;;428;Europe/Bucharest;2016-02-07
+10123394;Premier Cluj;Premier Cluj;;46.77701;23.60157;S;HTL;RO;;13;54975;;;0;;334;Europe/Bucharest;2016-02-07
+10123435;Mistral Resort Moieciu;Mistral Resort Moieciu;;45.42352;25.36354;S;HTL;RO;;09;41471;;;0;;1091;Europe/Bucharest;2016-02-07
+10123477;Zava Hotel;Zava Hotel;;44.43522;26.11811;S;HTL;RO;;10;179132;11055040;;0;;84;Europe/Bucharest;2016-02-07
+10124387;Crystal Palace;Crystal Palace;;44.48436;26.09796;S;HTL;RO;;10;179132;11055041;;0;;85;Europe/Bucharest;2016-02-07
+10124389;Crowne Plaza;Crowne Plaza;;44.4792;26.06429;S;HTL;RO;;10;179132;11055041;;0;;91;Europe/Bucharest;2016-02-07
+10124390;Razvan;Razvan;;44.4332;26.12343;S;HTL;RO;;10;179132;11055044;;0;;80;Europe/Bucharest;2016-02-07
+10124513;Gloria;Gloria;;47.8449;25.92192;S;HTL;RO;;34;146628;;;0;;366;Europe/Bucharest;2016-02-07
+10124537;Pullman;Pullman;;44.405;26.093;S;HTL;RO;;10;179132;11055043;;0;;86;Europe/Bucharest;2016-02-07
+10124538;Domenii Plaza By Residence Hotels;Domenii Plaza By Residence Hotels;;44.43771;26.09737;S;HTL;RO;;10;179132;11055041;;0;;88;Europe/Bucharest;2016-02-07
+10124542;Caro Parc 3*;Caro Parc 3*;;44.479;26.094;S;HTL;RO;;10;179132;11055041;;0;;84;Europe/Bucharest;2016-02-07
+10124546;Inter Business Bucharest Hotel;Inter Business Bucharest Hotel;;44.41658;26.17518;S;HTL;RO;;10;179132;11055044;;0;;75;Europe/Bucharest;2016-02-07
+10124548;Stars Hotel Bucharest;Stars Hotel Bucharest;;44.44724;26.08542;S;HTL;RO;;10;179132;11055041;;0;;85;Europe/Bucharest;2016-02-07
+10124550;Relax Comfort Suites;Relax Comfort Suites;;44.43887;26.10098;S;HTL;RO;;10;179132;11055041;;0;;93;Europe/Bucharest;2016-02-07
+10124552;City Hotel;City Hotel;;44.42694;26.02296;S;HTL;RO;;10;179132;11055039;;0;;91;Europe/Bucharest;2016-02-07
+10124712;Hotel Savoy;Hotel Savoy;;45.74766;21.22431;S;HTL;RO;;36;155243;;;0;;91;Europe/Bucharest;2016-02-07
+10125680;DoubleTree by Hilton Hotel Oradea;DoubleTree by Hilton Hotel Oradea;;47.05436;21.94874;S;HTL;RO;;05;26564;;;0;;133;Europe/Bucharest;2016-11-02
+10125691;Lev Or Hotel Bucharest;Lev Or Hotel Bucharest;;44.44754;26.08432;S;HTL;RO;;10;179132;11055041;;0;;85;Europe/Bucharest;2016-02-07
+10125694;Pullman World Trade Center;Pullman World Trade Center;;44.47603;26.06979;S;HTL;RO;;10;179132;11055041;;0;;93;Europe/Bucharest;2016-02-07
+10125695;Centre Ville Aparthotel;Centre Ville Aparthotel;;44.44162;26.09295;S;HTL;RO;;10;179132;11055041;;0;;89;Europe/Bucharest;2016-02-07
+10125786;Casa Cranta;Casa Cranta;;45.64766;25.59611;S;HTL;RO;;09;40198;;;0;;597;Europe/Bucharest;2016-02-07
+10125809;KK Elisabeta Hotel;KK Elisabeta Hotel;;44.43576;26.10476;S;HTL;RO;;10;179132;11055044;;0;;87;Europe/Bucharest;2016-02-07
+10126969;Epoque Suites;Epoque Suites;;44.43709;26.08704;S;HTL;RO;;10;179132;11055041;;0;;74;Europe/Bucharest;2016-02-07
+10126972;Tulip Inn Sunny Hill Hotel;Tulip Inn Sunny Hill Hotel;;46.71664;23.57583;S;HTL;RO;;13;54975;;;0;;597;Europe/Bucharest;2016-02-07
+10127072;Premier Hotel;Premier Hotel;;46.7711;23.55205;S;HTL;RO;;13;54975;;;0;;350;Europe/Bucharest;2016-02-07
+10127361;Nelisse;Nelisse;;44.44668;26.13219;S;HTL;RO;;10;179132;11055040;;0;;81;Europe/Bucharest;2016-02-07
+10127856;Savoy Hotel Timisoara;Savoy Hotel Timisoara;;45.74785;21.22434;S;HTL;RO;;36;155243;;;0;;91;Europe/Bucharest;2016-02-07
+10127857;Perla 2 Hotel;Perla 2 Hotel;;45.74206;21.22934;S;HTL;RO;;36;155243;;;0;;89;Europe/Bucharest;2016-02-07
+10127858;Grand Hotel Traian;Grand Hotel Traian;;47.16589;27.57927;S;HTL;RO;;23;95060;;;0;;65;Europe/Bucharest;2016-02-07
+10127860;Herastrau Hotel;Herastrau Hotel;;44.48025;26.07905;S;HTL;RO;;10;179132;11055041;;0;;82;Europe/Bucharest;2016-02-07
+10127861;Royal Bucharest;Royal Bucharest;;44.42731;26.11173;S;HTL;RO;;10;179132;11055044;;0;;77;Europe/Bucharest;2016-02-07
+10127862;Cantemir;Cantemir;;44.42066;26.10462;S;HTL;RO;;10;179132;11055042;;0;;71;Europe/Bucharest;2016-02-07
+10127863;Bliss;Bliss;;44.42786;26.14611;S;HTL;RO;;10;179132;11055044;;0;;75;Europe/Bucharest;2016-02-07
+10127864;Grand Hotel Perla Ciucasului;Grand Hotel Perla Ciucasului;;45.63403;25.75822;S;HTL;RO;;09;42003;;;0;;628;Europe/Bucharest;2016-02-07
+10128611;Royal Plaza;Royal Plaza;;45.76776;21.2609;S;HTL;RO;;36;155243;;;0;;86;Europe/Bucharest;2016-02-07
+10128936;Armonia Hotel s;Armonia Hotel s;;44.43489;26.10863;S;HTL;RO;;10;179132;11055040;;0;;83;Europe/Bucharest;2016-02-07
+10128987;Nelisse One;Nelisse One;;44.44666;26.13232;S;HTL;RO;;10;179132;11055040;;0;;81;Europe/Bucharest;2016-02-07
+10128988;Lido;Lido;;44.44152;26.09918;S;HTL;RO;;10;179132;11055041;;0;;90;Europe/Bucharest;2016-02-07
+10129011;Minotel Floris;Minotel Floris;;45.44615;25.93978;S;HTL;RO;;30;134096;;;0;;867;Europe/Bucharest;2016-02-07
+10129057;Capitolina;Capitolina;;46.76676;23.58628;S;HTL;RO;;13;54975;;;0;;354;Europe/Bucharest;2016-02-07
+10129797;Confort Hotel Cluj Napoca;Confort Hotel Cluj Napoca;;46.76338;23.59769;S;HTL;RO;;13;54975;;;0;;375;Europe/Bucharest;2016-02-07
+10129798;Ambient Hotel;Ambient Hotel;;45.64869;25.59812;S;HTL;RO;;09;40198;;;0;;574;Europe/Bucharest;2016-02-07
+10129799;El Greco;El Greco;;44.43734;26.10576;S;HTL;RO;;10;179132;11055040;;0;;86;Europe/Bucharest;2016-02-07
+10129800;President Tg Mures;President Tg Mures;;46.51552;24.51986;S;HTL;RO;;27;114319;;;0;;310;Europe/Bucharest;2016-02-07
+10129801;Denisa Otopeni;Denisa Otopeni;;44.547;26.08176;S;HTL;RO;;43;179481;;;0;;92;Europe/Bucharest;2016-02-07
+10129802;Caro Golf;Caro Golf;;44.47514;26.10845;S;HTL;RO;;10;179132;11055040;;0;;85;Europe/Bucharest;2016-02-07
+10129803;Egreta;Egreta;;45.174;28.8009;S;HTL;RO;;37;159614;;;0;;31;Europe/Bucharest;2016-02-07
+10129804;Johann Strauss;Johann Strauss;;44.46699;26.1025;S;HTL;RO;;10;179132;11055041;;0;;86;Europe/Bucharest;2016-02-07
+10129805;International;International;;45.3309;25.5555;S;HTL;RO;;30;131540;;;0;;797;Europe/Bucharest;2016-02-07
+10171158;Poenari Castle;Poenari Castle;Cetatea Poenari,Citadel of Negru Voda,Citadel of Negru Vodă,Citadel of Tepes Voda,Citadel of Țepeș Vodă,Poenari Citadel;45.35375;24.63522;S;CSTL;RO;;03;14049;;;0;860;816;Europe/Bucharest;2016-02-07
+10172980;Girocului;Girocului;Calea Martirilor;45.73039;21.23095;P;PPLX;RO;;36;155243;;;0;;85;Europe/Bucharest;2015-03-23
+10172995;Elisabetin;Elisabetin;;45.74173;21.22547;P;PPLX;RO;;36;155243;;;0;;90;Europe/Bucharest;2015-03-23
+10174222;Ambient Pensiune;Ambient Pensiune;;45.6502;25.60524;S;HTL;RO;;09;40198;;;0;;570;Europe/Bucharest;2016-02-07
+10174653;Alutus Superior;Alutus Superior;;45.10791;24.37111;S;HTL;RO;;39;167473;;;0;;240;Europe/Bucharest;2016-02-07
+10175550;N Tulip Mamaia Hotel;N Tulip Mamaia Hotel;;44.25431;28.62116;S;HTL;RO;;14;60419;;;0;;6;Europe/Bucharest;2016-02-07
+10176037;Rizzo;Rizzo;;45.58968;25.5476;S;HTL;RO;;09;40198;;;0;;1007;Europe/Bucharest;2016-02-07
+10176042;Complex Cochet;Complex Cochet;;45.39299;25.53819;S;HTL;RO;;30;131210;;;0;;864;Europe/Bucharest;2016-02-07
+10176186;Fantanita Haiducului;Fantanita Haiducului;;45.78744;24.14326;S;HTL;RO;;33;143450;;;0;;426;Europe/Bucharest;2016-02-07
+10176276;Apa Nova;Apa Nova;;44.39091;26.11094;S;WTRW;RO;;10;179132;11055042;;0;;83;Europe/Bucharest;2016-02-07
+10176278;Aviatiei;Aviatiei;;44.4825;26.10225;P;PPLX;RO;;10;179132;11055040;;0;;85;Europe/Bucharest;2016-02-07
+10176279;Dorobanti;Dorobanti;;44.45934;26.09363;P;PPLX;RO;;10;179132;11055041;;0;;87;Europe/Bucharest;2016-02-07
+10176280;Soseaua Oltenitei;Soseaua Oltenitei;;44.38847;26.11832;P;PPLX;RO;;10;179132;11055042;;0;;82;Europe/Bucharest;2016-02-07
+10176282;Dristor;Dristor;;44.41833;26.14241;P;PPLX;RO;;10;179132;11055044;;0;;74;Europe/Bucharest;2016-02-07
+10176437;Splendid Hotel-Mamaia;Splendid Hotel-Mamaia;;44.25399;28.61843;S;HTL;RO;;14;60419;;;0;;1;Europe/Bucharest;2016-02-07
+10176904;Tal Forum;Tal Forum;;47.05536;21.94294;S;HTL;RO;;05;26564;;;0;;126;Europe/Bucharest;2016-02-07
+10177055;CET Progresu;CET Progresu;;44.37175;26.10657;S;PS;RO;;10;179132;11055042;;0;;93;Europe/Bucharest;2016-02-07
+10227998;Continental Tirgu Mures;Continental Tirgu Mures;;46.54493;24.55676;S;HTL;RO;;27;114319;;;0;;311;Europe/Bucharest;2016-02-07
+10227999;Business Conference & Spa Hotel;Business Conference & Spa Hotel;;46.64768;23.91724;S;HTL;RO;;13;56844;;;0;;322;Europe/Bucharest;2016-02-07
+10228057;Atlas;Atlas;;45.61217;25.65943;S;HTL;RO;;09;40438;;;0;;644;Europe/Bucharest;2016-02-07
+10228460;Arc De Triomphe By Residence Hotels;Arc De Triomphe By Residence Hotels;;44.46074;26.07737;S;HTL;RO;;10;179132;11055041;;0;;90;Europe/Bucharest;2016-02-07
+10228462;Hello Hotels;Hello Hotels;;44.44607;26.07858;S;HTL;RO;;10;179132;11055041;;0;;82;Europe/Bucharest;2016-02-07
+10228463;Epoque Luxury Boutique Hotel;Epoque Luxury Boutique Hotel;;44.43675;26.08696;S;HTL;RO;;10;179132;11055041;;0;;73;Europe/Bucharest;2016-02-07
+10228464;Centre Ville Aparthotel By Radisson Blu;Centre Ville Aparthotel By Radisson Blu;;44.44133;26.0945;S;HTL;RO;;10;179132;11055041;;0;;89;Europe/Bucharest;2016-02-07
+10228666;Wolf 1;Wolf 1;;45.54049;25.37639;S;HTL;RO;;09;40492;;;0;;704;Europe/Bucharest;2016-02-07
+10228667;Wolf 2;Wolf 2;;45.54044;25.37635;S;HTL;RO;;09;40492;;;0;;704;Europe/Bucharest;2016-02-07
+10228796;Orfeu;Orfeu;;44.25966;28.61919;S;HTL;RO;;14;60419;;;0;;6;Europe/Bucharest;2016-02-07
+10228797;Del Mar;Del Mar;;44.21975;28.63346;S;HTL;RO;;14;60419;;;0;;3;Europe/Bucharest;2016-02-07
+10228798;Palm Beach Hotel;Palm Beach Hotel;;44.24176;28.62279;S;HTL;RO;;14;60419;;;0;;3;Europe/Bucharest;2016-02-07
+10228883;Unirea Hotel & Spa;Unirea Hotel & Spa;;47.16541;27.58637;S;HTL;RO;;23;95060;;;0;;73;Europe/Bucharest;2016-02-07
+10228997;Levoslav House Villa;Levoslav House Villa;;45.79718;24.15417;S;HTL;RO;;33;143450;;;0;;428;Europe/Bucharest;2016-02-07
+10229217;Boavista Hotel & Aparthotel;Boavista Hotel & Aparthotel;;45.74554;21.24148;S;HTL;RO;;36;155243;;;0;;87;Europe/Bucharest;2016-02-07
+10229834;Rina Tirol;Rina Tirol;;45.59779;25.55976;S;HTL;RO;;09;40198;;;0;;1047;Europe/Bucharest;2016-02-07
+10229835;Lux Garden;Lux Garden;;45.44337;25.58978;S;HTL;RO;;30;130954;;;0;;983;Europe/Bucharest;2016-02-07
+10229875;Lina Hotel;Lina Hotel;;44.45216;26.12017;S;HTL;RO;;10;179132;11055040;;0;;82;Europe/Bucharest;2016-02-07
+10229876;Grand Pier Conference & Spa;Grand Pier Conference & Spa;;44.42436;26.10264;S;HTL;RO;;10;179132;11055042;;0;;71;Europe/Bucharest;2016-02-07
+10229877;Visconti Militari;Visconti Militari;;44.43341;25.99535;S;HTL;RO;;10;179132;11055039;;0;;92;Europe/Bucharest;2016-02-07
+10229878;Best Western Plus Mari Vila Hotel Bucharest;Best Western Plus Mari Vila Hotel Bucharest;;44.40718;26.21603;S;HTL;RO;;10;179132;11055044;;0;;63;Europe/Bucharest;2016-02-07
+10229879;Mirage Snagov Hotel & Resort;Mirage Snagov Hotel & Resort;;44.67207;26.07605;S;HTL;RO;;43;105160;;;0;;89;Europe/Bucharest;2016-02-07
+10229880;Cara;Cara;;44.85453;24.87811;S;HTL;RO;;03;13169;;;0;;274;Europe/Bucharest;2016-02-07
+10229881;Ramada Pitesti;Ramada Pitesti;;44.86247;24.87451;S;HTL;RO;;03;13169;;;0;;269;Europe/Bucharest;2016-02-07
+10230089;Recif Hotel;Recif Hotel;;43.86371;28.59584;S;HTL;RO;;14;60482;;;0;;14;Europe/Bucharest;2016-02-07
+10230090;Miorita;Miorita;;43.8713;28.6062;S;HTL;RO;;14;60482;;;0;;3;Europe/Bucharest;2016-02-07
+10230092;Melodia Hotel;Melodia Hotel;;43.84926;28.59984;S;HTL;RO;;14;60482;;;0;;12;Europe/Bucharest;2016-02-07
+10230093;Favorit Hotel;Favorit Hotel;;43.845;28.59556;S;HTL;RO;;14;60482;;;0;;5;Europe/Bucharest;2016-02-07
+10230094;Saturn;Saturn;;43.82859;28.58574;S;HTL;RO;;14;60482;;;0;;9;Europe/Bucharest;2016-02-07
+10230095;Corsa;Corsa;;43.81316;28.58591;S;HTL;RO;;14;60482;;;0;;14;Europe/Bucharest;2016-02-07
+10230096;Bran Eforie;Bran Eforie;;44.05793;28.63174;S;HTL;RO;;14;60455;;;0;;11;Europe/Bucharest;2016-02-07
+10230097;Brad Eforie;Brad Eforie;;44.05793;28.63174;S;HTL;RO;;14;60455;;;0;;11;Europe/Bucharest;2016-02-07
+10230098;Bega Eforie;Bega Eforie;;44.05793;28.63174;S;HTL;RO;;14;60455;;;0;;11;Europe/Bucharest;2016-02-07
+10232249;Aqua Thermal Spa & Relax Hotel;Aqua Thermal Spa & Relax Hotel;;46.09476;24.21544;S;HTL;RO;;33;144116;;;0;;298;Europe/Bucharest;2016-02-07
+10232250;Termal;Termal;;46.99101;21.98017;S;HTL;RO;;05;26582;;;0;;152;Europe/Bucharest;2016-02-07
+10232251;Nufarul;Nufarul;;46.98;21.98;S;HTL;RO;;05;26582;;;0;;182;Europe/Bucharest;2016-02-07
+10232397;Roua Voronetului;Roua Voronetului;;47.53726;25.86338;S;HTL;RO;;34;146584;;;0;;482;Europe/Bucharest;2016-02-07
+10232465;Binderbubi Medias;Binderbubi Medias;;46.16057;24.36375;S;HTL;RO;;33;143619;;;0;;306;Europe/Bucharest;2016-02-07
+10232466;Binderbubi Sighisoara;Binderbubi Sighisoara;;46.21607;24.79407;S;HTL;RO;;27;114514;;;0;;356;Europe/Bucharest;2016-02-07
+10232467;Traube Medias;Traube Medias;;46.16399;24.34984;S;HTL;RO;;33;143619;;;0;;297;Europe/Bucharest;2016-02-07
+10232507;Botel Ibis;Botel Ibis;;45.18228;28.80392;S;HTL;RO;;37;159614;;;0;;1;Europe/Bucharest;2016-02-07
+10232508;Complex Cormoran;Complex Cormoran;;45.0751;29.22412;S;HTL;RO;;37;160911;;;0;;2;Europe/Bucharest;2016-02-07
+10232509;Botel Sincron Delta;Botel Sincron Delta;;45.18583;28.80487;S;HTL;RO;;37;159614;;;0;;1;Europe/Bucharest;2016-02-07
+10232510;Botel Magia Deltei;Botel Magia Deltei;;45.05815;29.24465;S;HTL;RO;;37;160911;;;0;;-1;Europe/Bucharest;2016-02-07
+10232511;Sunrise 4;Sunrise 4;;45.17439;29.3852;S;HTL;RO;;37;160261;;;0;;5;Europe/Bucharest;2016-02-07
+10232512;Delta Dreams Pension;Delta Dreams Pension;;44.98352;29.22145;S;HTL;RO;;37;160911;;;0;;10;Europe/Bucharest;2016-02-07
+10232513;Danube Delta Resort Hotel;Danube Delta Resort Hotel;;45.17619;29.38584;S;HTL;RO;;37;160261;;;0;;3;Europe/Bucharest;2016-02-07
+10232514;Botel Anda;Botel Anda;;45.05815;29.24465;S;HTL;RO;;37;160911;;;0;;-1;Europe/Bucharest;2016-02-07
+10232515;Botel Gggociman;Botel Gggociman;;45.17563;29.38601;S;HTL;RO;;37;160261;;;0;;3;Europe/Bucharest;2016-02-07
+10232516;Eden Pension;Eden Pension;;45.17439;29.3852;S;HTL;RO;;37;160261;;;0;;5;Europe/Bucharest;2016-02-07
+10232517;Sunrise 3;Sunrise 3;;45.17439;29.3852;S;HTL;RO;;37;160261;;;0;;5;Europe/Bucharest;2016-02-07
+10232518;Paradise Delta House Pension;Paradise Delta House Pension;;45.22922;29.25805;S;HTL;RO;;37;160261;;;0;;0;Europe/Bucharest;2016-02-07
+10232719;Parc;Parc;;45.64945;21.60875;S;HTL;RO;;36;155403;;;0;;129;Europe/Bucharest;2016-02-07
+10232982;Capitolina City Chic;Capitolina City Chic;;46.76397;23.58494;S;HTL;RO;;13;54975;;;0;;373;Europe/Bucharest;2016-02-07
+10233016;Cocor Spa Hotel;Cocor Spa Hotel;;43.87883;28.60378;S;HTL;RO;;14;60482;;;0;;17;Europe/Bucharest;2016-02-07
+10233017;Inter;Inter;;43.84441;28.5984;S;HTL;RO;;14;60482;;;0;;7;Europe/Bucharest;2016-02-07
+10233018;Teen Apart-Hotel;Teen Apart-Hotel;;43.82828;28.59095;S;HTL;RO;;14;60482;;;0;;6;Europe/Bucharest;2016-02-07
+10233019;Bazart Hostel;Bazart Hostel;;43.75334;28.57376;S;HTL;RO;;14;60632;;;0;;2;Europe/Bucharest;2016-02-07
+10235280;Pensiunea Maria;Pensiunea Maria;;45.80426;24.14061;S;HTL;RO;;33;143450;;;0;;408;Europe/Bucharest;2016-02-07
+10235464;După Stoguri;Dupa Stoguri;;47.22028;23.24098;L;AREA;RO;;31;;;;0;;338;Europe/Bucharest;2015-04-25
+10235465;Poiana Din'Jos;Poiana Din'Jos;;47.22067;23.2254;L;AREA;RO;;31;;;;0;;358;Europe/Bucharest;2015-04-25
+10235466;Rîtu' Florii;Ritu' Florii;;47.22094;23.25171;L;AREA;RO;;31;;;;0;;261;Europe/Bucharest;2015-04-25
+10235467;Lazăluși;Lazalusi;;47.21759;23.25325;L;AREA;RO;;31;;;;0;;250;Europe/Bucharest;2015-04-25
+10235468;Ghețar;Ghetar;;47.2196;23.24887;L;AREA;RO;;31;;;;0;;260;Europe/Bucharest;2015-04-25
+10235469;Peșteroaia;Pesteroaia;;47.21438;23.25321;L;AREA;RO;;31;;;;0;;285;Europe/Bucharest;2015-04-25
+10235470;Pădurice;Padurice;;47.21872;23.25063;V;FRST;RO;;31;;;;0;;259;Europe/Bucharest;2015-04-25
+10235471;Su' Pădure;Su' Padure;;47.2175;23.24553;L;AREA;RO;;31;;;;0;;316;Europe/Bucharest;2015-04-25
+10235472;Temeteu;Temeteu;;47.22508;23.2505;L;AREA;RO;;31;;;;0;;315;Europe/Bucharest;2015-04-25
+10235473;Fîntîna Satului;Fintina Satului;;47.22414;23.2431;H;SPNG;RO;;31;;;;0;;316;Europe/Bucharest;2015-04-25
+10235474;Ulicioară;Ulicioara;;47.21999;23.24304;H;WLL;RO;;31;;;;0;;324;Europe/Bucharest;2015-04-25
+10235475;Ciglentir;Ciglentir;;47.22688;23.23634;L;AREA;RO;;31;;;;0;;411;Europe/Bucharest;2015-04-25
+10235476;Rîpa;Ripa;;47.22;23.24937;L;AREA;RO;;31;;;;0;;260;Europe/Bucharest;2015-04-25
+10235478;Stînă;Stina;;47.21872;23.24702;L;AREA;RO;;31;;;;0;;304;Europe/Bucharest;2015-04-25
+10235479;Cooperativă;Cooperativa;;47.22431;23.24503;S;RET;RO;;31;140672;;;0;;316;Europe/Bucharest;2016-02-07
+10235606;Pensiunea Valeria Voronet;Pensiunea Valeria Voronet;;47.51707;25.86417;S;HTL;RO;;34;146584;;;0;;527;Europe/Bucharest;2016-02-07
+10235668;Cavaler;Cavaler;;46.22185;24.8003;S;HTL;RO;;27;114514;;;0;;353;Europe/Bucharest;2016-02-07
+10235675;Genius Delta Resort;Genius Delta Resort;;45.07308;29.22618;S;HTL;RO;;37;160911;;;0;;1;Europe/Bucharest;2016-02-07
+10235725;Nevis Wellness & Spa;Nevis Wellness & Spa;;47.06295;21.9117;S;HTL;RO;;05;26564;;;0;;121;Europe/Bucharest;2016-02-07
+10236278;Ramada Cluj Hotel;Ramada Cluj Hotel;;46.76388;23.59861;S;HTL;RO;;13;54975;;;0;;368;Europe/Bucharest;2016-02-07
+10236497;Vila Hd;Vila Hd;;45.76082;22.90692;S;HTL;RO;;21;86810;;;0;;229;Europe/Bucharest;2016-02-07
+10236645;Casa Postavarului;Casa Postavarului;;45.64349;25.59516;S;HTL;RO;;09;40198;;;0;;584;Europe/Bucharest;2016-02-07
+10236679;Hotel Ancor;Hotel Ancor;;44.51413;26.12732;S;HTL;RO;;43;179551;;;0;;86;Europe/Bucharest;2016-02-07
+10236688;Hotel Oltenia;Hotel Oltenia;;44.29899;23.83055;S;HTL;RO;;17;69900;;;0;;112;Europe/Bucharest;2016-02-07
+10236857;Undergroun Bucharest Vip Villa;Undergroun Bucharest Vip Villa;;44.43002;26.11188;S;HTL;RO;;10;179132;11055044;;0;;77;Europe/Bucharest;2016-02-07
+10236920;Rompromo Plus Accommodation;Rompromo Plus Accommodation;;44.44409;26.09641;S;HTL;RO;;10;179132;11055041;;0;;89;Europe/Bucharest;2016-02-07
+10236974;Andy Bucharest;Andy Bucharest;;44.445;26.07401;S;HTL;RO;;10;179132;11055041;;0;;82;Europe/Bucharest;2016-02-07
+10237039;Villa Csonka;Villa Csonka;;46.52646;24.54032;S;HTL;RO;;27;114319;;;0;;309;Europe/Bucharest;2016-02-07
+10237137;Cabana Trei Brazi;Cabana Trei Brazi;;45.50949;25.5636;S;HTL;RO;;09;40303;;;0;;1167;Europe/Bucharest;2016-02-07
+10237386;Hotel Regal 1880;Hotel Regal 1880;;45.35338;25.54979;S;HTL;RO;;30;131540;;;0;;829;Europe/Bucharest;2016-02-07
+10237508;Grand Hotel Italia;Grand Hotel Italia;;46.75231;23.60564;S;HTL;RO;;13;54975;;;0;;439;Europe/Bucharest;2016-02-07
+10237673;Chimney of CET Târgu Jiu;Chimney of CET Targu Jiu;;45.01273;23.25943;S;TOWR;RO;;19;77812;;;0;;194;Europe/Bucharest;2016-02-07
+10237911;Andy Predeal;Andy Predeal;;45.51122;25.5677;S;HTL;RO;;09;40303;;;0;;1090;Europe/Bucharest;2016-02-07
+10237969;Pensiunea Carmen Silvae;Pensiunea Carmen Silvae;;47.53719;25.86564;S;HTL;RO;;34;146584;;;0;;481;Europe/Bucharest;2016-02-07
+10238058;Prahova Plaza Hotel;Prahova Plaza Hotel;;44.9412;26.02593;S;HTL;RO;;30;130534;;;0;;157;Europe/Bucharest;2016-02-07
+10238145;Lev Or Ii;Lev Or Ii;;44.37434;26.14651;S;HTL;RO;;43;179533;;;0;;75;Europe/Bucharest;2016-02-07
+10238402;Alex & George Boutique Hotel;Alex & George Boutique Hotel;;46.75884;23.59849;S;HTL;RO;;13;54975;;;0;;407;Europe/Bucharest;2016-02-07
+10238406;Hotel Marea Neagra;Hotel Marea Neagra;;44.26355;28.61843;S;HTL;RO;;14;60419;;;0;;4;Europe/Bucharest;2016-02-07
+10239346;Casa Teo Mahmudia;Casa Teo Mahmudia;;45.08928;29.09114;S;HTL;RO;;37;160724;;;0;;6;Europe/Bucharest;2016-02-07
+10239375;Alpin Casa;Alpin Casa;;45.59614;25.55068;S;HTL;RO;;09;40198;;;0;;1039;Europe/Bucharest;2016-02-07
+10239392;Bastion Hotel;Bastion Hotel;;45.3582;25.54724;S;HTL;RO;;30;131540;;;0;;891;Europe/Bucharest;2016-02-07
+10239417;Aparthotel Alpin;Aparthotel Alpin;;45.59614;25.55068;S;HTL;RO;;09;40198;;;0;;1039;Europe/Bucharest;2016-02-07
+10239458;Hotel Herastrau Bucharest;Hotel Herastrau Bucharest;;44.4803;26.07882;S;HTL;RO;;10;179132;11055041;;0;;82;Europe/Bucharest;2016-02-07
+10240028;Hotel Siret;Hotel Siret;;44.25699;28.61911;S;HTL;RO;;14;60419;;;0;;5;Europe/Bucharest;2016-02-07
+10240110;Golden Tulip Times Hotel;Golden Tulip Times Hotel;;44.43096;26.13622;S;HTL;RO;;10;179132;11055044;;0;;81;Europe/Bucharest;2016-02-07
+10243504;Carol;Carol;;44.17891;28.65272;S;HTL;RO;;14;60419;;;0;;38;Europe/Bucharest;2016-02-07
+10243505;Pacific Aparthotel;Pacific Aparthotel;;44.18286;28.61771;S;HTL;RO;;14;60419;;;0;;52;Europe/Bucharest;2016-02-07
+10243634;Business Conference and Spa Hotel;Business Conference and Spa Hotel;;46.64768;23.91724;S;HTL;RO;;13;56844;;;0;;322;Europe/Bucharest;2016-02-07
+10243635;Plaza V Executive Hotel;Plaza V Executive Hotel;;46.54458;24.56143;S;HTL;RO;;27;114319;;;0;;317;Europe/Bucharest;2016-02-07
+10243661;Hotel Crowne Plaza;Hotel Crowne Plaza;;44.41;26.118;S;HTL;RO;;10;179132;11055042;;0;;69;Europe/Bucharest;2016-02-07
+10243740;Northstar Continental;Northstar Continental;;45.75494;21.23246;S;HTL;RO;;36;155243;;;0;;88;Europe/Bucharest;2016-02-07
+10243750;Relax Confort;Relax Confort;;44.43877;26.10109;S;HTL;RO;;10;179132;11055041;;0;;93;Europe/Bucharest;2016-02-07
+10243751;Jw Marriott Grand;Jw Marriott Grand;;44.42551;26.07661;S;HTL;RO;;10;179132;11055043;;0;;92;Europe/Bucharest;2016-02-07
+10244258;Hotel Novotel Bucarest City Centre;Hotel Novotel Bucarest City Centre;;44.4369;26.0972;S;HTL;RO;;10;179132;11055041;;0;;84;Europe/Bucharest;2016-02-07
+10244462;Best Western Plus Mari Villa Bucharest;Best Western Plus Mari Villa Bucharest;;44.4079;26.21725;S;HTL;RO;;10;179132;11055044;;0;;65;Europe/Bucharest;2016-02-07
+10244551;Phoenicia Express Bucharest Hotel;Phoenicia Express Bucharest Hotel;;44.53154;26.05562;S;HTL;RO;;43;179481;;;0;;93;Europe/Bucharest;2016-02-07
+10244600;Cv By Radisson Blu;Cv By Radisson Blu;;44.45268;26.08532;S;HTL;RO;;10;179132;11055041;;0;;83;Europe/Bucharest;2016-02-07
+10244930;Zimbru Hotel;Zimbru Hotel;;47.15128;27.62326;S;HTL;RO;;23;95060;;;0;;37;Europe/Bucharest;2016-02-07
+10245274;Pension Hanul Andritei;Pension Hanul Andritei;;44.31622;23.86575;S;HTL;RO;;17;69900;;;0;;190;Europe/Bucharest;2016-02-07
+10245305;Royal Classic;Royal Classic;;46.76432;23.62083;S;HTL;RO;;13;54975;;;0;;359;Europe/Bucharest;2016-02-07
+10245326;Iri Hotel;Iri Hotel;;45.42085;25.5323;S;HTL;RO;;30;131210;;;0;;918;Europe/Bucharest;2016-02-07
+10245584;Club Austria Villa Elena;Club Austria Villa Elena;;45.39152;25.54821;S;HTL;RO;;30;131210;;;0;;891;Europe/Bucharest;2016-02-07
+10245811;Rompromo Plus Accommodation Ltd;Rompromo Plus Accommodation Ltd;;44.44409;26.09641;S;HTL;RO;;10;179132;11055041;;0;;89;Europe/Bucharest;2016-02-07
+10245815;Hotel Vila 23 Snagov Spa and Conference Lake Resort;Hotel Vila 23 Snagov Spa and Conference Lake Resort;;44.69577;26.16032;S;HTL;RO;;43;105160;;;0;;90;Europe/Bucharest;2016-02-07
+10247602;Jw Marriott Buchares Grand;Jw Marriott Buchares Grand;;44.42564;26.07681;S;HTL;RO;;10;179132;11055043;;0;;92;Europe/Bucharest;2016-02-07
+10255061;Ramada Cluj Napoca;Ramada Cluj Napoca;;46.76388;23.59863;S;HTL;RO;;13;54975;;;0;;368;Europe/Bucharest;2016-02-07
+10277032;Denisa Airport Hotel;Denisa Airport Hotel;;44.55;26.07;S;HTL;RO;;43;179481;;;0;;93;Europe/Bucharest;2016-02-07
+10277092;Tempo Hotel Rs;Tempo Hotel Rs;;44.43852;26.10912;S;HTL;RO;;10;179132;11055040;;0;;83;Europe/Bucharest;2016-02-07
+10277705;CET Botoşan;CET Botosan;;47.74905;26.63537;S;PS;RO;;07;35731;;;0;;181;Europe/Bucharest;2016-02-07
+10278471;Beyfin;Beyfin;;46.77106;23.59625;S;HTL;RO;;13;54975;;;0;;345;Europe/Bucharest;2016-02-07
+10278976;Hotel Le Boutique Moxa Rs;Hotel Le Boutique Moxa Rs;;44.44669;26.08957;S;HTL;RO;;10;179132;11055041;;0;;84;Europe/Bucharest;2016-02-07
+10279293;Avis Boutique Hotel Rs;Avis Boutique Hotel Rs;;44.4941;26.08112;S;HTL;RO;;10;179132;11055041;;0;;90;Europe/Bucharest;2016-02-07
+10279447;Premier Palace Spa Hotel Rs;Premier Palace Spa Hotel Rs;;44.41584;26.03994;S;HTL;RO;;10;179132;11055039;;0;;91;Europe/Bucharest;2016-02-07
+10279449;Armonia Bucharest Rs;Armonia Bucharest Rs;;44.43484;26.10864;S;HTL;RO;;10;179132;11055040;;0;;83;Europe/Bucharest;2016-02-07
+10280304;Albert Neptun;Albert Neptun;;43.87438;28.601;S;HTL;RO;;14;60482;;;0;;11;Europe/Bucharest;2016-02-07
+10281107;Venezia Hotel Bucharest;Venezia Hotel Bucharest;;44.43049;26.12302;S;HTL;RO;;10;179132;11055044;;0;;81;Europe/Bucharest;2016-02-07
+10281371;Residence Arc de Triomphe Business and Wellness;Residence Arc de Triomphe Business and Wellness;;44.43049;26.12302;S;HTL;RO;;10;179132;11055044;;0;;81;Europe/Bucharest;2016-02-07
+10281746;Silver Hotel Conference and Spa;Silver Hotel Conference and Spa;;47.06274;21.92102;S;HTL;RO;;05;26564;;;0;;123;Europe/Bucharest;2016-02-07
+10281995;Victoria Bucarest;Victoria Bucarest;;44.43049;26.12302;S;HTL;RO;;10;179132;11055044;;0;;81;Europe/Bucharest;2016-02-07
+10282300;Hotel Charter Otopeni;Hotel Charter Otopeni;;44.43049;26.12302;S;HTL;RO;;10;179132;11055044;;0;;81;Europe/Bucharest;2016-02-07
+10283447;Mercure Bucharest City Center Hotel;Mercure Bucharest City Center Hotel;;44.44273;26.09626;S;HTL;RO;;10;179132;11055041;;0;;86;Europe/Bucharest;2016-02-07
+10303035;Carpati;Carpati;;47.65859;23.57179;S;HTL;RO;;25;106318;;;0;;218;Europe/Bucharest;2016-02-07
+10303036;Deva;Deva;;45.87273;22.90775;S;HTL;RO;;21;86687;;;0;;189;Europe/Bucharest;2016-02-07
+10303557;Le Boutique Hotel Moxa Non Refundable Room;Le Boutique Hotel Moxa Non Refundable Room;;44.44668;26.08957;S;HTL;RO;;10;179132;11055041;;0;;84;Europe/Bucharest;2016-02-07
+10338530;Maryo Hotel;Maryo Hotel;;44.92255;26.00741;S;HTL;RO;;30;130534;;;0;;154;Europe/Bucharest;2016-02-07
+10340691;Hotel Hunguest Fenyo;Hotel Hunguest Fenyo;;45.644;25.59;S;HTL;RO;;09;40198;;;0;;587;Europe/Bucharest;2016-02-07
+10340692;Sighsoara;Sighsoara;;46.21916;24.79293;S;HTL;RO;;27;114514;;;0;;374;Europe/Bucharest;2016-02-07
+10340694;Vrancea;Vrancea;;45.695;27.188;S;HTL;RO;;40;174744;;;0;;53;Europe/Bucharest;2016-02-07
+10340695;Hotel Calarasi;Hotel Calarasi;;44.201;27.33;S;HTL;RO;;41;92569;;;0;;20;Europe/Bucharest;2016-02-07
+10340697;Hotel Zimbru;Hotel Zimbru;;45.276;25.048;S;HTL;RO;;03;13490;;;0;;604;Europe/Bucharest;2016-02-07
+10340698;Hotel Moldova Bacau;Hotel Moldova Bacau;;46.568;26.911;S;HTL;RO;;04;20297;;;0;;168;Europe/Bucharest;2016-02-07
+10340699;Suter Inn;Suter Inn;;44.41806;26.09222;S;HTL;RO;;10;179132;11055042;;0;;79;Europe/Bucharest;2016-02-07
+10344998;Anna Junior;Anna Junior;;45.03478;23.26711;S;HTL;RO;;19;77812;;;0;;203;Europe/Bucharest;2016-02-07
+10345044;Viva Club;Viva Club;;45.4688;28.0287;S;HTL;RO;;18;75098;;;0;;66;Europe/Bucharest;2016-02-07
+10345672;County Clinical Emergency Hospital of Cluj-Napoca;County Clinical Emergency Hospital of Cluj-Napoca;;46.7654;23.58345;S;HSP;RO;;13;54975;;;0;;364;Europe/Bucharest;2016-02-07
+10345673;Timişoara County Emergency Clinical Hospital;Timisoara County Emergency Clinical Hospital;;45.73649;21.24185;S;HSP;RO;;36;155243;;;0;;90;Europe/Bucharest;2016-02-07
+10345674;Tîrgu Mureș Emergency Clinical County Hospital;Tirgu Mures Emergency Clinical County Hospital;;46.559;24.58312;S;HSP;RO;;27;114319;;;0;;342;Europe/Bucharest;2016-02-07
+10375641;Depou RATT;Depou RATT;;45.738;21.19455;R;RYD;RO;;36;;;;0;;84;Europe/Bucharest;2015-07-06
+10375917;Aqua Magic Mamaia;Aqua Magic Mamaia;;44.22271;28.62963;L;AMUS;RO;;14;;;;0;;7;Europe/Bucharest;2015-07-10
+10375919;Myrtos Beach;Myrtos Beach;;44.23089;28.629;T;BCH;RO;;14;60419;;;0;;0;Europe/Bucharest;2016-02-07
+10375920;Psy Beach;Psy Beach;;44.2714;28.62195;T;BCH;RO;;14;60419;;;0;;-1;Europe/Bucharest;2016-02-07
+10375921;Oha Beach;Oha Beach;;44.27686;28.62227;T;BCH;RO;;14;60507;;;0;;0;Europe/Bucharest;2016-02-07
+10375922;Rapana Beach;Rapana Beach;;44.29928;28.62662;T;BCH;RO;;14;60507;;;0;;0;Europe/Bucharest;2016-02-07
+10375923;Celsius Beach;Celsius Beach;;44.24299;28.62444;T;BCH;RO;;14;60419;;;0;;0;Europe/Bucharest;2016-02-07
+10375924;Kudos Beach;Kudos Beach;;44.26234;28.62165;T;BCH;RO;;14;60419;;;0;;0;Europe/Bucharest;2016-02-07
+10375925;Delfinariu;Delfinariu;;44.20562;28.64296;S;ZOO;RO;;14;60419;;;0;;5;Europe/Bucharest;2016-02-07
+10375926;Karting Constanta;Karting Constanta;;44.202;28.63998;L;AMUS;RO;;14;;;;0;;8;Europe/Bucharest;2015-07-10
+10375928;Plaja Modern;Plaja Modern;;44.17956;28.65638;T;BCH;RO;;14;60419;;;0;;3;Europe/Bucharest;2016-02-07
+10375929;Zoom Beach;Zoom Beach;;44.19279;28.65582;T;BCH;RO;;;;;;0;;1;Europe/Bucharest;2015-07-10
+10400707;Little Texas;Little Texas;;47.17121;27.59944;S;HTL;RO;;23;95060;;;0;0;91;Europe/Bucharest;2016-02-07
+10400813;Hotel Adriatico;Hotel Adriatico;;45.77774;21.24303;S;HTL;RO;;36;155243;;;0;0;90;Europe/Bucharest;2016-02-07
+10402318;Oxford Timisoara;Oxford Timisoara;;45.76363;21.26721;S;HTL;RO;;36;155243;;;0;0;86;Europe/Bucharest;2016-02-07
+10629807;Mălaia;Malaia;;45.50633;26.12805;T;PK;RO;;11;46180;;;0;1662;1646;Europe/Bucharest;2016-02-07
+10629808;Siriu;Siriu;;45.52355;26.14594;T;PK;RO;;11;49484;;;0;1657;1649;Europe/Bucharest;2016-02-07
+10629809;Tătăruț;Tatarut;;45.52197;26.08847;T;PK;RO;;09;42183;;;0;1411;1401;Europe/Bucharest;2016-02-07
+10629810;fața Crasnei;fata Crasnei;;45.54866;26.10145;T;PK;RO;;15;;;;0;1332;1321;Europe/Bucharest;2015-08-27
+10629812;Ghiței;Ghitei;;45.5649;26.08882;T;PK;RO;;09;42183;;;0;1253;1249;Europe/Bucharest;2016-02-07
+10629813;Gâlma;Galma;;45.46494;26.116;T;PK;RO;;11;;;;0;1202;1204;Europe/Bucharest;2015-08-27
+10630087;Vf. Penteleu;Vf. Penteleu;;45.60288;26.4168;T;PK;RO;;11;47079;;;0;1772;1749;Europe/Bucharest;2016-02-07
+10630088;Viforâta;Viforata;;45.59712;26.41988;T;PK;RO;;11;47079;;;0;1667;1665;Europe/Bucharest;2016-02-07
+10630089;Coriiu;Coriiu;;45.6469;26.40635;T;PK;RO;;11;47079;;;0;1608;1589;Europe/Bucharest;2016-02-07
+10630090;Ciulianeș;Ciulianes;;45.66212;26.39286;T;PK;RO;;11;47079;;;0;1602;1590;Europe/Bucharest;2016-02-07
+10630091;Crucea Fetei;Crucea Fetei;;45.63475;26.41784;T;PK;RO;;11;47079;;;0;1577;1558;Europe/Bucharest;2016-02-07
+10630092;Bălescu;Balescu;;45.65444;26.40817;T;PK;RO;;11;47079;;;0;1557;1545;Europe/Bucharest;2016-02-07
+10630093;Piciorul Caprei;Piciorul Caprei;;45.57345;26.4531;T;PK;RO;;11;47079;;;0;1520;1511;Europe/Bucharest;2016-02-07
+10630094;Ciuta Înaltă;Ciuta Inalta;;45.60082;26.47203;T;PK;RO;;11;47079;;;0;1444;1428;Europe/Bucharest;2016-02-07
+10630095;Vf. Podul Calului;Vf. Podul Calului;;45.52822;26.35689;T;PK;RO;;11;47079;;;0;1439;1426;Europe/Bucharest;2016-02-07
+10630096;Cernatu;Cernatu;;45.59344;26.38938;T;PK;RO;;11;47079;;;0;1423;1409;Europe/Bucharest;2016-02-07
+10630097;Bălescuțu;Balescutu;;45.65905;26.42542;T;PK;RO;;11;47079;;;0;1396;1434;Europe/Bucharest;2016-02-07
+10630098;Monteoru;Monteoru;;45.55481;26.43522;T;PK;RO;;11;47079;;;0;1384;1365;Europe/Bucharest;2016-02-07
+10630099;Cașoca;Casoca;;45.50761;26.336;T;PK;RO;;11;47079;;;0;1327;1316;Europe/Bucharest;2016-02-07
+10630100;Piscu Curselor;Piscu Curselor;;45.54624;26.45578;T;PK;RO;;11;47079;;;0;1235;1217;Europe/Bucharest;2016-02-07
+10630101;Strigoaiei;Strigoaiei;;45.5325;26.27509;T;PK;RO;;11;49484;;;0;1227;1220;Europe/Bucharest;2016-02-07
+10630102;Podu Grecilor;Podu Grecilor;;45.51294;26.40029;T;PK;RO;;11;47079;;;0;1222;1214;Europe/Bucharest;2016-02-07
+10630103;Brânzaru;Branzaru;;45.48728;26.30784;T;PK;RO;;11;49484;;;0;1198;1196;Europe/Bucharest;2016-02-07
+10630104;Ivănețu;Ivanetu;;45.48882;26.48985;T;PK;RO;;11;45539;;;0;1191;1172;Europe/Bucharest;2016-02-07
+10630105;Țărcătoarea;Tarcatoarea;;45.48228;26.3446;T;PK;RO;;11;47079;;;0;1116;1115;Europe/Bucharest;2016-02-07
+10630106;Lacului;Lacului;;45.495;26.3628;T;PK;RO;;11;47079;;;0;1108;1100;Europe/Bucharest;2016-02-07
+10630107;Mortafu;Mortafu;;45.52899;26.51895;T;PK;RO;;11;47079;;;0;1096;1095;Europe/Bucharest;2016-02-07
+10630108;Colcovan;Colcovan;;45.49952;26.48623;T;PK;RO;;11;47079;;;0;1088;1103;Europe/Bucharest;2016-02-07
+10630109;Goru;Goru;;45.80029;26.41927;T;PK;RO;;40;177003;;;0;1785;1754;Europe/Bucharest;2016-02-07
+10630110;Lăcăuți;Lacauti;;45.8235;26.37539;T;PK;RO;;40;;;;0;1777;1769;Europe/Bucharest;2015-09-01
+10630111;Giurgiu;Giurgiu;;45.75711;26.44329;T;PK;RO;;40;;;;0;1721;1712;Europe/Bucharest;2015-09-01
+10630112;Manișca Mare;Manisca Mare;;45.80144;26.34637;T;PK;RO;;15;63526;;;0;1677;1669;Europe/Bucharest;2016-02-07
+10630113;Pietrosu;Pietrosu;;45.78554;26.50998;T;PK;RO;;40;177003;;;0;1676;1651;Europe/Bucharest;2016-02-07
+10630114;Vf. Zboina Frumoasă;Vf. Zboina Frumoasa;;45.73471;26.56491;T;PK;RO;;40;177003;;;0;1657;1643;Europe/Bucharest;2016-02-07
+10630115;Cristianu;Cristianu;;45.87764;26.55232;T;PK;RO;;40;178910;;;0;1629;1608;Europe/Bucharest;2016-02-07
+10630116;Păișaua Arsă;Paisaua Arsa;;45.80267;26.4661;T;PK;RO;;40;177003;;;0;1592;1573;Europe/Bucharest;2016-02-07
+10630117;Zburătura;Zburatura;;45.85612;26.44378;T;PK;RO;;40;178910;;;0;1590;1572;Europe/Bucharest;2016-02-07
+10630118;Vf. cu Lespezi;Vf. cu Lespezi;;45.78007;26.52005;T;PK;RO;;40;177003;;;0;1583;1505;Europe/Bucharest;2016-02-07
+10630119;Păișaua Înaltă;Paisaua Inalta;;45.82396;26.45199;T;PK;RO;;40;177003;;;0;1578;1500;Europe/Bucharest;2016-02-07
+10630120;Căbălașu;Cabalasu;;45.78304;26.46025;T;PK;RO;;40;177003;;;0;1557;1568;Europe/Bucharest;2016-02-07
+10630121;Mârdanu;Mardanu;;45.82218;26.4066;T;PK;RO;;40;177003;;;0;1550;1540;Europe/Bucharest;2016-02-07
+10630122;Lujeru;Lujeru;;45.8606;26.37695;T;PK;RO;;40;;;;0;1547;1513;Europe/Bucharest;2015-09-01
+10630123;Bulboace;Bulboace;;45.84593;26.49527;T;PK;RO;;40;177003;;;0;1548;1516;Europe/Bucharest;2016-02-07
+10630124;Baba;Baba;;45.87411;26.3885;T;PK;RO;;40;178117;;;0;1544;1530;Europe/Bucharest;2016-02-07
+10630125;Stogu Mare;Stogu Mare;;45.88956;26.37724;T;PK;RO;;15;;;;0;1527;1518;Europe/Bucharest;2015-09-01
+10630126;Clăbuci;Clabuci;;45.77179;26.36807;T;PK;RO;;15;63526;;;0;1516;1601;Europe/Bucharest;2016-02-07
+10630127;Tichertu;Tichertu;;45.84179;26.50663;T;PK;RO;;40;177003;;;0;1508;1500;Europe/Bucharest;2016-02-07
+10630128;Mușat;Musat;;45.94621;26.3909;T;PK;RO;;15;64602;;;0;1503;1496;Europe/Bucharest;2016-02-07
+10630129;Verdele;Verdele;;45.79747;26.5108;T;PK;RO;;40;177003;;;0;1488;1518;Europe/Bucharest;2016-02-07
+10630130;Pietrele Înșirate;Pietrele Insirate;;45.65087;26.51905;T;PK;RO;;11;;;;0;1476;1468;Europe/Bucharest;2015-09-01
+10630131;Lapoșu de Sus;Laposu de Sus;;45.73676;26.59146;T;PK;RO;;40;177003;;;0;1455;1446;Europe/Bucharest;2016-02-07
+10630132;Frumoasele;Frumoasele;;45.68755;26.58133;T;PK;RO;;40;176944;;;0;1423;1363;Europe/Bucharest;2016-02-07
+10630133;Pârâul Bradului;Paraul Bradului;;45.8597;26.43406;T;PK;RO;;40;178910;;;0;1420;1399;Europe/Bucharest;2016-02-07
+10630134;Colocani;Colocani;;45.83581;26.58787;T;PK;RO;;40;177003;;;0;1395;1367;Europe/Bucharest;2016-02-07
+10630135;Titila;Titila;;45.7317;26.6139;T;PK;RO;;40;176944;;;0;1368;1359;Europe/Bucharest;2016-02-07
+10630136;Preluncu;Preluncu;;45.6525;26.63825;T;PK;RO;;40;178475;;;0;1351;1325;Europe/Bucharest;2016-02-07
+10630137;Zboina Neagră;Zboina Neagra;;46.01494;26.57588;T;PK;RO;;40;178117;;;0;1350;1360;Europe/Bucharest;2016-02-07
+10630138;Tisaru Mare;Tisaru Mare;;45.93201;26.54037;T;PK;RO;;40;178910;;;0;1280;1219;Europe/Bucharest;2016-02-07
+10630139;Tisaru Mic;Tisaru Mic;;45.93366;26.55645;T;PK;RO;;40;178910;;;0;1268;1216;Europe/Bucharest;2016-02-07
+10630140;La Table;La Table;;45.83882;26.5649;T;PK;RO;;40;178910;;;0;1239;1224;Europe/Bucharest;2016-02-07
+10630141;Piscul Mesteacănului;Piscul Mesteacanului;;45.9556;26.46807;T;PK;RO;;40;178117;;;0;1221;1201;Europe/Bucharest;2016-02-07
+10630142;Pietricelele;Pietricelele;;45.90425;26.59948;T;PK;RO;;40;178117;;;0;1163;1145;Europe/Bucharest;2016-02-07
+10630143;Arsura;Arsura;;45.99838;26.58707;T;PK;RO;;40;177762;;;0;1152;1154;Europe/Bucharest;2016-02-07
+10630144;Condratu;Condratu;;45.87212;26.46933;T;PK;RO;;40;178910;;;0;1146;1428;Europe/Bucharest;2016-02-07
+10630145;Locoțeilor;Locoteilor;;45.94743;26.61388;T;PK;RO;;40;178117;;;0;1140;1113;Europe/Bucharest;2016-02-07
+10630146;Fântână lui Bucur;Fantana lui Bucur;;45.94472;26.63948;T;PK;RO;;40;178117;;;0;1113;1101;Europe/Bucharest;2016-02-07
+10630147;Piatra Albă;Piatra Alba;;45.97476;26.53302;T;PK;RO;;40;178117;;;0;1086;1081;Europe/Bucharest;2016-02-07
+10630148;Țiua Golașă;Tiua Golasa;;45.96832;26.62122;T;PK;RO;;40;177762;;;0;1071;1058;Europe/Bucharest;2016-02-07
+10630226;University of Bucharest;University of Bucharest;;44.43556;26.10124;S;UNIV;RO;;10;179132;11055044;;0;;88;Europe/Bucharest;2016-02-07
+10792571;Botoş;Botos;;47.5132;25.22744;P;PPL;RO;;34;151451;;;0;;883;Europe/Bucharest;2016-02-07
+10793814;Cristiana Building;Cristiana Building;;45.64492;25.59724;S;BLDG;RO;;09;40198;;;0;;581;Europe/Bucharest;2016-02-07
+10793966;Gara Socola;Gara Socola;;47.13886;27.60652;S;RSTN;RO;;23;95060;;;0;;41;Europe/Bucharest;2016-02-07
+10860700;Bobărești;Bobaresti;;46.34215;22.98748;P;PPL;RO;;01;7446;;;46;;904;Europe/Bucharest;2015-11-04
+10861082;Bubești;Bubesti;;46.50004;22.706;P;PPL;RO;;01;2381;;;101;;1045;Europe/Bucharest;2015-11-07
+10861115;Ștefanca;Stefanca;;46.36852;23.13076;P;PPL;RO;;01;3039;;;28;;764;Europe/Bucharest;2015-11-08
+10861116;Jurcuiești;Jurcuiesti;;46.29448;23.1833;P;PPL;RO;;01;3459;;;6;;1029;Europe/Bucharest;2015-11-08
+10861117;Valea Cerbului;Valea Cerbului;;46.24;23.11755;P;PPL;RO;;01;3459;;;59;;706;Europe/Bucharest;2015-11-08
+10861181;Valea Făgetului;Valea Fagetului;;46.35369;23.51385;P;PPL;RO;;01;6627;;;37;;646;Europe/Bucharest;2015-11-08
+10861183;Dăroaia;Daroaia;;46.30472;23.05125;P;PPL;RO;;01;6761;;;570;;592;Europe/Bucharest;2015-11-08
+10861406;Furduiești;Furduiesti;;46.31271;22.99104;P;PPL;RO;;01;7446;;;13;;886;Europe/Bucharest;2015-11-09
+10861430;Vințu de Jos;Vintu de Jos;Alvinc,Vint,Vinț,Winz;45.99462;23.48612;P;PPLA2;RO;;01;8826;;;3113;;215;Europe/Bucharest;2015-11-09
+10861431;Mătăcina;Matacina;;46.03544;23.41997;P;PPL;RO;;01;8826;;;3;;482;Europe/Bucharest;2015-11-09
+10903356;Aluniș;Alunis;Cseralja;46.09351;21.48926;P;PPL;RO;;02;12920;;;929;;150;Europe/Bucharest;2015-11-10
+10904389;Leștioara;Lestioara;Kisles;46.27379;22.56736;P;PPL;RO;;02;11058;;;42;;249;Europe/Bucharest;2015-11-10
+10908163;Satu Mic;Satu Mic;Dezsohaza,Dezsőháza;46.34932;21.89549;P;PPL;RO;;02;12288;;;209;;129;Europe/Bucharest;2015-11-10
+10918028;Avram Iancu;Avram Iancu;Aciua,Aciuva,Acsva,Ácsva;46.35217;22.454;P;PPL;RO;;02;12689;;;634;;291;Europe/Bucharest;2015-11-10
+10940786;Făgetu;Fagetu;;44.90616;24.91159;P;PPL;RO;;03;13301;;;1119;;291;Europe/Bucharest;2015-11-10
+10941886;Valea Mărului;Valea Marului;;44.96703;24.77563;P;PPL;RO;;03;14851;;;439;;324;Europe/Bucharest;2015-11-11
+10941900;Poienari;Poienari;;45.07034;24.53056;P;PPLA2;RO;;03;17913;;;530;;341;Europe/Bucharest;2015-11-11
+10941903;Lintești;Lintesti;;45.00477;24.61178;P;PPL;RO;;03;15983;;;118;;533;Europe/Bucharest;2015-11-11
+10941904;Dobrogostea;Dobrogostea;;44.92941;24.78355;P;PPL;RO;;03;17101;;;812;;304;Europe/Bucharest;2015-11-11
+10941905;Mozacu;Mozacu;;44.6119;25.16504;P;PPL;RO;;03;17726;;;351;;199;Europe/Bucharest;2015-11-11
+10941906;Oarja;Oarja;;44.76053;24.97596;P;PPLA2;RO;;03;17824;;;2341;;269;Europe/Bucharest;2015-11-11
+10941923;Romana;Romana;;44.89659;24.54958;P;PPL;RO;;03;19392;;;135;;446;Europe/Bucharest;2015-11-12
+10941927;Bijghir;Bijghir;;46.60185;27.01859;P;PPL;RO;;04;21668;;;1952;;180;Europe/Bucharest;2015-11-13
+10941938;Gârla Anei;Garla Anei;;46.55391;27.09283;P;PPL;RO;;04;25932;;;177;;209;Europe/Bucharest;2015-11-13
+10941939;Făncica;Fancica;Erfancsika,Érfancsika;47.32381;22.23266;P;PPL;RO;;05;27169;;;339;;158;Europe/Bucharest;2015-11-13
+10941966;Dumbrava;Dumbrava;;44.63745;24.15159;P;PPL;RO;;39;170952;;;212;;199;Europe/Bucharest;2015-11-14
+10941968;Chirițești;Chiritesti;;45.27429;26.0215;P;PPL;RO;;30;133795;;;54;;442;Europe/Bucharest;2015-11-14
+10941969;Izvoarele;Izvoarele;;45.28376;26.00119;P;PPLA2;RO;;30;133795;;;2329;;528;Europe/Bucharest;2015-11-14
+10941970;Satu Nou;Satu Nou;;46.68888;27.29924;P;PPL;RO;;04;23207;;;556;;195;Europe/Bucharest;2015-11-15
+10941973;Sâniob;Saniob;Szentjobb;47.26461;22.12778;P;PPLA2;RO;;05;28610;;;1391;;124;Europe/Bucharest;2015-11-15
+10941978;Hălmăsău;Halmasau;Helmesaljavoelgy,Helmesaljavölgy;47.34464;24.13798;P;PPL;RO;;06;34547;;;275;;444;Europe/Bucharest;2015-11-16
+10942049;Lișmănița;Lismanita;;48.13977;26.65661;P;PPL;RO;;07;35946;;;599;;214;Europe/Bucharest;2015-11-16
+10942053;Movileni;Movileni;;48.13489;26.59582;P;PPL;RO;;07;36532;;;326;;202;Europe/Bucharest;2015-11-16
+10942059;Nicolae Bălcescu;Nicolae Balcescu;;48.10459;26.78118;P;PPL;RO;;07;36809;;;33;;190;Europe/Bucharest;2015-11-16
+10942065;Recia-Verbia;Recia-Verbia;;47.91692;26.49594;P;PPL;RO;;07;39959;;;119;;143;Europe/Bucharest;2015-11-16
+10942071;Brăteni;Brateni;;47.86107;27.02053;P;PPL;RO;;07;37100;;;725;;204;Europe/Bucharest;2015-11-16
+10942081;Baranca;Baranca;;48.19651;26.47893;P;PPL;RO;;07;37770;;;1207;;126;Europe/Bucharest;2015-11-16
+10942092;Izvoare;Izvoare;;48.09562;26.51738;P;PPL;RO;;07;38982;;;53;;147;Europe/Bucharest;2015-11-16
+10942155;Ungureni;Ungureni;;47.88176;26.79899;P;PPLA2;RO;;07;39417;;;2397;;99;Europe/Bucharest;2015-11-17
+10942203;Dobrinăuți-Hapăi;Dobrinauti-Hapai;;47.89387;26.27969;P;PPL;RO;;07;39694;;;268;;300;Europe/Bucharest;2016-01-31
+10942240;Racoș;Racos;Alsorakos,Alsórákos;46.02524;25.41075;P;PPLA2;RO;;09;41701;;;2856;;481;Europe/Bucharest;2015-11-19
+10942243;Valea Călmățuiului;Valea Calmatuiului;Rubla;44.95963;27.62849;P;PPL;RO;;08;43411;;;75;;24;Europe/Bucharest;2015-11-19
+10942250;Bumbăcari;Bumbacari;;44.89554;27.45401;P;PPL;RO;;08;43073;;;63;;41;Europe/Bucharest;2015-11-19
+10942255;Gropeni;Gropeni;;45.07547;27.87969;P;PPLA2;RO;;08;43313;;;3296;;11;Europe/Bucharest;2015-11-19
+10942257;Brădeanca;Bradeanca;;45.14299;27.22913;P;PPL;RO;;08;43466;;;0;;47;Europe/Bucharest;2015-11-19
+10942258;Arbănași;Arbanasi;;45.39898;26.73688;P;PPL;RO;;11;45003;;;8;;400;Europe/Bucharest;2015-11-19
+10942260;Smârdan;Smardan;;45.2867;28.00368;P;PPLA2;RO;;37;161286;;;1077;;5;Europe/Bucharest;2015-11-19
+10942289;Bălaia;Balaia;;45.01323;26.82943;P;PPL;RO;;11;49545;;;219;;71;Europe/Bucharest;2015-11-20
+10942291;Valea Salciei-Cătun;Valea Salciei-Catun;;45.47165;26.82453;P;PPL;RO;;11;50068;;;96;;440;Europe/Bucharest;2015-11-20
+10942294;Agadici;Agadici;Agadics;45.10913;21.69559;P;PPL;RO;;12;51118;;;202;;180;Europe/Bucharest;2015-11-20
+10942295;Marila;Marila;Marillavoelgy,Marillavölgy;45.06212;21.77749;P;PPL;RO;;12;51118;;;33;;670;Europe/Bucharest;2015-11-20
+10942312;Negiudin;Negiudin;;45.05998;22.39592;P;PPL;RO;;12;52160;;;94;;775;Europe/Bucharest;2015-11-20
+10942325;Văleni;Valeni;;45.91193;27.05546;P;PPL;RO;;40;177799;;;56;;249;Europe/Bucharest;2015-11-21
+10942326;Grozăvești;Grozavesti;;47.03728;26.06353;P;PPL;RO;;28;122953;;;393;;614;Europe/Bucharest;2015-11-21
+10942327;Țărculești;Tarculesti;;45.07202;26.2516;P;PPL;RO;;30;133615;;;641;;156;Europe/Bucharest;2015-11-21
+10942328;Lunca;Lunca;;47.88879;26.22129;P;PPL;RO;;34;151246;;;265;;282;Europe/Bucharest;2015-11-21
+10942360;Constantin Brâncoveanu;Constantin Brancoveanu;;44.47842;27.41274;P;PPL;RO;;41;93487;;;1054;;39;Europe/Bucharest;2015-11-23
+10942361;Peștera;Pestera;Pestes;47.18792;23.74525;P;PPL;RO;;13;55008;;;0;;404;Europe/Bucharest;2015-11-23
+10942362;Blidărești;Blidaresti;Talosfalva,Tálosfalva;47.1068;23.56772;P;PPL;RO;;13;56096;;;16;;379;Europe/Bucharest;2015-11-23
+10942363;Bonțida;Bontida;Bonchida;46.9155;23.81475;P;PPLA2;RO;;13;56210;;;2979;;276;Europe/Bucharest;2015-11-23
+10942364;Bogata;Bogata;Bogatpuszta,Bogátpuszta;46.51512;23.8129;P;PPL;RO;;13;56425;;;869;;344;Europe/Bucharest;2015-11-23
+10942365;Hodaie;Hodaie;;46.83257;24.1327;P;PPL;RO;;13;56773;;;106;;297;Europe/Bucharest;2015-11-23
+10942366;Valea Cășeielului;Valea Caseielului;Kesiel;47.32874;23.92646;P;PPL;RO;;13;57083;;;97;;425;Europe/Bucharest;2015-11-23
+10942368;Luna;Luna;Aranyoslona,Aranyoslóna;46.50659;23.91959;P;PPLA2;RO;;13;58311;;;2392;;297;Europe/Bucharest;2015-11-23
+10942370;Turmași;Turmasi;Tormasdulo,Tormásdűlő;46.80148;24.00769;P;PPL;RO;;13;58623;;;56;;395;Europe/Bucharest;2015-11-23
+10942373;Clapa;Clapa;Szentkiralyi tanya,Szentkirályi tanya;46.5738;24.02836;P;PPL;RO;;13;59693;;;87;;367;Europe/Bucharest;2015-11-23
+10942401;Culmea;Culmea;;44.25759;28.46643;P;PPL;RO;;14;60687;;;1059;;45;Europe/Bucharest;2015-11-24
+10942424;Miculești;Miculesti;;45.09591;25.4438;P;PPL;RO;;16;65921;;;464;;422;Europe/Bucharest;2015-11-24
+10942458;Valea Voievozilor;Valea Voievozilor;;44.93805;25.48518;P;PPL;RO;;16;65431;;;3023;;272;Europe/Bucharest;2015-11-25
+10942462;Ocolna;Ocolna;;43.87917;24.13405;P;PPL;RO;;17;70637;;;1336;;102;Europe/Bucharest;2015-11-25
+10942602;Vișina;Visina;;45.99812;27.27391;P;PPL;RO;;18;77587;;;458;;268;Europe/Bucharest;2015-11-27
+10942609;Hulubești;Hulubesti;Stramba,Strâmba;44.16748;25.94146;P;PPL;RO;;42;101662;;;1751;;57;Europe/Bucharest;2015-11-27
+10942610;Găiseanca;Gaiseanca;;44.45687;25.58818;P;PPL;RO;;42;102348;;;521;;111;Europe/Bucharest;2015-11-27
+10942611;Vlașin;Vlasin;Principele Nicolae;44.10025;25.85809;P;PPL;RO;;42;104975;;;572;;84;Europe/Bucharest;2015-11-27
+10942613;Bolboasa;Bolboasa;;44.74172;23.20649;P;PPL;RO;;19;79077;;;337;;199;Europe/Bucharest;2015-11-27
+10942929;Priporu;Priporu;;44.92942;22.97355;P;PPL;RO;;19;79656;;;53;;217;Europe/Bucharest;2015-12-01
+10942938;Cartier Militari;Cartier Militari;;44.43832;26.03944;P;PPLX;RO;;10;179132;11055039;;0;92;91;Europe/Bucharest;2016-10-26
+10942981;Gămani;Gamani;;45.13793;23.425;P;PPL;RO;;19;80908;;;58;;359;Europe/Bucharest;2015-12-03
+10942982;Sura;Sura;;44.75674;23.15938;P;PPL;RO;;19;82047;;;422;;193;Europe/Bucharest;2015-12-03
+10943002;Aluniș;Alunis;Szekelymagyaros,Székelymagyaros;46.26435;25.18368;P;PPL;RO;;20;85127;;;151;;455;Europe/Bucharest;2015-12-04
+10943032;Crăciunești;Craciunesti;Krecsunesd;46.01295;22.87028;P;PPL;RO;;21;88092;;;262;;233;Europe/Bucharest;2015-12-04
+10943036;Gurasada;Gurasada;Guraszada,Guraszáda;45.95483;22.59491;P;PPLA2;RO;;21;89687;;;395;;181;Europe/Bucharest;2015-12-04
+10943037;Dudești;Dudesti;Dudesd;46.05104;22.8132;P;PPL;RO;;21;90208;;;73;;596;Europe/Bucharest;2015-12-04
+10944706;Amara Nouă;Amara Noua;;44.61401;27.34208;P;PPL;RO;;22;92836;;;7;;27;Europe/Bucharest;2015-12-07
+10944969;Gheorghe Doja;Gheorghe Doja;Principesa Elena,Valea lui Siman,Valea lui Șiman;44.61622;27.1874;P;PPLA2;RO;;22;93600;;;2555;;37;Europe/Bucharest;2015-12-07
+10946710;Fântânele;Fantanele;;47.50935;27.31678;P;PPL;RO;;23;95667;;;377;;53;Europe/Bucharest;2015-12-07
+10947191;Buda;Buda;;47.1197;27.07185;P;PPL;RO;;23;96058;;;293;;113;Europe/Bucharest;2015-12-07
+10947598;Horodiștea;Horodistea;;47.35344;26.9097;P;PPL;RO;;23;96478;;;542;;244;Europe/Bucharest;2015-12-07
+10948152;Băiceni;Baiceni;;47.29903;26.92643;P;PPL;RO;;23;96664;;;300;;173;Europe/Bucharest;2015-12-07
+11000591;Valea Cufundoasă;Valea Cufundoasa;Melypatak,Mélypatak;47.93671;23.94403;P;PPL;RO;;25;106559;;;502;;287;Europe/Bucharest;2015-12-09
+11000948;Balota;Balota;;44.61934;22.79934;P;PPL;RO;;26;113233;;;57;;304;Europe/Bucharest;2015-12-11
+11001089;Valea Albeștiului;Valea Albestiului;Feheregyhazivoelgy,Fehéregyházivölgy,Sarpataki ut,Sárpataki út;46.21648;24.84718;P;PPL;RO;;27;114603;;;0;;404;Europe/Bucharest;2015-12-12
+11001396;Iștan-Tău;Istan-Tau;Istento,Istentó;46.65425;24.30101;P;PPL;RO;;27;115389;;;128;;350;Europe/Bucharest;2015-12-15
+11001447;Toaca;Toaca;Toka;46.79975;24.9641;P;PPL;RO;;27;117426;;;1871;;557;Europe/Bucharest;2015-12-16
+11001448;Cirhagău;Cirhagau;Cserhago,Cserhágó;46.66191;24.10985;P;PPL;RO;;27;118370;;;11;;397;Europe/Bucharest;2015-12-16
+11001504;Coasta Mare;Coasta Mare;Nagyoldal;46.69905;24.36503;P;PPL;RO;;27;118995;;;169;;334;Europe/Bucharest;2015-12-16
+11001507;Nima Râciului;Nima Raciului;Ruecsinema,Rücsinéma;46.70556;24.4432;P;PPL;RO;;27;118995;;;200;;334;Europe/Bucharest;2015-12-16
+11001512;Pripoare;Pripoare;Pripora;46.52273;24.19999;P;PPL;RO;;27;119386;;;51;;358;Europe/Bucharest;2015-12-16
+11001520;Vălișoara;Valisoara;Sarkihid,Sárkihíd;46.5355;24.21001;P;PPL;RO;;27;119386;;;3;;334;Europe/Bucharest;2015-12-16
+11001568;Mălăești;Malaesti;;46.6276;24.09645;P;PPL;RO;;27;119974;;;0;;356;Europe/Bucharest;2015-12-17
+11001689;Ciritei;Ciritei;;46.9311;26.40885;P;PPL;RO;;28;120726;;;773;;335;Europe/Bucharest;2015-12-17
+11001711;Humuleștii Noi;Humulestii Noi;;47.18557;26.33568;P;PPL;RO;;28;121055;;;481;;408;Europe/Bucharest;2015-12-17
+11001747;Pârâul Mare;Paraul Mare;;47.04104;25.98715;P;PPL;RO;;28;122025;;;139;;525;Europe/Bucharest;2015-12-18
+11001769;Netezi;Netezi;;47.15329;26.36907;P;PPL;RO;;28;122908;;;231;;345;Europe/Bucharest;2015-12-18
+11001771;Horia;Horia;Elisabeta-Doamna;46.90698;26.91919;P;PPLA2;RO;;28;120922;;;3277;;186;Europe/Bucharest;2015-12-18
+11001772;Ion Creangă;Ion Creanga;;46.87029;26.98023;P;PPLA2;RO;;28;123102;;;2339;;187;Europe/Bucharest;2015-12-18
+11001773;Poiana;Poiana;;47.06412;26.32989;P;PPL;RO;;28;125169;;;375;;512;Europe/Bucharest;2015-12-18
+11001775;Leghin;Leghin;;47.22521;26.19837;P;PPL;RO;;28;123521;;;675;;494;Europe/Bucharest;2015-12-18
+11001777;Dumbrava-Deal;Dumbrava-Deal;;46.87676;26.4973;P;PPL;RO;;28;120824;;;412;;309;Europe/Bucharest;2015-12-18
+11001780;Hanul Ancuței;Hanul Ancutei;;47.09603;26.6939;P;PPL;RO;;28;124750;;;25;;243;Europe/Bucharest;2015-12-18
+11001784;Ulmet;Ulmet;;44.2516;24.25078;P;PPL;RO;;29;126825;;;258;;101;Europe/Bucharest;2015-12-19
+11001785;Tonești;Tonesti;;44.78682;24.42684;P;PPL;RO;;29;127411;;;451;;352;Europe/Bucharest;2015-12-19
+11001786;Rudari;Rudari;;43.99082;24.59284;P;PPL;RO;;29;128613;;;0;;54;Europe/Bucharest;2015-12-19
+11001787;Măgura;Magura;;44.66792;24.62293;P;PPL;RO;;29;129317;;;93;;265;Europe/Bucharest;2015-12-19
+11001788;Urzica;Urzica;;43.8567;24.28952;P;PPLA2;RO;;29;129629;;;1514;;86;Europe/Bucharest;2015-12-19
+11001881;Schiau;Schiau;;44.9795;26.23293;P;PPL;RO;;30;131620;;;26;;123;Europe/Bucharest;2015-12-19
+11001889;Buda;Buda;;44.96442;25.92054;P;PPL;RO;;30;132075;;;496;;210;Europe/Bucharest;2015-12-19
+11002015;Plopeni;Plopeni;;45.06552;25.98114;P;PPL;RO;;30;131461;;;1590;;229;Europe/Bucharest;2015-12-20
+11002072;Tarna Mare;Tarna Mare;Nagytarna;48.09175;23.19369;P;PPLA2;RO;;32;139009;;;1951;;162;Europe/Bucharest;2015-12-21
+11002459;Colonia Sighetu Silvaniei;Colonia Sighetu Silvaniei;Szilagyszigettelep,Szilágyszigettelep;47.36253;22.91248;P;PPL;RO;;31;140501;;;75;;191;Europe/Bucharest;2015-12-28
+11002464;Bercea;Bercea;Bercse;47.02438;23.18508;P;PPL;RO;;31;142676;;;189;;288;Europe/Bucharest;2015-12-28
+11002473;Pădureni;Padureni;Erdeihazak,Erdeiházak;45.92869;24.2187;P;PPL;RO;;33;145603;;;3;;458;Europe/Bucharest;2015-12-29
+11002564;Gara;Gara;;47.77609;26.04653;P;PPL;RO;;34;146931;;;439;;317;Europe/Bucharest;2015-12-30
+11002727;Gemenea;Gemenea;;47.45699;25.71232;P;PPL;RO;;34;150356;;;843;;653;Europe/Bucharest;2016-01-02
+11002731;Ciumulești;Ciumulesti;;47.37766;26.39517;P;PPL;RO;;34;150766;;;384;;355;Europe/Bucharest;2016-01-02
+11002732;Bujoru;Bujoru;;43.95771;24.84806;P;PPL;RO;;35;152412;;;276;;70;Europe/Bucharest;2016-01-02
+11002733;Nicolae Bălcescu;Nicolae Balcescu;;43.96011;24.83102;P;PPL;RO;;35;152412;;;855;;93;Europe/Bucharest;2016-01-02
+11002734;Călmățuiu de Sus;Calmatuiu de Sus;;44.02632;24.8123;P;PPLA2;RO;;35;152467;;;840;;88;Europe/Bucharest;2016-01-02
+11002736;Drăcșenei;Dracsenei;;44.22676;24.98542;P;PPLA2;RO;;35;152797;;;783;;115;Europe/Bucharest;2016-01-02
+11002794;Dragomirna Monastery;Dragomirna Monastery;Manastirea Dragomirna,Mănăstirea Dragomirna;47.75864;26.22977;S;MSTY;RO;;34;146325;;;0;;374;Europe/Bucharest;2016-01-03
+11002840;Vatra;Vatra;;44.02529;25.00018;P;PPL;RO;;35;154790;;;220;;89;Europe/Bucharest;2016-01-04
+11002841;Jabăr;Jabar;Zsabar,Zsábár;45.7139;21.80101;P;PPL;RO;;36;156106;;;474;;110;Europe/Bucharest;2016-01-04
+11002842;Sârbova;Sarbova;Szirbova;45.69963;21.56084;P;PPL;RO;;36;158243;;;323;;102;Europe/Bucharest;2016-01-04
+11002852;Cloșca;Closca;;45.01068;28.4733;P;PPL;RO;;37;160528;;;101;;91;Europe/Bucharest;2016-01-05
+11002853;I. C. Brătianu;I. C. Bratianu;;45.40581;28.05381;P;PPLA2;RO;;37;161525;;;1187;;5;Europe/Bucharest;2016-01-05
+11002854;Maliuc;Maliuc;;45.17678;29.11334;P;PPLA2;RO;;37;160779;;;238;;3;Europe/Bucharest;2016-01-05
+11002875;Key Account Trading;Key Account Trading;Champagne Whisky Cognac Prosecco Vin Mousseux Oenotheque,Champagne Whisky Cognac Prosecco Vin Mousseux Oenothèque,Champagne Whisky Cognac Prosecco Vino Spumanti Enoteca,Champagne Whisky Cognac Prosecco Wine Sparkling Enoteca,Champagner Whisky Cognac Prosecco Wein Sekt Enoteca,Champan Whisky Conac Prosecco Vino Espumoso Enoteca,Champán Whisky Coñac Prosecco Vino Espumoso Enoteca,Key Account Trading,Sampanie Whisky Coniac Prosecco Vin Spumant Vinoteca,Șampanie Whisky Coniac Prosecco Vin Spumant Vinotecă;44.46888;26.07349;S;RET;RO;;10;179132;11055041;;0;90;90;Europe/Bucharest;2016-02-07
+11002898;Floreni;Floreni;;46.23649;27.97377;P;PPL;RO;;38;164981;;;668;;46;Europe/Bucharest;2016-01-06
+11002899;Cioatele;Cioatele;;46.82893;27.42881;P;PPL;RO;;38;161856;;;368;;125;Europe/Bucharest;2016-01-06
+11002902;Plopeni;Plopeni;;46.58038;27.59993;P;PPL;RO;;38;162595;;;0;;309;Europe/Bucharest;2016-01-06
+11002924;Șopârleni;Soparleni;Sopirleni,Șopîrleni;46.76045;28.11722;P;PPL;RO;;38;163618;;;27;;40;Europe/Bucharest;2016-01-07
+11002925;Fundătura Mică;Fundatura Mica;;46.70472;27.43561;P;PPL;RO;;38;164393;;;58;;319;Europe/Bucharest;2016-01-07
+11002926;Pădureni;Padureni;;46.78608;27.43838;P;PPL;RO;;38;165130;;;374;;212;Europe/Bucharest;2016-01-07
+11002927;Vâlcele;Valcele;Vilcele,Vîlcele;46.74718;27.44577;P;PPL;RO;;38;165130;;;70;;251;Europe/Bucharest;2016-01-07
+11003020;Poienești-Deal;Poienesti-Deal;;46.58823;27.53458;P;PPL;RO;;38;165336;;;124;;443;Europe/Bucharest;2016-01-08
+11003021;Cursești-Deal;Cursesti-Deal;;46.71353;27.38829;P;PPL;RO;;38;165611;;;204;;226;Europe/Bucharest;2016-01-08
+11003022;Mosoroasa;Mosoroasa;;45.15766;24.28711;P;PPL;RO;;39;167696;;;38;;592;Europe/Bucharest;2016-01-08
+11003027;Olteanca;Olteanca;;44.86142;24.09753;P;PPL;RO;;39;170685;;;135;;348;Europe/Bucharest;2016-01-08
+11048264;Obrocești;Obrocesti;;45.10107;23.92806;P;PPL;RO;;39;173533;;;349;;497;Europe/Bucharest;2016-01-10
+11048297;Rotileștii Mici;Rotilestii Mici;;46.03766;26.75144;P;PPL;RO;;40;175670;;;305;;392;Europe/Bucharest;2016-01-11
+11048298;Precistanu;Precistanu;;45.7721;27.20991;P;PPL;RO;;40;176212;;;186;;61;Europe/Bucharest;2016-01-11
+11048299;Rașca;Rasca;;45.641;26.93061;P;PPL;RO;;40;176338;;;209;;240;Europe/Bucharest;2016-01-11
+11048317;Sector 1;Sector 1;Sectorul 1;44.49239;26.04831;P;PPL;RO;;10;179132;11055041;;225453;;86;Europe/Bucharest;2016-02-07
+11048318;Sector 2;Sector 2;Sectorul 2;44.4528;26.13321;P;PPL;RO;;10;179132;11055040;;345370;;80;Europe/Bucharest;2016-10-15
+11048319;Sector 3;Sector 3;Sectorul 3;44.4234;26.16874;P;PPL;RO;;10;179132;11055044;;385439;;76;Europe/Bucharest;2016-02-07
+11048320;Sector 4;Sector 4;Sectorul 4;44.37571;26.12085;P;PPL;RO;;10;179132;11055042;;287828;;79;Europe/Bucharest;2016-02-07
+11048322;Sector 5;Sector 5;Sectorul 5;44.38808;26.07144;P;PPL;RO;;10;179132;11055043;;271575;;81;Europe/Bucharest;2016-02-07
+11048323;Sector 6;Sector 6;Sectorul 6;44.43579;26.01649;P;PPL;RO;;10;179132;11055039;;367760;;95;Europe/Bucharest;2016-10-15
+11049530;Colentina Bridge;Colentina Bridge;;44.46577;26.13689;S;BDG;RO;;10;179132;11055040;;0;10;68;Europe/Bucharest;2016-02-07
+11054406;Scroviștea Station;Scrovistea Station;;44.72111;26.02397;S;RSTN;RO;;43;104546;;;0;;109;Europe/Bucharest;2016-02-07
+11054414;Sovata Ski Resort;Sovata Ski Resort;Partie Schi Sovata;46.64242;25.15546;S;RSRT;RO;;27;114854;;;0;1200;1173;Europe/Bucharest;2016-02-07
+11055039;Sector 6;Sector 6;;44.43778;26.01743;A;ADM3;RO;;10;179132;11055039;;0;;92;Europe/Bucharest;2016-02-07
+11055040;District 1 (Sector 1);District 1 (Sector 1);;44.45816;26.1383;A;ADM3;RO;;10;179132;11055040;;0;;81;Europe/Bucharest;2016-10-13
+11055041;Sector 1;Sector 1;;44.49136;26.0602;A;ADM3;RO;;10;179132;11055041;;0;;85;Europe/Bucharest;2016-02-07
+11055042;Sector 4;Sector 4;;44.38191;26.12273;A;ADM3;RO;;10;179132;11055042;;0;;81;Europe/Bucharest;2016-02-07
+11055043;Sector 5;Sector 5;;44.40217;26.06236;A;ADM3;RO;;10;179132;11055043;;0;;80;Europe/Bucharest;2016-02-07
+11055044;Sector 3;Sector 3;;44.41796;26.16905;A;ADM3;RO;;10;179132;11055044;;0;;79;Europe/Bucharest;2016-02-07
+11055118;The Romanian Academy;The Romanian Academy;;44.44378;26.09292;S;STNB;RO;;10;179132;11055041;;0;;90;Europe/Bucharest;2016-02-08
+11055119;Horia Hulubei National Institute of Physics and Nuclear Engineering;Horia Hulubei National Institute of Physics and Nuclear Engineering;;44.45628;26.13643;S;ITTR;RO;;10;179132;11055040;;0;;79;Europe/Bucharest;2016-02-08
+11072025;Turnul industrial din Dej;Turnul industrial din Dej;;47.16275;23.89634;S;TOWR;RO;;13;55008;;;0;;220;Europe/Bucharest;2016-02-19
+11072026;Large Chimney of Lupeni Smelter;Large Chimney of Lupeni Smelter;;45.35124;23.19942;S;TOWR;RO;;21;87059;;;0;;674;Europe/Bucharest;2016-02-19
+11072027;CET 2 Borzesti;CET 2 Borzesti;;46.26431;26.7953;S;RUIN;RO;;04;20563;;;0;;189;Europe/Bucharest;2016-02-19
+11072028;CET Slatina;CET Slatina;;44.40504;24.37904;S;RUIN;RO;;29;125347;;;0;;174;Europe/Bucharest;2016-02-19
+11072054;CET Timisoara Sud;CET Timisoara Sud;;45.70888;21.19726;S;PS;RO;;36;155314;;;0;;93;Europe/Bucharest;2016-02-21
+11072093;CET Suceava;CET Suceava;;47.65253;26.29689;S;PS;RO;;34;146370;;;0;;266;Europe/Bucharest;2016-02-22
+11072355;Stardust Observatory ( private astronomical observatory );Stardust Observatory ( private astronomical observatory );;45.64154;25.62201;S;ASTR;RO;;09;40198;;;0;597;602;Europe/Bucharest;2016-02-26
+11072516;Large Chimney of Zlatna Copper Smelter;Large Chimney of Zlatna Copper Smelter;;46.11448;23.23442;S;TOWR;RO;;01;1936;;;0;;545;Europe/Bucharest;2016-02-29
+11102552;Pasaj Basarab Tram Station;Pasaj Basarab Tram Station;;44.45;26.06873;S;RSTN;RO;;10;179132;11055041;;0;;77;Europe/Bucharest;2016-03-24
+11102553;Calea Plevnei Tram Station;Calea Plevnei Tram Station;;44.44758;26.06353;S;RSTP;RO;;10;179132;11055039;;0;;75;Europe/Bucharest;2016-03-24
+11102554;Depou Militari Tram Station;Depou Militari Tram Station;;44.42952;25.97766;S;RSTP;RO;;10;179132;11055039;;0;;96;Europe/Bucharest;2016-03-24
+11102555;Valea Oltului Tram Station;Valea Oltului Tram Station;;44.42471;26.0123;S;RSTN;RO;;10;179132;11055039;;0;;100;Europe/Bucharest;2016-03-24
+11102557;Piata Unirii Tram Station;Piata Unirii Tram Station;;44.42657;26.10022;S;RSTN;RO;;10;179132;11055042;;0;;71;Europe/Bucharest;2016-03-24
+11126049;Timisoara Vest;Timisoara Vest;;45.72632;21.17267;S;RSTN;RO;;36;155243;;;0;;91;Europe/Bucharest;2016-04-18
+11153736;Rapa Rosie;Rapa Rosie;;45.98613;23.59628;T;CLF;RO;;01;1874;;;0;400;424;Europe/Bucharest;2016-05-25
+11154363;Port Tulcea AVAL;Port Tulcea AVAL;;45.18651;28.80727;L;PRT;RO;;37;159614;;;0;;9;Europe/Bucharest;2016-05-31
+11204178;Magazin ETHAN ALLEN Băneasa;Magazin ETHAN ALLEN Baneasa;;44.51043;26.08614;S;MALL;RO;;10;179132;11055041;;0;;76;Europe/Bucharest;2016-07-14
+11204186;MEX CONSTANȚA - raion mobilier de grădină MOBEXPERT;MEX CONSTANTA - raion mobilier de gradina MOBEXPERT;;44.19915;28.60855;S;MALL;RO;;14;60419;;;0;;30;Europe/Bucharest;2016-07-14
+11204227;Centrul Logistic MOBEXPERT Tunari;Centrul Logistic MOBEXPERT Tunari;;44.5405;26.13154;S;SHSE;RO;;43;105570;;;0;;74;Europe/Bucharest;2016-07-14
+11204236;MEX DEJ - birou MOBEXPERT Dej;MEX DEJ - birou MOBEXPERT Dej;;47.14309;23.87923;L;CTRB;RO;;13;55008;;;0;;218;Europe/Bucharest;2016-07-14
+11204238;MOBEXPERT - fabrica CONFO MEX Tunari;MOBEXPERT - fabrica CONFO MEX Tunari;;44.53802;26.13225;S;MFG;RO;;43;105570;;;0;;74;Europe/Bucharest;2016-07-14
+11204243;GOTTON - punct de lucru Fierbinți;GOTTON - punct de lucru Fierbinti;;44.69716;26.40282;S;HSE;RO;;22;102749;;;0;;58;Europe/Bucharest;2016-07-15
+11204244;GOTTON - punct de lucru București;GOTTON - punct de lucru Bucuresti;;44.43722;26.11622;S;HSE;RO;;10;179132;11055040;;0;;75;Europe/Bucharest;2016-07-15
+11204246;MOBEXPERT - fabrica SOFT MEX București;MOBEXPERT - fabrica SOFT MEX Bucuresti;;44.4369;26.1909;S;MFG;RO;;10;179132;11055044;;0;;62;Europe/Bucharest;2016-07-15
+11204247;VASNIS - MUSTANG Suceava;VASNIS - MUSTANG Suceava;;47.66448;26.26636;S;MALL;RO;;34;146263;;;0;;273;Europe/Bucharest;2016-07-15
+11256992;TP Vision Europe B.V. rep. office;TP Vision Europe B.V. rep. office;;44.4779;26.102;S;BLDO;RO;;10;179132;11055041;;0;;73;Europe/Bucharest;2016-09-15
+11282107;DoubleTree by Hilton Hotel Sighisoara - Cavaler;DoubleTree by Hilton Hotel Sighisoara - Cavaler;;46.22059;24.79618;S;HTL;RO;;27;114514;;;0;;343;Europe/Bucharest;2016-11-03
+11287471;Cabana Suru;Cabana Suru;;45.59843;24.41544;P;PPLF;RO;;33;145355;;;1;1450;1439;Europe/Bucharest;2016-11-09
+11352051;Cabana Canaia;Cabana Canaia;;45.58716;23.83703;T;MTS;RO;;33;143520;;;0;1771;1692;Europe/Bucharest;2016-11-27
+11395362;Hotel Castel Dracula;Hotel Castel Dracula;;47.23466;25.00377;S;HTL;RO;;06;35090;;;0;;1099;Europe/Bucharest;2016-12-09
+11395371;sub Balea Lac;sub Balea Lac;;45.60584;24.61564;P;PPL;RO;;33;144535;;;0;2000;2169;Europe/Bucharest;2016-12-09
+11395570;Water Park Otopeni;Water Park Otopeni;;44.56164;26.06373;L;AMUS;RO;;43;179481;;;0;;84;Europe/Bucharest;2016-12-14
+11397287;Obârşia Lotrului;Obarsia Lotrului;;45.43809;23.63228;P;PPL;RO;;39;174254;;;0;;1427;Europe/Bucharest;2016-12-28
+11428142;Ski resort Straja, Hunedoara;Ski resort Straja, Hunedoara;Ski resort Straja,Skigebiet Straja,Station de ski Straja,Statiunea Straja,Stazione sciistica Straja,Straja (statiune de munte);45.31898;23.23708;T;MT;RO;;21;87059;;;100;1440;1360;Europe/Bucharest;2017-02-07
+11428495;Straja;Straja;;45.3202;23.23673;P;PPL;RO;;21;87059;;;100;1380;1360;Europe/Bucharest;2017-01-24
+11494865;Platinia Hotel Cluj Napoca;Platinia Hotel Cluj Napoca;;46.76349;23.57125;S;HTL;RO;;13;54975;;;0;;372;Europe/Bucharest;2017-03-12
+11497625;Sannicolau Mare;Sannicolau Mare;;46.08231;20.62275;S;RSTN;RO;;36;155528;;;0;;88;Europe/Bucharest;2017-04-06
+11500049;Alexeni;Alexeni;Alexeni;44.70969;26.72129;S;AIRQ;RO;;22;;;;0;;50;Europe/Bucharest;2017-04-09
+11500056;Balaci;Balaci;Balaci;44.3731;24.98606;S;AIRF;RO;;35;;;;0;;152;Europe/Bucharest;2017-04-09
+11500071;Boboc;Boboc;Boboc,LRBO;45.21637;26.9787;S;AIRB;RO;;11;;;;0;;88;Europe/Bucharest;2017-11-03
+11500079;Brasov Heliport;Brasov Heliport;Brasov Heliport;45.65777;25.55702;S;AIRH;RO;;09;;;;0;;543;Europe/Bucharest;2017-04-09
+11500082;Bucharest Clinceni;Bucharest Clinceni;Bucharest Clinceni;44.35892;25.93184;S;AIRF;RO;;43;;;;0;;73;Europe/Bucharest;2017-04-09
+11500083;Buzau;Buzau;Buzau;45.12506;26.79162;S;AIRF;RO;;11;;;;0;;81;Europe/Bucharest;2017-04-09
+11500088;Campia Turzii;Campia Turzii;Campia Turzii,LRCT;46.50232;23.88593;S;AIRB;RO;;13;;;;0;;305;Europe/Bucharest;2017-11-03
+11500091;Craiova Balta Verde;Craiova Balta Verde;Craiova Balta Verde;44.28641;23.79112;S;AIRF;RO;;17;;;;0;;72;Europe/Bucharest;2017-04-09
+11500095;Deva Saulesti;Deva Saulesti;Deva Saulesti;45.86617;22.96593;S;AIRF;RO;;21;;;;0;;214;Europe/Bucharest;2017-04-09
+11500096;Dezmir;Dezmir;Dezmir;46.77919;23.71268;S;AIRF;RO;;13;;;;0;;311;Europe/Bucharest;2017-04-09
+11500113;Fetesti;Fetesti;Fetesti,LRFT;44.39227;27.72676;S;AIRB;RO;;41;;;;0;;64;Europe/Bucharest;2017-11-03
+11500115;Floreni;Floreni;Floreni,LRFL;47.36278;25.21194;S;AIRF;RO;;34;;;;0;;883;Europe/Bucharest;2017-10-28
+11500118;Galati North;Galati North;Galati North;45.50458;28.02991;S;AIRF;RO;;18;;;;0;;23;Europe/Bucharest;2017-04-09
+11500133;Homorod;Homorod;Homorod;46.03516;25.26629;S;AIRF;RO;;09;;;;0;;429;Europe/Bucharest;2017-04-09
+11500135;Ianca;Ianca;Ianca;45.15864;27.43096;S;AIRF;RO;;08;;;;0;;24;Europe/Bucharest;2017-04-09
+11500136;Iasi Military;Iasi Military;Iasi Military;47.15801;27.63753;S;AIRF;RO;;23;;;;0;;61;Europe/Bucharest;2017-04-09
+11500177;Magura;Magura;Magura;45.73718;24.16521;S;AIRF;RO;;33;;;;0;;469;Europe/Bucharest;2017-04-09
+11500186;Midia;Midia;Midia;44.32889;28.65694;S;AIRH;RO;;14;;;;0;;-9999;Europe/Bucharest;2017-04-09
+11500219;Pietroasa;Pietroasa;Pietroasa;44.63817;23.96681;S;AIRF;RO;;39;;;;0;;173;Europe/Bucharest;2017-04-09
+11500220;Pitesti Geamana;Pitesti Geamana;Pitesti Geamana;44.81754;24.8979;S;AIRQ;RO;;03;;;;0;;285;Europe/Bucharest;2017-04-09
+11500221;Ploiesti;Ploiesti;Ploiesti;44.92368;25.96343;S;AIRF;RO;;30;;;;0;;167;Europe/Bucharest;2017-04-09
+11500222;Ploiesti Aero Taxi;Ploiesti Aero Taxi;Ploiesti Aero Taxi;44.965;25.90111;S;AIRH;RO;;30;;;;0;;228;Europe/Bucharest;2017-04-09
+11500226;Prejmer;Prejmer;Prejmer;45.70187;25.77841;S;AIRF;RO;;09;;;;0;;527;Europe/Bucharest;2017-04-09
+11500243;Sanpetru;Sanpetru;Sanpetru;45.72113;25.63613;S;AIRF;RO;;09;;;;0;;524;Europe/Bucharest;2017-04-09
+11500286;Tecuci;Tecuci;Tecuci;45.85323;27.40252;S;AIRF;RO;;18;;;;0;;41;Europe/Bucharest;2017-04-09
+11500291;Timisoara Cioca;Timisoara Cioca;Timisoara Cioca;45.78603;21.18863;S;AIRF;RO;;36;;;;0;;98;Europe/Bucharest;2017-04-09
+11500292;Tirgu Miles;Tirgu Miles;Tirgu Miles;46.5332;24.52945;S;AIRF;RO;;27;;;;0;;298;Europe/Bucharest;2017-04-09
+11500296;Tuzla;Tuzla;Tuzla;43.98417;28.60972;S;AIRF;RO;;14;;;;0;;60;Europe/Bucharest;2017-04-09
+11524783;Prejba;Prejba;;45.61212;24.14606;T;MT;RO;;33;145827;;;0;1744;1532;Europe/Bucharest;2017-05-06
+11549433;Suter Palace Hotel;Suter Palace Hotel;Palatul Suter;44.41902;26.09309;S;HTL;RO;;10;179132;11055042;;0;;60;Europe/Bucharest;2017-07-19
+11592676;Baia Mare Railway Station;Baia Mare Railway Station;BAO,Baia Mare Railway Station;47.64677;23.55233;S;RSTN;RO;;25;106318;;;0;;217;Europe/Bucharest;2017-06-20
+11592677;Constanta Bus Station;Constanta Bus Station;CRN,Constanta Bus Station;44.17049;28.63196;S;BUSTN;RO;;14;60419;;;0;;38;Europe/Bucharest;2017-06-18
+11594194;Râul Jijia;Raul Jijia;;47.11652;27.82854;H;STM;RO;;23;98603;;;0;;46;Europe/Bucharest;2017-06-29
+11608535;Oradea Bus Station;Oradea Bus Station;Gare routiere de Oradea,Gare routière de Oradea,OQR,Oradea Bus Station;47.04249;21.95824;S;BUSTN;RO;;05;26564;;;0;;125;Europe/Bucharest;2017-07-08
+11608563;Sibiu Bus Station;Sibiu Bus Station;Gare routiere de Sibiu,Gare routière de Sibiu,SEI,Sibiu Bus Station;45.80056;24.16009;S;BUSTN;RO;;33;143450;;;0;;392;Europe/Bucharest;2017-07-08
+11608565;Sibiu Railway Station;Sibiu Railway Station;Gare de Sibiu,Sibiu Railway Station;45.79961;24.16203;S;RSTN;RO;;33;143450;;;0;;395;Europe/Bucharest;2017-07-08
+11608575;Satu Mare Bus Station;Satu Mare Bus Station;Gare routiere de Satu Mare,Gare routière de Satu Mare,STU,Satu Mare Bus Station;47.79727;22.89349;S;BUSTN;RO;;32;136483;;;0;;97;Europe/Bucharest;2017-07-08
+11608577;Satu Mare Railway Station;Satu Mare Railway Station;Gare de Satu Mare,Satu Mare Railway Station;47.79632;22.89379;S;RSTN;RO;;32;136483;;;0;;97;Europe/Bucharest;2017-07-08
+11608581;Târgu Mureş Bus Station;Targu Mures Bus Station;Gare routiere de Targu Mures,Gare routière de Târgu Mureş,TGY,Targu Mures Bus Station,Târgu Mureş Bus Station;46.52706;24.54489;S;BUSTN;RO;;27;114319;;;0;;318;Europe/Bucharest;2017-07-08
+11608582;Târgu Mureş Railway Station;Targu Mures Railway Station;Gare de Targu Mures,Gare de Târgu Mureş,Targu Mures Railway Station,Târgu Mureş Railway Station;46.53311;24.54854;S;RSTN;RO;;27;114319;;;0;;318;Europe/Bucharest;2017-07-08
+11612423;Bucharest Central University Library;Bucharest Central University Library;;44.43975;26.0973;S;LIBR;RO;;10;179132;11055041;;0;;83;Europe/Bucharest;2017-07-29
+11612605;St. Cyril and St. Methodius University of Veliko Turnovo;St. Cyril and St. Methodius University of Veliko Turnovo;;43.73389;25.64917;S;UNIV;RO;;35;153589;;;0;;37;Europe/Bucharest;2017-08-01
+11669761;Cabana Pietrele;Cabana Pietrele;;45.4055;22.87817;S;BLDG;RO;;21;91116;;;0;1497;1495;Europe/Bucharest;2017-08-24
+11669893;Ibis Styles Hotel;Ibis Styles Hotel;;44.48403;26.09711;S;HTL;RO;;10;179132;11055041;;0;;73;Europe/Bucharest;2017-08-28
+11670335;Cabana Piatra Singuratica;Cabana Piatra Singuratica;;46.68386;25.82478;S;BLDG;RO;;20;85760;;;1;1500;1512;Europe/Bucharest;2017-09-04
+11749002;"Generatii" Community Center;"Generatii" Community Center;Centrul comunitar „Generatii”,Centrul comunitar „Generații”;44.44046;26.05579;S;CTRCM;RO;;10;179132;11055039;;0;;68;Europe/Bucharest;2017-10-31

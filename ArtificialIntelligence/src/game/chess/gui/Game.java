@@ -7,9 +7,11 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import game.chess.model.ChessFinalStateChecker;
 import game.chess.model.ChessState;
 import game.chess.model.ChessStateFileSerializer;
 import game.chess.model.ChessStateTransitioner;
@@ -26,7 +28,8 @@ public class Game extends JPanel implements MouseListener
 	private ChessState currentState;
 	private boolean isFinished;
 	private boolean whiteMove;
-	
+	private ChessFinalStateChecker checker;
+	private int drawCounter = 0;
 	private MinMaxTree<ChessState> minMaxTree;
 	
 	public Game(ChessState state, boolean whiteMove)
@@ -37,9 +40,10 @@ public class Game extends JPanel implements MouseListener
 		this.currentState = state;
 		this.isFinished = false;
 		this.whiteMove = whiteMove;
+		this.checker = new ChessFinalStateChecker();
 		this.minMaxTree = new MinMaxTree<>(4);
 		this.minMaxTree.setTransitioner(new ChessStateTransitioner());
-		this.minMaxTree.setEvaluationFunction(new ChessOffensiveHeuristics());
+		this.minMaxTree.setEvaluationFunction(new ChessDefensiveHeuristics());
 		
 		JButton btnAiNextMove = new JButton("AI Next Move");
 		btnAiNextMove.setBounds(400, 64, 115, 45);
@@ -55,12 +59,50 @@ public class Game extends JPanel implements MouseListener
 	
 	private void generateAiNextMove()
 	{
+		ChessState unblockingAiNextState; 
 		ChessState aiNextState = minMaxTree.nextState(currentState, MinMaxTree.MAX_PLAYER);
-		if(aiNextState == null || isFinished)
+		if(aiNextState == null)
 		{
+			currentState.setWhiteToMove(!currentState.isWhiteToMove());
+			currentState.setEnPassantColumn((byte)-1);
+			currentState.setEnPassantVulnerable(false);
+			unblockingAiNextState = minMaxTree.nextState(currentState, MinMaxTree.MAX_PLAYER);
+			if(unblockingAiNextState != null)
+				aiNextState = unblockingAiNextState;
+		}
+
+		if(aiNextState != null)
+		{
+			if(this.checker.isFinal(aiNextState) && !isFinished)
+			{
+				String winner = "";
+				if(aiNextState.isWhiteToMove())
+					winner = "white";
+				else
+					winner = "black";
+				isFinished = true;
+				currentState = aiNextState;
+				whiteMove = !whiteMove;
+				reDrawBoard();
+				JOptionPane.showMessageDialog(this, "Game Over"/*, winner is + winner*/, "Dialog",JOptionPane.ERROR_MESSAGE);
+			}
+		}
+		if(aiNextState == null)
+		{
+			// remiza
+			this.drawCounter++;
 			this.isFinished = true;
+			if(drawCounter == 2)
+				if(ChessStateTransitioner.computeNumberOfPawns(currentState.getBlackPawns()) == 
+						ChessStateTransitioner.computeNumberOfPawns(currentState.getWhitePawns()))
+					JOptionPane.showMessageDialog(this, "Game Over, Draw :(", "Dialog",JOptionPane.ERROR_MESSAGE);
+				else
+					JOptionPane.showMessageDialog(this, "Game Over", "Dialog",JOptionPane.ERROR_MESSAGE);
 			return;
 		}
+		drawCounter = 0;
+//		if(isFinished)
+//			return;
 		currentState = aiNextState;
 		whiteMove = !whiteMove;
 		reDrawBoard();
@@ -165,6 +207,7 @@ public class Game extends JPanel implements MouseListener
 		{
 			ChessStateFileSerializer serializer = new ChessStateFileSerializer(); 
 			currentState = serializer.readState(stateFile.getAbsolutePath());
+			whiteMove = currentState.isWhiteToMove();
 			this.reDrawBoard();
 		} catch (IOException e)
 		{

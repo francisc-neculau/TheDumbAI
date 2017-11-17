@@ -14,6 +14,7 @@ public class ChessStateTransitioner implements StateTransitioner<ChessState>
 	public static final Map<Integer, Byte> byteMap;
 	public static final Map<Byte, Integer> reversedByteMap;
 	public static final Map<Byte, Integer> byteTrueBitsMap;
+	
 	static
 	{
 		positionCheckMap = new HashMap<>();

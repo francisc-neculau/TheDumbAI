@@ -62,13 +62,13 @@ public class MainGui extends JFrame
 		Game game = new Game(ChessStateFileSerializer.loadDefaultState(), true);
 		tabbedPane.addTab("Game " + gameCounter++, null, game, null);
 		
-		JPanel panel_1 = new JPanel();
-		tabbedPane.addTab("New tab", null, panel_1, null);
-		panel_1.setLayout(null);
-		
-		JButton btnAiNextMove = new JButton("AI Next Move");
-		btnAiNextMove.setBounds(400, 64, 115, 45);
-		panel_1.add(btnAiNextMove);
+//		JPanel panel_1 = new JPanel();
+//		tabbedPane.addTab("New tab", null, panel_1, null);
+//		panel_1.setLayout(null);
+//		
+//		JButton btnAiNextMove = new JButton("AI Next Move");
+//		btnAiNextMove.setBounds(400, 64, 115, 45);
+//		panel_1.add(btnAiNextMove);
 		
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
